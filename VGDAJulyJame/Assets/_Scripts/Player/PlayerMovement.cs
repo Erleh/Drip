@@ -13,7 +13,8 @@ public class PlayerMovement : MonoBehaviour
     
 	void Start ()
     {
-        playerRB = GetComponent<Rigidbody2D>();
+        if(findPlayerRB)
+            playerRB = GetComponent<Rigidbody2D>();
 	}
 	
 	void Update ()
