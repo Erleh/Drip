@@ -10,6 +10,8 @@ public class MapGrid : MonoBehaviour
     private Vector2 gridSize;
     [SerializeField]
     private float nodeRadius;
+    [SerializeField]
+    private bool showGizmos;
 
     //temp for testing
     [SerializeField]
@@ -20,7 +22,7 @@ public class MapGrid : MonoBehaviour
     float nodeDiameter;
     int gridSizeX, gridSizeY;
 
-    void Start()
+    void Awake()
     {
         nodeDiameter = nodeRadius * 2;
         gridSizeX = Mathf.RoundToInt(gridSize.x / nodeDiameter);
@@ -110,13 +112,13 @@ public class MapGrid : MonoBehaviour
     [SerializeField]
     private Transform enemy;
 
-    public List<Node> path;
+    //public List<Node> path;
     // draw representation for visual while editing
     void OnDrawGizmos()
     {
         Gizmos.DrawWireCube(transform.position, new Vector2(gridSize.x, gridSize.y));
 
-        if(grid != null)
+        if(grid != null && showGizmos)
         {
             // temp player
             Node playerNode = WorldToNodePoint(player.position);
@@ -127,11 +129,14 @@ public class MapGrid : MonoBehaviour
             {
                 // if node is not passable, make visual red, else white
                 Gizmos.color = (n.passable) ? Color.white : Color.red;
-                if(path != null)
+
+                /*
+                if (path != null)
                 {
                     if(path.Contains(n))
                         Gizmos.color = Color.blue;
                 }
+                */
 
                 if (playerNode == n)
                 {
