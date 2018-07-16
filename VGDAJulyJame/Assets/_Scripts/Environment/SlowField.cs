@@ -14,15 +14,21 @@ public class SlowField : MonoBehaviour {
     public void OnTriggerEnter2D(Collider2D col)
     {
         //grabbing rigidbody component of object...
-        Rigidbody2D affectedrb2d = col.gameObject.GetComponent<Rigidbody2D>();
-        affectedrb2d.drag = dragCoeff;
+        if (col.gameObject.GetComponent<Rigidbody2D>())
+        {
+            Rigidbody2D affectedrb2d = col.gameObject.GetComponent<Rigidbody2D>();
+            affectedrb2d.drag = dragCoeff;
+        }
         Debug.Log("Object entered field: " + col.gameObject);
     }
     public void OnTriggerExit2D(Collider2D col)
     {
-        Rigidbody2D affectedrb2d = col.gameObject.GetComponent<Rigidbody2D>();
-        //reset value to its default value
-        affectedrb2d.drag = 0;
+        if (col.gameObject.GetComponent<Rigidbody2D>())
+        {
+            Rigidbody2D affectedrb2d = col.gameObject.GetComponent<Rigidbody2D>();
+            //reset value to its default value
+            affectedrb2d.drag = 0;
+        }
         Debug.Log("Object exited field: " + col.gameObject);
     }
 }
