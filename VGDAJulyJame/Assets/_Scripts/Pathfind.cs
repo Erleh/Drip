@@ -46,52 +46,56 @@ public class Pathfind : MonoBehaviour
         openSet.Add(startNode);
 
         bool foundPath = false;
-
-        if (startNode.passable && targetNode.passable)
-        { 
-            // while nodes that have not been explored exist
-            while (openSet.Count > 0)
+        
+        // if we want the monster to kill the player instantly
+        if(Vector2.Distance(startPos, endPos) > 1)
+        {
+            if (startNode.passable && targetNode.passable)
             {
-                // retrieves first item from heap via pop
-                Node currentNode = openSet.Pop();
-
-                closedSet.Add(currentNode);
-
-                // if the target node has been found, loop ends and call to follow the found path
-                if (currentNode == targetNode)
+                // while nodes that have not been explored exist
+                while (openSet.Count > 0)
                 {
-                    //CreatePath(startNode, targetNode);
-                    //return;
-                    foundPath = true;
-                    break;
-                }
+                    // retrieves first item from heap via pop
+                    Node currentNode = openSet.Pop();
 
-                // for each neighboring node near by current node
-                foreach (Node n in grid.GetNeighbourNodes(currentNode))
-                {
-                    if (!n.passable || closedSet.Contains(n))
+                    closedSet.Add(currentNode);
+
+                    // if the target node has been found, loop ends and call to follow the found path
+                    if (currentNode == targetNode)
                     {
-                        continue;
+                        //CreatePath(startNode, targetNode);
+                        //return;
+                        foundPath = true;
+                        break;
                     }
 
-                    int distanceFromNeighbour = currentNode.gCost + GetDistance(currentNode, n);
-
-                    if (distanceFromNeighbour < n.gCost || !openSet.Contains(n))
+                    // for each neighboring node near by current node
+                    foreach (Node n in grid.GetNeighbourNodes(currentNode))
                     {
-                        n.gCost = distanceFromNeighbour;
-                        n.hCost = GetDistance(n, targetNode);
-
-                        n.parentNode = currentNode;
-
-                        if (!openSet.Contains(n))
+                        if (!n.passable || closedSet.Contains(n))
                         {
-                            openSet.Add(n);
+                            continue;
                         }
 
-                        openSet.UpdateItem(n);
+                        int distanceFromNeighbour = currentNode.gCost + GetDistance(currentNode, n);
+
+                        if (distanceFromNeighbour < n.gCost || !openSet.Contains(n))
+                        {
+                            n.gCost = distanceFromNeighbour;
+                            n.hCost = GetDistance(n, targetNode);
+
+                            n.parentNode = currentNode;
+
+                            if (!openSet.Contains(n))
+                            {
+                                openSet.Add(n);
+                            }
+
+                            openSet.UpdateItem(n);
+                        }
                     }
+
                 }
-                
             }
             
             yield return null;
@@ -139,7 +143,11 @@ public class Pathfind : MonoBehaviour
             if (newDirection != directionOld)
             {
                 newPath.Add(path[i].worldPos);
-            }   
+            }
+            else if(i == path.Count - 1)
+            {
+                newPath.Add(path[i].worldPos);
+            }
         }
 
         return newPath.ToArray();

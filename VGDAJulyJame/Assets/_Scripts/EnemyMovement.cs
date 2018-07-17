@@ -26,10 +26,27 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
     {
         if (col.tag.CompareTo("Player") == 0 && !hunting)
         {
-            //print("hit");
-            hunting = true;
-            target = col.transform;
-            RequestPath.CreatePathRequest(enemyTrans.position, target.position, OnPathFound);
+            if (Vector2.Distance(transform.position, col.transform.position) > 1)
+            {
+                //print("hit");
+                hunting = true;
+                target = col.transform;
+                RequestPath.CreatePathRequest(enemyTrans.position, target.position, OnPathFound);
+            }
+        }
+    }
+
+    void OnTriggerStay2D(Collider2D col)
+    {
+        if (col.tag.CompareTo("Player") == 0 && !hunting)
+        {
+            if (Vector2.Distance(transform.position, col.transform.position) > 1)
+            {
+                //print("hit");
+                hunting = true;
+                target = col.transform;
+                RequestPath.CreatePathRequest(enemyTrans.position, target.position, OnPathFound);
+            }
         }
     }
 
@@ -44,9 +61,10 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
     public IEnumerator FollowPath()
     {
         Vector2 currentWaypoint = path[0];
+
         //print("trying to follow path...");
         
-        while (true)
+        while (true)// && hasWaypoint)
         {
             Vector2 currPos = new Vector2(enemyTrans.position.x, enemyTrans.position.y);
             //print("trying to get to waypoint...");
@@ -65,9 +83,10 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
                     //{
                     //    RequestPath.CreatePathRequest(enemyTrans.position, target.position, OnPathFound);
                     //}
-                    hunting = false;
 
                     yield return new WaitForSeconds(1);
+
+                    hunting = false;
                     triggerDetectionBox.SetActive(false);
                     triggerDetectionBox.SetActive(true);
                     
