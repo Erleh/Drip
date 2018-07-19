@@ -5,15 +5,19 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour, EnemyMovementBase
 {
     [SerializeField]
+    private float speed = 5;
+    [SerializeField]
+    private Transform target;
+
+    [Header("Set fields below")]
+    [SerializeField]
     Transform enemyTrans;
     [SerializeField]
     Rigidbody2D enemyRB;
     [SerializeField]
-    private float speed = 5;
-    [SerializeField]
-    private Transform target;
-    [SerializeField]
     GameObject triggerDetectionBox;
+    [SerializeField]
+    MapGrid mapGrid;
 
     // reps the index of the position on the path this object is on
     int posIndex;
@@ -21,6 +25,11 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
     private Vector2[] path;
 
     bool hunting;
+
+    void FixedUpdate()
+    {
+        enemyRB.velocity = Vector2.zero;
+    }
 
     void OnTriggerEnter2D(Collider2D col)
     {
@@ -61,28 +70,25 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
     public IEnumerator FollowPath()
     {
         Vector2 currentWaypoint = path[0];
-
+        Vector2 currPos;
         //print("trying to follow path...");
-        
+
         while (true)// && hasWaypoint)
         {
-            Vector2 currPos = new Vector2(enemyTrans.position.x, enemyTrans.position.y);
+            currPos = new Vector2(enemyTrans.position.x, enemyTrans.position.y);
+            float oldPosX = currPos.x;
+            float oldPosY = currPos.y;
+            
+            //print("currPos = " + currPos);
+
             //print("trying to get to waypoint...");
-            if (currPos == currentWaypoint)
+            if (mapGrid.WorldToNodePoint(currPos) == mapGrid.WorldToNodePoint(currentWaypoint))
             {
                 posIndex++;
-                //print("posIndex = " + posIndex);
-                //print("next destination = " + path[posIndex]);
 
                 if (posIndex >= path.Length)
                 {
-                    //print("break");
                     posIndex = 0;
-
-                    //if (hunt)
-                    //{
-                    //    RequestPath.CreatePathRequest(enemyTrans.position, target.position, OnPathFound);
-                    //}
 
                     yield return new WaitForSeconds(1);
 
@@ -96,11 +102,36 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
                 currentWaypoint = path[posIndex];
             }
 
-            //enemyRB.AddForce((currentWaypoint - currPos) * speed);
-            enemyTrans.position = Vector2.MoveTowards(enemyTrans.position, currentWaypoint, speed);
+            enemyRB.AddForce(Vector3.Normalize(currentWaypoint - currPos) * speed);
+
+            Vector2 newPos = new Vector2(enemyTrans.position.x, enemyTrans.position.y);
+            
+            // if stuck
+            if (ApproxVals(currPos.x, oldPosX, .01f) && ApproxVals(currPos.y, oldPosY, .01f))
+            {
+                yield return new WaitForSeconds(1);
+
+                hunting = false;
+                triggerDetectionBox.SetActive(false);
+                triggerDetectionBox.SetActive(true);
+
+                // stop coroutine
+                yield break;
+            }
+            //enemyTrans.position = Vector2.MoveTowards(enemyTrans.position, currentWaypoint, speed);
 
             yield return null;
         }
+    }
+
+    public bool ApproxVals(float a, float b, float tollerance)
+    {
+        if (Mathf.Abs(b - a) < tollerance)
+        {
+            return false;
+        }
+        else
+            return true;
     }
 
     public void OnPathFound(Vector2[] _path, bool pathFound)

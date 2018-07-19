@@ -5,9 +5,6 @@ using System;
 
 public class Pathfind : MonoBehaviour
 {
-    // temp, represents object trying to reach other object
-    //public Transform seeker, target;
-
     MapGrid grid;
 
     [SerializeField]
@@ -17,12 +14,6 @@ public class Pathfind : MonoBehaviour
     {
         grid = GetComponent<MapGrid>();
     }
-
-    // temp, updates path from seeker to target on update
-    //void Update()
-    //{
-    //    FindPath(seeker.position, target.position);
-    //}
 
     public void StartFindPath(Vector2 startPos, Vector2 endPos)
     {
@@ -48,7 +39,7 @@ public class Pathfind : MonoBehaviour
         bool foundPath = false;
         
         // if we want the monster to kill the player instantly
-        if(Vector2.Distance(startPos, endPos) > 1)
+        if(Vector2.Distance(startPos, endPos) > 0)
         {
             if (startNode.passable && targetNode.passable)
             {
@@ -103,11 +94,6 @@ public class Pathfind : MonoBehaviour
             {
                 waypoints = CreatePath(startNode, targetNode);
             }
-            
-            //for(int i = 0; i < waypoints.Length; i++)
-            //{
-            //    print("waypoints " + i + " = " + waypoints[i]);
-            //}
 
             requestPath.FinishedProcessingPath(waypoints, foundPath);
         }
@@ -140,7 +126,7 @@ public class Pathfind : MonoBehaviour
             Vector2 newDirection = new Vector2(path[i - 1].gridX - path[i].gridX,
                                                path[i - 1].gridY - path[i].gridY);
 
-            if (newDirection != directionOld)
+            if (newDirection != directionOld && i != path.Count - 1)
             {
                 newPath.Add(path[i].worldPos);
             }
