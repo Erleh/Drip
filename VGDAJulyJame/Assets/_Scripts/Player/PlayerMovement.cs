@@ -26,9 +26,14 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private int moving = 0;
 
+    private bool idle;
+    private bool setRandomIdle;
+
     public enum Direction{
         Up, Down, Left, Right
     }
+
+
     private void Awake()
     {
         pAnim = GetComponent<Animator>();
@@ -43,7 +48,8 @@ public class PlayerMovement : MonoBehaviour
 	void FixedUpdate ()
     {
         idleTimer += Time.deltaTime;
-        pAnim.SetBool("isIdle", CheckIdle());
+        idle = CheckIdle();
+        pAnim.SetBool("isIdle", idle);
         MakeMovement();
 
         playerRB.velocity = new Vector2(0, 0); //comment out this line for non-physics movement
@@ -83,6 +89,7 @@ public class PlayerMovement : MonoBehaviour
         //If movement is made, move the player and determine the direction they are facing...
         if (!axes.Equals(Vector2.zero))
         {
+            setRandomIdle = false;
             pAnim.SetBool("moving", true);
             idleTimer = 0;
             Vector2 movForce = axes * speed;
@@ -92,6 +99,11 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
+            if(!setRandomIdle && idle)
+            {
+                pAnim.SetInteger("randIdle", Random.Range(0, 3));
+                setRandomIdle = true;
+            }
             pAnim.SetBool("moving", false);
         }
 
