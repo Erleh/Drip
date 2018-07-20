@@ -23,8 +23,6 @@ public class PlayerMovement : MonoBehaviour
     private float idleTimer;
     [SerializeField]
     private float idleLimit;
-    [SerializeField]
-    private int moving = 0;
 
     private bool idle;
     private bool setRandomIdle;
