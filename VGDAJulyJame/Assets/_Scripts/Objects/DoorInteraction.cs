@@ -16,6 +16,7 @@ public class DoorInteraction : MonoBehaviour
         doorMotor = doorHinge.motor;
     }
 
+    // trigger to sense interaction with door via "E" key
     void OnTriggerStay2D(Collider2D col)
     {
         if (col.gameObject.CompareTag("Player"))

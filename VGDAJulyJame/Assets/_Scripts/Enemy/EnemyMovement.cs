@@ -37,7 +37,6 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
         {
             if (Vector2.Distance(transform.position, col.transform.position) > 1)
             {
-                //print("hit");
                 hunting = true;
                 target = col.transform;
                 RequestPath.CreatePathRequest(enemyTrans.position, target.position, OnPathFound);
@@ -51,7 +50,6 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
         {
             if (Vector2.Distance(transform.position, col.transform.position) > 1)
             {
-                //print("hit");
                 hunting = true;
                 target = col.transform;
                 RequestPath.CreatePathRequest(enemyTrans.position, target.position, OnPathFound);
@@ -71,7 +69,6 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
     {
         Vector2 currentWaypoint = path[0];
         Vector2 currPos;
-        //print("trying to follow path...");
 
         while (true)// && hasWaypoint)
         {
@@ -79,9 +76,6 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
             float oldPosX = currPos.x;
             float oldPosY = currPos.y;
             
-            //print("currPos = " + currPos);
-
-            //print("trying to get to waypoint...");
             if (mapGrid.WorldToNodePoint(currPos) == mapGrid.WorldToNodePoint(currentWaypoint))
             {
                 posIndex++;
@@ -144,6 +138,15 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
             // stop whatever instance of followpath exists already and start new
             StopCoroutine("FollowPath");
             StartCoroutine("FollowPath");
+        }
+        else
+        {
+            hunting = false;
+
+            triggerDetectionBox.SetActive(false);
+            triggerDetectionBox.SetActive(true);
+            
+            StopCoroutine("FollowPath");
         }
     }
 }

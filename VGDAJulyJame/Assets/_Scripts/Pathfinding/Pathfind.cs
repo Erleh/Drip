@@ -54,8 +54,6 @@ public class Pathfind : MonoBehaviour
                     // if the target node has been found, loop ends and call to follow the found path
                     if (currentNode == targetNode)
                     {
-                        //CreatePath(startNode, targetNode);
-                        //return;
                         foundPath = true;
                         break;
                     }
@@ -94,7 +92,7 @@ public class Pathfind : MonoBehaviour
             {
                 waypoints = CreatePath(startNode, targetNode);
             }
-
+            
             requestPath.FinishedProcessingPath(waypoints, foundPath);
         }
     }
@@ -151,6 +149,11 @@ public class Pathfind : MonoBehaviour
             path.Add(currentNode);
 
             currentNode = currentNode.parentNode;
+        }
+
+        if(currentNode == start)
+        {
+            path.Add(currentNode);
         }
 
         Vector2[] waypoints = SimplifyPath(path);
