@@ -35,6 +35,7 @@ public class RequestPath : MonoBehaviour
         instance.pathRequestQueue.Enqueue(newRequest);
         //print("trying next request...");
         instance.TryNextRequest();
+        //print("complete");
     }
 
     // if not currently processing a path, and the queue has a request in queue
@@ -45,6 +46,7 @@ public class RequestPath : MonoBehaviour
         {
             currentPathRequest = pathRequestQueue.Dequeue();
             isProcessingPath = true;
+            
             pathfind.StartFindPath(currentPathRequest.startPos, currentPathRequest.endPos);
         }
     }
@@ -53,6 +55,7 @@ public class RequestPath : MonoBehaviour
     public void FinishedProcessingPath(Vector2[] path, bool success)
     {
         currentPathRequest.doAfter(path, success);
+
         isProcessingPath = false;
         TryNextRequest();
     }
