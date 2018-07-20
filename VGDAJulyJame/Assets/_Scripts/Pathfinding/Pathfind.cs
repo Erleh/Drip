@@ -5,9 +5,6 @@ using System;
 
 public class Pathfind : MonoBehaviour
 {
-    // temp, represents object trying to reach other object
-    //public Transform seeker, target;
-
     MapGrid grid;
 
     [SerializeField]
@@ -17,12 +14,6 @@ public class Pathfind : MonoBehaviour
     {
         grid = GetComponent<MapGrid>();
     }
-
-    // temp, updates path from seeker to target on update
-    //void Update()
-    //{
-    //    FindPath(seeker.position, target.position);
-    //}
 
     public void StartFindPath(Vector2 startPos, Vector2 endPos)
     {
@@ -46,52 +37,56 @@ public class Pathfind : MonoBehaviour
         openSet.Add(startNode);
 
         bool foundPath = false;
-
-        if (startNode.passable && targetNode.passable)
-        { 
-            // while nodes that have not been explored exist
-            while (openSet.Count > 0)
+        
+        // if we want the monster to kill the player instantly
+        if(Vector2.Distance(startPos, endPos) > 0)
+        {
+            if (startNode.passable && targetNode.passable)
             {
-                // retrieves first item from heap via pop
-                Node currentNode = openSet.Pop();
-
-                closedSet.Add(currentNode);
-
-                // if the target node has been found, loop ends and call to follow the found path
-                if (currentNode == targetNode)
+                // while nodes that have not been explored exist
+                while (openSet.Count > 0)
                 {
-                    //CreatePath(startNode, targetNode);
-                    //return;
-                    foundPath = true;
-                    break;
-                }
+                    // retrieves first item from heap via pop
+                    Node currentNode = openSet.Pop();
 
-                // for each neighboring node near by current node
-                foreach (Node n in grid.GetNeighbourNodes(currentNode))
-                {
-                    if (!n.passable || closedSet.Contains(n))
+                    closedSet.Add(currentNode);
+
+                    // if the target node has been found, loop ends and call to follow the found path
+                    if (currentNode == targetNode)
                     {
-                        continue;
+                        //CreatePath(startNode, targetNode);
+                        //return;
+                        foundPath = true;
+                        break;
                     }
 
-                    int distanceFromNeighbour = currentNode.gCost + GetDistance(currentNode, n);
-
-                    if (distanceFromNeighbour < n.gCost || !openSet.Contains(n))
+                    // for each neighboring node near by current node
+                    foreach (Node n in grid.GetNeighbourNodes(currentNode))
                     {
-                        n.gCost = distanceFromNeighbour;
-                        n.hCost = GetDistance(n, targetNode);
-
-                        n.parentNode = currentNode;
-
-                        if (!openSet.Contains(n))
+                        if (!n.passable || closedSet.Contains(n))
                         {
-                            openSet.Add(n);
+                            continue;
                         }
 
-                        openSet.UpdateItem(n);
+                        int distanceFromNeighbour = currentNode.gCost + GetDistance(currentNode, n);
+
+                        if (distanceFromNeighbour < n.gCost || !openSet.Contains(n))
+                        {
+                            n.gCost = distanceFromNeighbour;
+                            n.hCost = GetDistance(n, targetNode);
+
+                            n.parentNode = currentNode;
+
+                            if (!openSet.Contains(n))
+                            {
+                                openSet.Add(n);
+                            }
+
+                            openSet.UpdateItem(n);
+                        }
                     }
+
                 }
-                
             }
             
             yield return null;
@@ -99,11 +94,6 @@ public class Pathfind : MonoBehaviour
             {
                 waypoints = CreatePath(startNode, targetNode);
             }
-            
-            //for(int i = 0; i < waypoints.Length; i++)
-            //{
-            //    print("waypoints " + i + " = " + waypoints[i]);
-            //}
 
             requestPath.FinishedProcessingPath(waypoints, foundPath);
         }
@@ -136,10 +126,14 @@ public class Pathfind : MonoBehaviour
             Vector2 newDirection = new Vector2(path[i - 1].gridX - path[i].gridX,
                                                path[i - 1].gridY - path[i].gridY);
 
-            if (newDirection != directionOld)
+            if (newDirection != directionOld && i != path.Count - 1)
             {
                 newPath.Add(path[i].worldPos);
-            }   
+            }
+            else if(i == path.Count - 1)
+            {
+                newPath.Add(path[i].worldPos);
+            }
         }
 
         return newPath.ToArray();
