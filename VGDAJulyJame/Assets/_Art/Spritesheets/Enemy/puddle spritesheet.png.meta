@@ -1,14 +1,14 @@
 fileFormatVersion: 2
-guid: 04090e314f273224993f806bc7ca7b6b
+guid: 57b932826cd9187458dafd9d2f947714
 TextureImporter:
   fileIDToRecycleName:
-    21300000: monster_puddleSteps_1
-    21300002: monster_puddleSteps_7
-    21300004: monster_puddleSteps_6
-    21300006: monster_puddleSteps_5
-    21300008: monster_puddleSteps_4
-    21300010: monster_puddleSteps_3
-    21300012: monster_puddleSteps_2
+    21300000: puddle spritesheet_7
+    21300002: puddle spritesheet_6
+    21300004: puddle spritesheet_5
+    21300006: puddle spritesheet_4
+    21300008: puddle spritesheet_3
+    21300010: puddle spritesheet_2
+    21300012: puddle spritesheet_1
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -111,141 +111,141 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: monster_puddleSteps_1
+      name: puddle spritesheet_7
       rect:
         serializedVersion: 2
-        x: 196
-        y: 126
-        width: 112
-        height: 65
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 68a08d37ebfc37d4a888daebf0904894
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: monster_puddleSteps_7
-      rect:
-        serializedVersion: 2
-        x: 3100
+        x: 3099
         y: 0
         width: 500
-        height: 317
+        height: 311
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48b7a19ccab09234eb414b8d757babbd
+      spriteID: 32a5d87b049bd9b41af24b2b2fa265bd
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monster_puddleSteps_6
+      name: puddle spritesheet_6
       rect:
         serializedVersion: 2
-        x: 2584
+        x: 2583
         y: 0
         width: 500
-        height: 317
+        height: 313
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72321fee308dcce41bef598a7cab4926
+      spriteID: 48cef7a52e81f3b4f8784284071eac52
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monster_puddleSteps_5
+      name: puddle spritesheet_5
       rect:
         serializedVersion: 2
-        x: 2072
+        x: 2069
         y: 0
         width: 500
-        height: 317
+        height: 311
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57ca4863fff152d43a275a2e6eec9280
+      spriteID: 2d1aa076b66ae2d4a96b10a6c3a627ae
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monster_puddleSteps_4
+      name: puddle spritesheet_4
       rect:
         serializedVersion: 2
-        x: 1576
-        y: 2
+        x: 1574
+        y: 6
         width: 460
-        height: 315
+        height: 299
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a33e641e10d9a643be21379d2829389
+      spriteID: 286060abc1386324e91effc508ccc71f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monster_puddleSteps_3
+      name: puddle spritesheet_3
       rect:
         serializedVersion: 2
-        x: 1116
-        y: 20
-        width: 320
-        height: 279
+        x: 1110
+        y: 62
+        width: 340
+        height: 206
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a51655df4482d84ba7ad54e6e412a47
+      spriteID: 315f6066cca30dd408f66e7d9c8005dc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monster_puddleSteps_2
+      name: puddle spritesheet_2
       rect:
         serializedVersion: 2
-        x: 687
-        y: 116
-        width: 170
-        height: 107
+        x: 692
+        y: 112
+        width: 160
+        height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a810235ea9eec604ea5eaba644ddabd9
+      spriteID: 6d00e079e180c5342a5c397c4322a58f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puddle spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 132
+        width: 100
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9a7f397f36383e489b863ee43969a0c
       vertices: []
       indices: 
       edges: []
@@ -253,7 +253,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 326f9ec1353c47e40ab258ea0ece0f88
+    spriteID: 04b482995c0313f459849844836cf038
     vertices: []
     indices: 
     edges: []
