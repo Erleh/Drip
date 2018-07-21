@@ -18,6 +18,8 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
     GameObject triggerDetectionBox;
     [SerializeField]
     MapGrid mapGrid;
+    [SerializeField]
+    ParticleSystem waterTrail;
 
     // reps the index of the position on the path this object is on
     int posIndex;
@@ -31,6 +33,7 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
         enemyRB.velocity = Vector2.zero;
     }
 
+    // will most likely not need this
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.tag.CompareTo("Player") == 0 && !hunting)
@@ -54,14 +57,6 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
                 target = col.transform;
                 RequestPath.CreatePathRequest(enemyTrans.position, target.position, OnPathFound);
             }
-        }
-    }
-
-    void OnTriggerExit2D(Collider2D col)
-    {
-        if(col.tag.CompareTo("Player") == 0)
-        {
-            //hunt = false;
         }
     }
 
@@ -118,6 +113,7 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
         }
     }
 
+    // approx between 2 bools, return whether difference is greater that tolerated level
     public bool ApproxVals(float a, float b, float tollerance)
     {
         if (Mathf.Abs(b - a) < tollerance)
@@ -132,8 +128,6 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
     {
         if(pathFound)
         {
-            //print("path found");
-
             path = _path;
             // stop whatever instance of followpath exists already and start new
             StopCoroutine("FollowPath");

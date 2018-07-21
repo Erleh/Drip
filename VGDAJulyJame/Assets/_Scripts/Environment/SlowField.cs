@@ -19,7 +19,7 @@ public class SlowField : MonoBehaviour {
             Rigidbody2D affectedrb2d = col.gameObject.GetComponent<Rigidbody2D>();
             affectedrb2d.drag = dragCoeff;
         }
-        Debug.Log("Object entered field: " + col.gameObject);
+        //Debug.Log("Object entered field: " + col.gameObject);
     }
     public void OnTriggerExit2D(Collider2D col)
     {
@@ -29,6 +29,6 @@ public class SlowField : MonoBehaviour {
             //reset value to its default value
             affectedrb2d.drag = 0;
         }
-        Debug.Log("Object exited field: " + col.gameObject);
+        //Debug.Log("Object exited field: " + col.gameObject);
     }
 }

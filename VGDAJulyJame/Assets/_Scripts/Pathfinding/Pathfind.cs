@@ -83,7 +83,6 @@ public class Pathfind : MonoBehaviour
                             openSet.UpdateItem(n);
                         }
                     }
-
                 }
             }
             
