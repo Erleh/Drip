@@ -10,6 +10,9 @@ public class SlowField : MonoBehaviour {
     [SerializeField]
     private float dragCoeff;
 
+    //Maintain list of rigidbodies currently affected by the puddle
+    [SerializeField]
+    private List<Rigidbody2D> affectedRigidbodies;
     //Set entering drag coefficient of rigidbody to number defined in inspector
     public void OnTriggerEnter2D(Collider2D col)
     {
@@ -18,6 +21,8 @@ public class SlowField : MonoBehaviour {
         {
             Rigidbody2D affectedrb2d = col.gameObject.GetComponent<Rigidbody2D>();
             affectedrb2d.drag = dragCoeff;
+            //Maintain list of affected objects
+            affectedRigidbodies.Add(affectedrb2d);
         }
         //Debug.Log("Object entered field: " + col.gameObject);
     }
@@ -28,7 +33,15 @@ public class SlowField : MonoBehaviour {
             Rigidbody2D affectedrb2d = col.gameObject.GetComponent<Rigidbody2D>();
             //reset value to its default value
             affectedrb2d.drag = 0;
+            affectedRigidbodies.Remove(affectedrb2d);
         }
         //Debug.Log("Object exited field: " + col.gameObject);
+    }
+    public void OnDisable()
+    {
+        //If the puddle disappears with objects in it, return all objects inside to normal state
+        foreach(Rigidbody2D affected in affectedRigidbodies)
+            affected.drag = 0;
+        affectedRigidbodies.Clear();
     }
 }
