@@ -13,5 +13,9 @@ public class WaterWalking : MonoBehaviour
         {
             waterManager.WaterWalkingSuccess(true, false);
         }
+        if(self.CompareTag("Player"))
+        {
+            waterManager.WaterWalkingSuccess(false, true);
+        }
     }
 }
