@@ -18,6 +18,8 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
     GameObject triggerDetectionBox;
     [SerializeField]
     MapGrid mapGrid;
+    [SerializeField]
+    ParticleSystem waterTrail;
 
     // reps the index of the position on the path this object is on
     int posIndex;
@@ -31,13 +33,13 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
         enemyRB.velocity = Vector2.zero;
     }
 
+    // will most likely not need this
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.tag.CompareTo("Player") == 0 && !hunting)
         {
             if (Vector2.Distance(transform.position, col.transform.position) > 1)
             {
-                //print("hit");
                 hunting = true;
                 target = col.transform;
                 RequestPath.CreatePathRequest(enemyTrans.position, target.position, OnPathFound);
@@ -51,7 +53,6 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
         {
             if (Vector2.Distance(transform.position, col.transform.position) > 1)
             {
-                //print("hit");
                 hunting = true;
                 target = col.transform;
                 RequestPath.CreatePathRequest(enemyTrans.position, target.position, OnPathFound);
@@ -59,19 +60,10 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
         }
     }
 
-    void OnTriggerExit2D(Collider2D col)
-    {
-        if(col.tag.CompareTo("Player") == 0)
-        {
-            //hunt = false;
-        }
-    }
-
     public IEnumerator FollowPath()
     {
         Vector2 currentWaypoint = path[0];
         Vector2 currPos;
-        //print("trying to follow path...");
 
         while (true)// && hasWaypoint)
         {
@@ -79,9 +71,6 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
             float oldPosX = currPos.x;
             float oldPosY = currPos.y;
             
-            //print("currPos = " + currPos);
-
-            //print("trying to get to waypoint...");
             if (mapGrid.WorldToNodePoint(currPos) == mapGrid.WorldToNodePoint(currentWaypoint))
             {
                 posIndex++;
@@ -124,6 +113,7 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
         }
     }
 
+    // approx between 2 bools, return whether difference is greater that tolerated level
     public bool ApproxVals(float a, float b, float tollerance)
     {
         if (Mathf.Abs(b - a) < tollerance)
@@ -138,12 +128,19 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
     {
         if(pathFound)
         {
-            //print("path found");
-
             path = _path;
             // stop whatever instance of followpath exists already and start new
             StopCoroutine("FollowPath");
             StartCoroutine("FollowPath");
+        }
+        else
+        {
+            hunting = false;
+
+            triggerDetectionBox.SetActive(false);
+            triggerDetectionBox.SetActive(true);
+            
+            StopCoroutine("FollowPath");
         }
     }
 }

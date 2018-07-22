@@ -4,6 +4,57 @@ using UnityEngine;
 
 public class DoorInteraction : MonoBehaviour
 {
+    [Header("Set fields bellow")]
+    [SerializeField]
+    private BoxCollider2D doorCollider;
+
+    private bool open;
+
+    void Awake()
+    {
+        open = false;
+    }
+
+    void OpenDoor()
+    {
+        doorCollider.enabled = false;
+    }
+
+    void CloseDoor()
+    {
+        doorCollider.enabled = true;
+    }
+
+    // if button to interact is pressed, trigger interaction with open and close door
+    // when animations are in, action will be linked to points within the animation
+    void GetInteraction()
+    {
+        if (Input.GetButtonDown("Interact"))
+        {
+            if (!open)
+            {
+                OpenDoor();
+                open = true;
+            }
+            else
+            {
+                CloseDoor();
+                open = false;
+            }
+        }
+    }
+
+    //animation based door
+    void OnTriggerStay2D(Collider2D col)
+    {
+        if(col.CompareTag("Player"))
+        {
+            GetInteraction();
+        }
+    }
+
+    /* works when with physics based door
+    
     private HingeJoint2D doorHinge;
     private JointMotor2D doorMotor;
 
@@ -16,6 +67,7 @@ public class DoorInteraction : MonoBehaviour
         doorMotor = doorHinge.motor;
     }
 
+    // trigger to sense interaction with door via "E" key
     void OnTriggerStay2D(Collider2D col)
     {
         if (col.gameObject.CompareTag("Player"))
@@ -28,4 +80,5 @@ public class DoorInteraction : MonoBehaviour
             }
         }
     }
+    */
 }

@@ -108,6 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dragCoeff: 20
+  affectedRigidbodies: []
 --- !u!212 &212199400094535112
 SpriteRenderer:
   m_ObjectHideFlags: 1
