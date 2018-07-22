@@ -14,6 +14,7 @@ public class MapGrid : MonoBehaviour
     private bool showGizmos;
 
     //temp for testing
+    [Header("Needed only for gizmos")]
     [SerializeField]
     private Transform player;
 
