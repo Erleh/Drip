@@ -5,12 +5,16 @@ using System;
 
 public class WaterWalkingManager : MonoBehaviour
 {
+    Queue<OnWaterRequest> waterQueue = new Queue<OnWaterRequest>();
+
     static WaterWalkingManager instance;
 
     OnWaterRequest currRequest;
 
     [SerializeField]
     WaterWalking waterWalking;
+
+    //bool processingRequest = false;
 
     private void Awake()
     {
@@ -22,19 +26,30 @@ public class WaterWalkingManager : MonoBehaviour
     {
         OnWaterRequest newRequest = new OnWaterRequest(reply, self);
 
+        instance.waterQueue.Enqueue(newRequest);
+
         instance.TryRequest();
     }
 
     // attempt to perform check on request before successful response
     void TryRequest()
     {
+        currRequest = waterQueue.Dequeue();
+
+        //processingRequest = true;
+
         waterWalking.StartWaterAffect(currRequest.self);
     }
 
     // send results to apply appropriate response
-    public void WaterWalkingSuccess(bool enemy, bool player)
+    public void FinishedProcess(bool enemy, bool player, bool success)
     {
-        currRequest.response(enemy, player);
+        if (success)
+        {
+            currRequest.response(enemy, player);
+        }
+
+        //processingRequest = false;
     }
 
     // make request to have response from walking on water
