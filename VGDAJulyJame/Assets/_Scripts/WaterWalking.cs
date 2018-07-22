@@ -11,7 +11,13 @@ public class WaterWalking : MonoBehaviour
     {
         if(self.CompareTag("Enemy"))
         {
-            waterManager.WaterWalkingSuccess(true, false);
+            print("enemy found");
+            waterManager.FinishedProcess(true, false, true);
+        }
+        if(self.CompareTag("Player"))
+        {
+            print("player found");
+            waterManager.FinishedProcess(false, true, true);
         }
     }
 }

@@ -1,0 +1,327 @@
+fileFormatVersion: 2
+guid: 1ccad4630a610ba4494c1a527af6ef20
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: front_idle_spritesheet_0
+    21300002: front_idle_spritesheet_1
+    21300004: front_idle_spritesheet_2
+    21300006: front_idle_spritesheet_3
+    21300008: front_idle_spritesheet_4
+    21300010: front_idle_spritesheet_5
+    21300012: front_idle_spritesheet_6
+    21300014: front_idle_spritesheet_7
+    21300016: front_idle_spritesheet_8
+    21300018: front_idle_spritesheet_9
+  externalObjects: {}
+  serializedVersion: 5
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 400
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: front_idle_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 635
+        width: 280
+        height: 610
+      alignment: 9
+      pivot: {x: 0.4877769, y: 0.076399505}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092404139c1c010468caeecbcaccec5c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front_idle_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 635
+        width: 280
+        height: 610
+      alignment: 9
+      pivot: {x: 0.4938884, y: 0.07920482}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 965432b286e845b45891e63c52ea5b28
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front_idle_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 635
+        width: 280
+        height: 610
+      alignment: 9
+      pivot: {x: 0.4938884, y: 0.076399505}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c058afc895708564ea2f9658ad2b3480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front_idle_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 635
+        width: 280
+        height: 610
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07078897}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df3c4e1edda41241a1b22a429dcf404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front_idle_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 635
+        width: 280
+        height: 610
+      alignment: 9
+      pivot: {x: 0.4938882, y: 0.076399505}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0881a66985a554e4e8e54941df90f6f3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front_idle_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 11
+        width: 280
+        height: 610
+      alignment: 9
+      pivot: {x: 0.5061115, y: 0.07920476}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b5440e925de90439ebdb84dd45efb3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front_idle_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 11
+        width: 280
+        height: 610
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08201005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 826ee73d256279c468552c485d1b9492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front_idle_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 11
+        width: 280
+        height: 610
+      alignment: 9
+      pivot: {x: 0.5061114, y: 0.07639945}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13cb15547984c1d46a5934792ab709f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front_idle_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 11
+        width: 280
+        height: 610
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07639945}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a6a72a52c336d47aff7cbad4fac442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front_idle_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 11
+        width: 280
+        height: 610
+      alignment: 9
+      pivot: {x: 0.4938882, y: 0.07639945}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e0f324daa9cfe64382cc7a6f18724e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 786841279413b924e9b5f0edd8cc7eb1
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
