@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 76edf1364ffb5634ea18ae1ea1830e98
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Old Press
+  fontNames:
+  - Old Press
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 2ad99e03df1d6f245a872b9651eb52fa, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
