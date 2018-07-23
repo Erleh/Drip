@@ -8,5 +8,5 @@ public interface BreakableBase
     // if object is destroyed
     void OnDestroyed();
     // if object is interacted with
-    void OnInteraction(bool aggressive);
+    void OnInteraction(bool aggressive, Collision2D col);
 }

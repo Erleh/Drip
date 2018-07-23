@@ -31,6 +31,7 @@ public class DoorInteraction : MonoBehaviour
     {
         if (Input.GetButtonDown("Interact"))
         {
+            //print("hit");
             if (!open)
             {
                 OpenDoor();
@@ -50,6 +51,10 @@ public class DoorInteraction : MonoBehaviour
         if(col.CompareTag("Player"))
         {
             GetInteraction();
+        }
+        if(col.CompareTag("Enemy"))
+        {
+            col.gameObject.GetComponent<CircleCollider2D>().isTrigger = false;
         }
     }
 

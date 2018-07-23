@@ -116,7 +116,7 @@ TextureImporter:
         width: 373
         height: 569
       alignment: 9
-      pivot: {x: 0.4930251, y: 0.120500974}
+      pivot: {x: 0.48953766, y: 0.07477827}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -136,7 +136,7 @@ TextureImporter:
         width: 375
         height: 586
       alignment: 9
-      pivot: {x: 0.5138753, y: 0.13373017}
+      pivot: {x: 0.5069377, y: 0.08045462}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -156,7 +156,7 @@ TextureImporter:
         width: 370
         height: 580
       alignment: 9
-      pivot: {x: 0.49648422, y: 0.1366695}
+      pivot: {x: 0.50703144, y: 0.08732832}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -171,12 +171,12 @@ TextureImporter:
       name: left_walk_spritesheet_3
       rect:
         serializedVersion: 2
-        x: 1156
+        x: 1157
         y: 29
         width: 374
         height: 586
       alignment: 9
-      pivot: {x: 0.46174076, y: 0.13816981}
+      pivot: {x: 0.4652191, y: 0.100432985}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

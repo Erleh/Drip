@@ -27,7 +27,7 @@ public class DoorDurability : MonoBehaviour, BreakableBase
     }
 
     // while the enemy interacts with the door, 
-    public void OnInteraction(bool aggressive)
+    public void OnInteraction(bool aggressive, Collision2D col)
     {
         if(aggressive)
         {
@@ -37,6 +37,7 @@ public class DoorDurability : MonoBehaviour, BreakableBase
             }
             else if (currentDurability == 0)
             {
+                col.gameObject.GetComponent<CircleCollider2D>().isTrigger = true;
                 OnDestroyed();
             }
         }
@@ -46,7 +47,7 @@ public class DoorDurability : MonoBehaviour, BreakableBase
     {
         if(col.gameObject.CompareTag("Enemy"))
         {
-            OnInteraction(true);
+            OnInteraction(true, col);
         }
     }
 }
