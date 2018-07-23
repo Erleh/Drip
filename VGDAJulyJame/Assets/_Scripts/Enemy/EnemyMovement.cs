@@ -98,6 +98,7 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
             // if stuck
             if (ApproxVals(currPos.x, oldPosX, .01f) && ApproxVals(currPos.y, oldPosY, .01f))
             {
+                print("stuck");
                 yield return new WaitForSeconds(1);
 
                 hunting = false;

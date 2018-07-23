@@ -1,11 +1,7 @@
 fileFormatVersion: 2
-guid: 3aec7318e007578448845e0b74eb5111
+guid: 0cceb90a020220449bc846bc8b981cee
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: left_idle_spritesheet_0
-    21300002: left_idle_spritesheet_1
-    21300004: left_idle_spritesheet_2
-    21300006: left_idle_spritesheet_3
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -42,12 +38,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 400
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -106,91 +102,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: left_idle_spritesheet_0
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 29
-        width: 375
-        height: 586
-      alignment: 9
-      pivot: {x: 0.4849871, y: 0.0963719}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2dfe7593b6a03d047a12133902eb3022
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: left_idle_spritesheet_1
-      rect:
-        serializedVersion: 2
-        x: 389
-        y: 29
-        width: 375
-        height: 586
-      alignment: 9
-      pivot: {x: 0.48613867, y: 0.10672506}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7c3eea6032688bf4ab3a844b3fc4b37a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: left_idle_spritesheet_2
-      rect:
-        serializedVersion: 2
-        x: 773
-        y: 29
-        width: 375
-        height: 586
-      alignment: 9
-      pivot: {x: 0.48960742, y: 0.105988085}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 18935c303fd27764080447dd9e6eb4dd
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: left_idle_spritesheet_3
-      rect:
-        serializedVersion: 2
-        x: 1158
-        y: 29
-        width: 375
-        height: 586
-      alignment: 9
-      pivot: {x: 0.4815039, y: 0.09710881}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 485ced6cc0a663e468d59950f5da5ea9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d6e77257362b3a24db7355df405b5073
+    spriteID: 227312f4a9c89f0498d7bad8164deb50
     vertices: []
     indices: 
     edges: []

@@ -114,7 +114,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1764787049304572}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4, z: 0}
+  m_LocalPosition: {x: -7.07, y: 1.5265834, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children:
   - {fileID: 4955415216085866}
@@ -213,7 +213,7 @@ MonoBehaviour:
   enemyRB: {fileID: 50768018130383912}
   triggerDetectionBox: {fileID: 1127764167894336}
   mapGrid: {fileID: 0}
-  waterTrail: {fileID: 0}
+  waterTrail: {fileID: 198487214908988320}
 --- !u!198 &198251630556625102
 ParticleSystem:
   m_ObjectHideFlags: 1
