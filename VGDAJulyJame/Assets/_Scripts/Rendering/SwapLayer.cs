@@ -16,6 +16,7 @@ public class SwapLayer : MonoBehaviour {
         {
             if (objTrigger == TriggerType.Upper)
             {
+                print("hit");
                 col.gameObject.GetComponent<SpriteRenderer>().sortingLayerName = "first";
             }
             else
