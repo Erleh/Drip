@@ -111,12 +111,12 @@ TextureImporter:
       name: left_idle_spritesheet_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 29
+        x: 6
+        y: 28
         width: 375
         height: 586
       alignment: 9
-      pivot: {x: 0.4849871, y: 0.0963719}
+      pivot: {x: 0.5, y: 0.076}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -132,11 +132,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 389
-        y: 29
+        y: 28
         width: 375
         height: 586
       alignment: 9
-      pivot: {x: 0.48613867, y: 0.10672506}
+      pivot: {x: 0.5, y: 0.076}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,11 +152,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 773
-        y: 29
+        y: 28
         width: 375
         height: 586
       alignment: 9
-      pivot: {x: 0.48960742, y: 0.105988085}
+      pivot: {x: 0.5, y: 0.076}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -172,11 +172,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1158
-        y: 29
+        y: 28
         width: 375
         height: 586
       alignment: 9
-      pivot: {x: 0.4815039, y: 0.09710881}
+      pivot: {x: 0.5, y: 0.076}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
