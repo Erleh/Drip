@@ -93,7 +93,7 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
 
             enemyRB.AddForce(Vector3.Normalize(currentWaypoint - currPos) * speed);
 
-            Vector2 newPos = new Vector2(enemyTrans.position.x, enemyTrans.position.y);
+            //Vector2 newPos = new Vector2(enemyTrans.position.x, enemyTrans.position.y);
             
             // if stuck
             if (ApproxVals(currPos.x, oldPosX, .01f) && ApproxVals(currPos.y, oldPosY, .01f))
