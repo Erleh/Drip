@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" SchemaVersion="85">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Click_Setting" ID="{9A80467A-93EF-4975-94D4-AFCDFBA21A62}">
+					<ChildrenList>
+						<Action Name="" ID="{6FB31AAB-477A-4394-AF8B-7DADFDDE2AF1}" ShortID="12682327">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SettingValve" ID="{A14B377D-DAD0-4DA5-94B3-3A70B35BC713}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Start_Music" ID="{B527279B-E33B-4A26-9D78-99BC04690B12}">
+					<ChildrenList>
+						<Action Name="" ID="{BE9B720F-3895-4187-86DD-39983C342379}" ShortID="1066742733">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Drip Title theme" ID="{5A54D182-1891-43DD-B47F-706A658442D6}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Release_Adjustment" ID="{D74B9D3F-0590-49C4-88CA-59C4A50805D8}">
+					<ChildrenList>
+						<Action Name="" ID="{06805DA4-1800-4307-8552-42F755A45E32}" ShortID="999268279">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Valve_Folder" ID="{E496B65D-CB1D-48BF-909F-E94DE9843016}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Click_Play" ID="{EDDE5941-B70A-4749-A483-70D2796C6604}">
+					<ChildrenList>
+						<Action Name="" ID="{BF924EE5-883A-4791-9182-0C5F155330B4}" ShortID="984009130">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlaySound" ID="{0F16B8D1-5AD6-4F73-9C30-361295A67FD7}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A669DA44-6F70-4FAB-B65D-AD8D4C6EAC7E}" ShortID="797146276">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Drip Title theme" ID="{5A54D182-1891-43DD-B47F-706A658442D6}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MouseOver" ID="{C18CF850-ECB1-449C-80A7-DF401D21EA8E}">
+					<ChildrenList>
+						<Action Name="" ID="{27260747-EA2A-46C5-9A2F-2B3FAF29E544}" ShortID="895562270">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MouseOver" ID="{E60DD256-1802-4731-AA2D-A5F04603FBEC}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Hold_Adjustment" ID="{5FCFEE6A-569A-4905-BBEC-C8C6DFDD7975}">
+					<ChildrenList>
+						<Action Name="" ID="{451A45D7-71C6-4B33-8942-AEFCC9B01EA5}" ShortID="373669046">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Valve_Folder" ID="{E496B65D-CB1D-48BF-909F-E94DE9843016}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

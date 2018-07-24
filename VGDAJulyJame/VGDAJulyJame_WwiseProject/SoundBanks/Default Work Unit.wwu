@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F3F75FBD-6C18-4F1E-91B6-BAF75923EF9F}" SchemaVersion="85">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{F3F75FBD-6C18-4F1E-91B6-BAF75923EF9F}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{CE8D44FC-E8F3-44E3-9DC5-60DAE8F873D5}">
+					<PropertyList>
+						<Property Name="Maximum" Type="int32">
+							<ValueList>
+								<Value>2500000</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ObjectInclusionList>
+						<ObjectRef Name="MouseOver" ID="{C18CF850-ECB1-449C-80A7-DF401D21EA8E}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Click_Play" ID="{EDDE5941-B70A-4749-A483-70D2796C6604}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Click_Setting" ID="{9A80467A-93EF-4975-94D4-AFCDFBA21A62}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Release_Adjustment" ID="{D74B9D3F-0590-49C4-88CA-59C4A50805D8}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Music" ID="{F0774FB8-B1AC-446D-B0AE-CDB7362CABAC}">
+					<PropertyList>
+						<Property Name="Maximum" Type="int32">
+							<ValueList>
+								<Value>3000000</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ObjectInclusionList>
+						<ObjectRef Name="Start_Music" ID="{B527279B-E33B-4A26-9D78-99BC04690B12}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>
