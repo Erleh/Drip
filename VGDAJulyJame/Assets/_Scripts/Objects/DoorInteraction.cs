@@ -52,10 +52,16 @@ public class DoorInteraction : MonoBehaviour
         {
             GetInteraction();
         }
-        if(col.CompareTag("Enemy"))
+
+        if(col.CompareTag("Enemy") && !open)
         {
             col.gameObject.GetComponent<CircleCollider2D>().isTrigger = false;
         }
+        else if(col.CompareTag("Enemy") && open)
+        {
+            col.gameObject.GetComponent<CircleCollider2D>().isTrigger = true;
+        }
+
     }
 
     /* works when with physics based door
