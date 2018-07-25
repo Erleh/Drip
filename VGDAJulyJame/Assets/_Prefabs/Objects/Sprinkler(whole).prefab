@@ -243,7 +243,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df854179ac055f429136bbc9bad23c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterParticleSystem: {fileID: 0}
   monsterStatus: {fileID: 0}
   affected: []
 --- !u!114 &114100800408908342
