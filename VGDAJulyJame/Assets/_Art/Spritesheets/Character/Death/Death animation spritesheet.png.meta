@@ -1,10 +1,7 @@
 fileFormatVersion: 2
-guid: cb7bb7275625ee044b21e8b5ace177ee
+guid: e8e066a057fab9b48b40ef4f66848c04
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: sprinkler spritesheet w212 h190_0
-    21300002: sprinkler spritesheet w212 h190_1
-    21300004: sprinkler spritesheet w212 h190_2
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -46,7 +43,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 400
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,71 +102,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: sprinkler spritesheet w212 h190_0
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 188
-        height: 190
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2151100e69515ab46b4b656c572797c7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprinkler spritesheet w212 h190_1
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 188
-        height: 190
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca212a8d6b04aa34aa06dea96e2db528
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprinkler spritesheet w212 h190_2
-      rect:
-        serializedVersion: 2
-        x: 438
-        y: 0
-        width: 188
-        height: 190
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 54188146d3f08924b90c1113b5705d2b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 23343702d8d228242a850a202ca8ffb5
+    spriteID: e7e10a0444ff9d949987fc032094a660
     vertices: []
     indices: 
     edges: []

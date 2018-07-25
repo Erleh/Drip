@@ -7,17 +7,17 @@ public class WaterWalking : MonoBehaviour
     [SerializeField]
     WaterWalkingManager waterManager;
 
-    public void StartWaterAffect(GameObject self)
+    public void StartWaterAffect(GameObject self, bool onWater)
     {
         if(self.CompareTag("Enemy"))
         {
-            print("enemy found");
-            waterManager.FinishedProcess(true, false, true);
+            //print("enemy found");
+            waterManager.FinishedProcess(true, false, onWater);
         }
         if(self.CompareTag("Player"))
         {
-            print("player found");
-            waterManager.FinishedProcess(false, true, true);
+            //print("player found");
+            waterManager.FinishedProcess(false, true, onWater);
         }
     }
 }

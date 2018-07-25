@@ -6,32 +6,42 @@ public class WaterFieldInteraction : MonoBehaviour
 {
     [SerializeField]
     private ParticleSystem monsterParticleSystem;
+    [SerializeField]
+    private EnemyStatus monsterStatus;
+    [SerializeField]
+    private List<Collider2D> affected;
+
+    private void OnDisable()
+    {
+        //print("Disabled");
+        foreach(Collider2D col in affected)
+        {
+            WaterWalkingManager.CreateWaterResponseRequest(col.gameObject, WaterReaction, false);
+        }
+    }
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        WaterWalkingManager.CreateWaterResponseRequest(col.gameObject, WaterReaction);
+        affected.Add(col);
+        
+        WaterWalkingManager.CreateWaterResponseRequest(col.gameObject, WaterReaction, true);
     }
 
     void OnTriggerExit2D(Collider2D col)
     {
-        WaterWalkingManager.CreateWaterResponseRequest(col.gameObject, WaterReaction);
+        //print("exit");
+        affected.Remove(col);
+        WaterWalkingManager.CreateWaterResponseRequest(col.gameObject, WaterReaction, false);
     }
 
-    void WaterReaction(bool enemy, bool player)
+    void WaterReaction(bool enemy, bool player, bool onWater)
     {
         if (enemy)
         {
-            //print("enemy particle start");
-            if (monsterParticleSystem.isEmitting)
-            {
-                //print("stopping...");
-                monsterParticleSystem.Stop();
-            }
-            else
-            {
-                //print("starting....");
+            if (onWater)
                 monsterParticleSystem.Play();
-            }
+            else if (!onWater)
+                monsterParticleSystem.Stop();
         }
 
         if (player)
