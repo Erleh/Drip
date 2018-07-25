@@ -520,7 +520,7 @@ MonoBehaviour:
   startingAngle: 0
   currentAngle: {x: 0, y: 0, z: 0}
   eulerIncrements: 2.6
-  turnSpeed: 5
+  turnSpeed: 40
   startingVal: 50
   currVal: 0
   minVal: 0
@@ -3229,7 +3229,7 @@ MonoBehaviour:
   startingAngle: 0
   currentAngle: {x: 0, y: 0, z: 0}
   eulerIncrements: 2.6
-  turnSpeed: 20
+  turnSpeed: 40
   startingVal: 50
   currVal: 0
   minVal: 0
