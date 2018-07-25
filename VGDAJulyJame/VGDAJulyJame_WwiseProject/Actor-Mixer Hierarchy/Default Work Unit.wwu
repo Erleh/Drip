@@ -155,6 +155,138 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Valve_Hold" ID="{5EC66579-81EC-4CDE-8B92-E899A7A7BC04}" ShortID="81545096">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Valve1" ID="{D31B2655-6A2B-4014-A063-99D5DDC3A8AA}" ShortID="338920150">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-0.3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Valve1" ID="{1515B513-5EAE-410D-AA7D-10650ADE7C3E}" ShortID="1023408149">
+											<Language>SFX</Language>
+											<AudioFile>Valve_Folder\Valve1.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="829649723"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Valve1" ID="{1515B513-5EAE-410D-AA7D-10650ADE7C3E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Valve2" ID="{62DB6083-560B-4923-8FE7-F2C2BEC1DC37}" ShortID="933099041">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>11</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Valve2" ID="{9B43F22E-2394-4A4F-B683-6C47C18A2847}" ShortID="629599381">
+											<Language>SFX</Language>
+											<AudioFile>Valve_Folder\Valve2.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="964048617"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Valve2" ID="{9B43F22E-2394-4A4F-B683-6C47C18A2847}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Valve3" ID="{CC033170-C175-436F-A71C-100B50434BCA}" ShortID="501872163">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Valve3" ID="{3BCE01C1-F23C-4844-9225-715A7D83C31B}" ShortID="832148162">
+											<Language>SFX</Language>
+											<AudioFile>Valve_Folder\Valve3.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="413463645"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Valve3" ID="{3BCE01C1-F23C-4844-9225-715A7D83C31B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Valve4" ID="{B5820990-5C86-4660-AD2D-D366D1629130}" ShortID="1073041457">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Valve4" ID="{A1CF290B-6BB6-48BD-B7B0-CBD244BDD3AE}" ShortID="491149112">
+											<Language>SFX</Language>
+											<AudioFile>Valve_Folder\Valve4.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="70994745"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Valve4" ID="{A1CF290B-6BB6-48BD-B7B0-CBD244BDD3AE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 					<PositioningInfo>
 						<Panner Name="" ID="{C5A05A5B-F3AD-4263-9E09-1D721B1AC9BF}"/>

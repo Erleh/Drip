@@ -21,50 +21,15 @@ MonoBehaviour:
   autoPopulateEnabled: 1
   AuxBusWwu:
   - Guid: '{F77BEB74-7DE8-4B55-950E-8A6899C309EB}'
-    m_lastTimePart2: -1999245045
-    m_lastTimePsrt1: 1090272512
+    m_lastTimePart2: -1999244811
+    m_lastTimePsrt1: -2137042048
     ParentPhysicalPath: 
     PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
-    List:
-    - Guid: 4feb67917cea614aaecd7f1e41f00c72
-      ID: 1973600711
-      Name: Environmental
-      Path: Default Work Unit/Master Audio Bus/Environmental
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Master Audio Bus
-        ObjectType: 2
-      - ElementName: Environmental
-        ObjectType: 1
-    - Guid: c72689d6491dbb4fa92eba7ae72f2280
-      ID: -303024426
-      Name: Music
-      Path: Default Work Unit/Master Audio Bus/Music
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Master Audio Bus
-        ObjectType: 2
-      - ElementName: Music
-        ObjectType: 1
-    - Guid: ef20f4e42b875945a5560094f5811456
-      ID: 393239870
-      Name: SFX
-      Path: Default Work Unit/Master Audio Bus/Environmental/SFX
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Master Audio Bus
-        ObjectType: 2
-      - ElementName: Environmental
-        ObjectType: 1
-      - ElementName: SFX
-        ObjectType: 1
+    List: []
   BankWwu:
   - Guid: '{F3F75FBD-6C18-4F1E-91B6-BAF75923EF9F}'
-    m_lastTimePart2: -1999245021
-    m_lastTimePsrt1: -403909888
+    m_lastTimePart2: -1999244777
+    m_lastTimePsrt1: 729037184
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks/Default Work Unit.wwu
     List:
@@ -92,8 +57,8 @@ MonoBehaviour:
   defaultPoolSize: 4096
   EventWwu:
   - Guid: '{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}'
-    m_lastTimePart2: -1999245013
-    m_lastTimePsrt1: -1153648256
+    m_lastTimePart2: -1999244777
+    m_lastTimePsrt1: 729037184
     ParentPhysicalPath: 
     PhysicalPath: Events/Default Work Unit.wwu
     List:
@@ -121,14 +86,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - Guid: 6aeecf5f9a560549bbecc8c6dfdd7975
-      ID: -596601976
-      Name: Hold_Adjustment
-      Path: Default Work Unit/Hold_Adjustment
+    - Guid: f72ecebacae41b48bf69ed44d80857e3
+      ID: 455730641
+      Name: Hold_Adjuster
+      Path: Default Work Unit/Hold_Adjuster
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Hold_Adjustment
+      - ElementName: Hold_Adjuster
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 090b518146d64749a0fc176508949f29
+      ID: -1596740367
+      Name: Monster_Drip
+      Path: Default Work Unit/Monster_Drip
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Monster_Drip
         ObjectType: 3
       maxAttenuation: 0
       maxDuration: 0
@@ -145,6 +122,30 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - Guid: d1650471ee92db4a999cd259f7fd29a3
+      ID: -651566061
+      Name: Player_Idle
+      Path: Default Work Unit/Player_Idle
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player_Idle
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 53e8ac752855cd4ca20af7dc2147561d
+      ID: -1986924794
+      Name: Player_Walking
+      Path: Default Work Unit/Player_Walking
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player_Walking
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - Guid: 3f9d4bd79005c44988ca59c4a50805d8
       ID: 36310742
       Name: Release_Adjustment
@@ -153,6 +154,18 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Release_Adjustment
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 15f19b68a27d8143860e927183b93a17
+      ID: 600834356
+      Name: Release_Hold
+      Path: Default Work Unit/Release_Hold
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Release_Hold
         ObjectType: 3
       maxAttenuation: 0
       maxDuration: 0
@@ -171,13 +184,11 @@ MonoBehaviour:
       minDuration: 0
   ExpandedItems:
   - /VGDAJulyJame_WwiseProject
-  - /VGDAJulyJame_WwiseProject/Auxiliary Busses
-  - /VGDAJulyJame_WwiseProject/Auxiliary Busses/Default Work Unit
-  - /VGDAJulyJame_WwiseProject/Auxiliary Busses/Default Work Unit/Master Audio Bus
   - /VGDAJulyJame_WwiseProject/Events
   - /VGDAJulyJame_WwiseProject/Events/Default Work Unit
   - /VGDAJulyJame_WwiseProject/SoundBanks
   - /VGDAJulyJame_WwiseProject/SoundBanks/Default Work Unit
+  - /VGDAJulyJame_WwiseProject/States
   language: English(US)
   lowerPoolSize: 2048
   m_lastPopulateTimePart2: 0
@@ -186,23 +197,100 @@ MonoBehaviour:
   preparePoolSize: 0
   RtpcWwu:
   - Guid: '{8DFAB3CB-05FD-4802-8FDC-C4E8552E127F}'
-    m_lastTimePart2: -1999245080
-    m_lastTimePsrt1: -2080839424
+    m_lastTimePart2: -1999244811
+    m_lastTimePsrt1: -2137042048
     ParentPhysicalPath: 
     PhysicalPath: Game Parameters/Default Work Unit.wwu
-    List: []
+    List:
+    - Guid: 6d303463ddfe5d46941c512d24da7a7e
+      ID: 1240670792
+      Name: Distance
+      Path: Default Work Unit/Distance
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Distance
+        ObjectType: 13
+    - Guid: 7c2c9b6745cdb6459658f72fe61d6b95
+      ID: -1948435988
+      Name: MusicVolume
+      Path: Default Work Unit/MusicVolume
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MusicVolume
+        ObjectType: 13
+    - Guid: ab0c5e21134f0e49b56c5ccbc6f75bbc
+      ID: 988953028
+      Name: SFXVolume
+      Path: Default Work Unit/SFXVolume
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFXVolume
+        ObjectType: 13
   StateWwu:
   - Guid: '{304B9BE2-9D9E-4E24-8CF6-14A758EE62B4}'
-    m_lastTimePart2: -1999245080
-    m_lastTimePsrt1: -2080839424
+    m_lastTimePart2: -1999244811
+    m_lastTimePsrt1: -2137042048
     ParentPhysicalPath: 
     PhysicalPath: States/Default Work Unit.wwu
-    List: []
+    List:
+    - Guid: 4aabb5ba0973e44f9ed15973b4835a17
+      ID: -1645263621
+      Name: Moving
+      Path: Default Work Unit/Moving
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Moving
+        ObjectType: 9
+      ValueGuids:
+      - bytes: 4dc63632aebf4045bc512f99ffcf4073
+      - bytes: 2c46c11bf73ec042975304de558a6fc6
+      - bytes: a1249fb1b359274da2b3c4caa1f17ccc
+      ValueIcons:
+      - ElementName: Idle
+        ObjectType: 8
+      - ElementName: None
+        ObjectType: 8
+      - ElementName: Walking
+        ObjectType: 8
+      valueIDs: ff60b76fdb3ba32c42234814
+      values:
+      - Idle
+      - None
+      - Walking
+    - Guid: af56928d85e7564d85774b969335bd36
+      ID: 444815956
+      Name: PlayerLife
+      Path: Default Work Unit/PlayerLife
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PlayerLife
+        ObjectType: 9
+      ValueGuids:
+      - bytes: c66b08d1a22397478e011e35dad80dff
+      - bytes: cdba6df93a059e43af8635fc806b2af3
+      - bytes: 8716390d47636c40ac8669e9780b665e
+      ValueIcons:
+      - ElementName: Alive
+        ObjectType: 8
+      - ElementName: Dead
+        ObjectType: 8
+      - ElementName: None
+        ObjectType: 8
+      valueIDs: 608f0e2773b9d579db3ba32c
+      values:
+      - Alive
+      - Dead
+      - None
   streamingPoolSize: 1024
   SwitchWwu:
   - Guid: '{6489A8DF-DDBB-4F6F-8A81-AA14C58E66F9}'
-    m_lastTimePart2: -1999245080
-    m_lastTimePsrt1: -2080839424
+    m_lastTimePart2: -1999244811
+    m_lastTimePsrt1: -2137042048
     ParentPhysicalPath: 
     PhysicalPath: Switches/Default Work Unit.wwu
     List: []
