@@ -7,6 +7,7 @@ public class GaugeSettingsHandler : MonoBehaviour {
     /// <summary>
     /// It is worth noting that there is a lot of duplicate code here
     /// I'll fix it when we go to refactor after the deadline
+    /// Also eric, I'm sorry this looks so disgusting
     /// -Justin Gonzalez
     /// </summary>
     
@@ -37,6 +38,12 @@ public class GaugeSettingsHandler : MonoBehaviour {
     [SerializeField]
     private GameObject UINeedle;
 
+    //Check for Plus Hold
+    private bool checkHeldP;
+    //Check for Minus Hold
+    private bool checkHeldM;
+    //Saved reference to prevent player from overlapping coroutine calls
+    private Coroutine holdingCo;
     // Use this for initialization
     void Start () {
         UINeedle.transform.rotation = Quaternion.Euler(0,0, startingAngle);
@@ -44,31 +51,62 @@ public class GaugeSettingsHandler : MonoBehaviour {
         rotatingQueue = new CoroutineQueue(this);
         rotatingQueue.StartLoop();
         currVal = startingVal;
-        Debug.Log(UINeedle.transform.localEulerAngles);
         meterVal.text = 0 + "";
     }
-	
+    private void FixedUpdate()
+    {
+        Debug.Log("Minus Held: " + checkHeldM);
+        Debug.Log("Plus Held: " + checkHeldP);
+        if (checkHeldM)
+        {
+            DecreaseValue();
+        }
+        if(checkHeldP)
+        {
+            IncreaseValue();
+        }
+    }
+    public void ChangeHeldMD() { checkHeldM = true; }
+    public void ChangeHeldMU() { checkHeldM = false; }
+    public void ChangeHeldPD() { checkHeldP = true; }
+    public void ChangeHeldPU() { checkHeldP = false; }
+
     public void IncreaseValue()
     {
-        if (currVal < maxVal)
+        if (holdingCo == null)
         {
-            rotatingQueue.EnqueueAction(IncreaseNeedle());
-            currVal = Mathf.Clamp(currVal + valIncrements, minVal, maxVal);
-            meterVal.text = currVal + "";
+            if (currVal < maxVal)
+            {
+                if (checkHeldP)
+                    holdingCo = StartCoroutine(IncreaseNeedle());
+                else
+                {
+                    rotatingQueue.EnqueueAction(IncreaseNeedle());
+                }
+                currVal = Mathf.Clamp(currVal + valIncrements, minVal, maxVal);
+                meterVal.text = currVal + "";
+            }
         }
     }
     public void DecreaseValue()
     {
-        if (currVal > minVal)
+        if (holdingCo == null)
         {
-            rotatingQueue.EnqueueAction(DecreaseNeedle());
-            currVal = Mathf.Clamp(currVal - valIncrements, minVal, maxVal);
-            meterVal.text = currVal + "";
+            if (currVal > minVal)
+            {
+                if (checkHeldM)
+                    holdingCo = StartCoroutine(DecreaseNeedle());
+                else
+                {
+                    rotatingQueue.EnqueueAction(DecreaseNeedle());
+                }
+                currVal = Mathf.Clamp(currVal - valIncrements, minVal, maxVal);
+                meterVal.text = currVal + "";
+            }
         }
     }
     IEnumerator DecreaseNeedle()
     {
-        Debug.Log(UINeedle.transform.eulerAngles.z);
         Vector3 targetAngle = new Vector3(0, 0, currentAngle.z + eulerIncrements);
         //Debug.Log("Target Angle: " + targetAngle);
         while (currentAngle.z < targetAngle.z)
@@ -78,12 +116,19 @@ public class GaugeSettingsHandler : MonoBehaviour {
             UINeedle.transform.eulerAngles = currentAngle;
             yield return null;
         }
-        Debug.Log("Finished.");
-        yield return null;
+        if (checkHeldM)
+        {
+            yield return new WaitForSeconds(0.01f);
+            holdingCo = null;
+        }
+        else
+        {
+            yield return null;
+            holdingCo = null;
+        }
     }
     IEnumerator IncreaseNeedle()
     {
-        Debug.Log(UINeedle.transform.eulerAngles.z);
         Vector3 targetAngle = new Vector3(0, 0, currentAngle.z - eulerIncrements);
         //Debug.Log("Target Angle: " + targetAngle);
         while (currentAngle.z > targetAngle.z)
@@ -93,7 +138,15 @@ public class GaugeSettingsHandler : MonoBehaviour {
             UINeedle.transform.eulerAngles = currentAngle;
             yield return null;
         }
-        Debug.Log("Finished.");
-        yield return null;
+        if (checkHeldP)
+        {
+            yield return new WaitForSeconds(0.01f);
+            holdingCo = null;
+        }
+        else
+        {
+            yield return null;
+            holdingCo = null;
+        }
     }
 }
