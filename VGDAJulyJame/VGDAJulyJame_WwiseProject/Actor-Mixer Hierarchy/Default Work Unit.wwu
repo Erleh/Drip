@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}" SchemaVersion="85">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Valve SFX" ID="{8D311107-DF55-49B7-A0FA-A3F8D792B7A1}" ShortID="380996727">
+					<PropertyList>
+						<Property Name="EnablePanner" Type="bool" Value="True"/>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{7CF91145-4A38-429D-A267-12286FD00BE3}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="2"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{B5D4A99E-F507-4641-B51B-2D0C829803A7}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="SFX" ID="{85802724-8919-426B-A5BD-48679A23F238}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Environmental" ID="{9BFD25F4-E473-474D-BA82-7796C62F6630}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Valve_Folder" ID="{E496B65D-CB1D-48BF-909F-E94DE9843016}" ShortID="580173522">
+							<PropertyList>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Valve1" ID="{4329ABC9-EC5A-49D0-A003-627FCC0819B7}" ShortID="154913549">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-0.3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Valve1" ID="{4ACBDB91-3FFB-4E24-88C4-FB8D08CA1EBD}" ShortID="829649723">
+											<Language>SFX</Language>
+											<AudioFile>Valve_Folder\Valve1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Valve1" ID="{4ACBDB91-3FFB-4E24-88C4-FB8D08CA1EBD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Valve2" ID="{0066B2F6-2F90-4B74-99BD-947249F01B3E}" ShortID="786955792">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>11</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Valve2" ID="{4BE47167-EA69-4E7A-8E29-610BF95E94B0}" ShortID="964048617">
+											<Language>SFX</Language>
+											<AudioFile>Valve_Folder\Valve2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Valve2" ID="{4BE47167-EA69-4E7A-8E29-610BF95E94B0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Valve3" ID="{62BE0F23-65B7-4BF8-B209-5970C6993A6D}" ShortID="56369768">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Valve3" ID="{40DA4CE9-0A4F-4864-9B38-064EF2600A67}" ShortID="413463645">
+											<Language>SFX</Language>
+											<AudioFile>Valve_Folder\Valve3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Valve3" ID="{40DA4CE9-0A4F-4864-9B38-064EF2600A67}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Valve4" ID="{B1CE2A29-61B2-4302-A0BD-9C25EDB144D7}" ShortID="425691705">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Valve4" ID="{925584CC-20D4-4F2D-BC34-D315A9EC8AAB}" ShortID="70994745">
+											<Language>SFX</Language>
+											<AudioFile>Valve_Folder\Valve4.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Valve4" ID="{925584CC-20D4-4F2D-BC34-D315A9EC8AAB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{C5A05A5B-F3AD-4263-9E09-1D721B1AC9BF}"/>
+					</PositioningInfo>
+				</ActorMixer>
+				<ActorMixer Name="DripsSFX" ID="{E7CA5B96-F251-4F64-94B3-2135370315BD}" ShortID="648725798">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Drip" ID="{C36D9A23-337E-4840-AE58-0B7617E1F35E}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Drips Random Folder" ID="{16F5133A-7DED-4FA8-A713-B44D2A6EBD5D}" ShortID="423807405">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{9B7B484D-9DA1-448A-8405-328E153412B3}" ShortID="619904265">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Distance" ID="{6334306D-FEDD-465D-941C-512D24DA7A7E}" WorkUnitID="{8DFAB3CB-05FD-4802-8FDC-C4E8552E127F}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{71A2C9A9-4BA0-4775-AD00-423FABDAE5D4}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-100</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>108.59729</XPos>
+														<YPos>-24</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>244.34389</XPos>
+														<YPos>13</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>502.26245</XPos>
+														<YPos>33</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1500</XPos>
+														<YPos>93</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{1C38D5F5-82F6-484B-B4F0-3B0E9CA81B57}" ShortID="51393328">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Distance" ID="{6334306D-FEDD-465D-941C-512D24DA7A7E}" WorkUnitID="{8DFAB3CB-05FD-4802-8FDC-C4E8552E127F}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{B320636D-26E7-4164-97A8-A31CD5A6FA2F}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-100</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>90.49774</XPos>
+														<YPos>-24</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>300.90498</XPos>
+														<YPos>25</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>592.76017</XPos>
+														<YPos>36</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1500</XPos>
+														<YPos>49</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{5BAB7649-06B8-44C4-AB70-487CC51C033B}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="150"/>
+													<Property Name="Min" Type="Real64" Value="-150"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="7"/>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{FEBFF222-3FF8-44E0-8375-E51F11D09FDF}"/>
+										</ModifierInfo>
+									</ModifierList>
+									<RTPCList>
+										<RTPC Name="" ID="{735E4BEB-DFEE-48E6-BAD7-24D08AA0F129}" ShortID="758043210">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Distance" ID="{6334306D-FEDD-465D-941C-512D24DA7A7E}" WorkUnitID="{8DFAB3CB-05FD-4802-8FDC-C4E8552E127F}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{6DF9B73A-B9DE-44C0-BEBC-7E1F477B44A6}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0.11429</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>138.00905</XPos>
+														<YPos>-0.03763</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>635.74661</XPos>
+														<YPos>-1.3057</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1002.26244</XPos>
+														<YPos>-6.54718</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1500</XPos>
+														<YPos>-28.1308</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Water Dripping into a Big Bucket_bip_3Gurgle Sounds" ID="{1BE7AF9A-0EB8-44BB-815C-FE57A1752234}" ShortID="680486146">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water Dripping into a Big Bucket_bip_3Gurgle Sounds" ID="{19764025-C01E-42AB-B569-FE76F039A215}" ShortID="711721849">
+											<Language>SFX</Language>
+											<AudioFile>Water Dripping into a Big Bucket_bip.3Gurgle Sounds.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water Dripping into a Big Bucket_bip_3Gurgle Sounds" ID="{19764025-C01E-42AB-B569-FE76F039A215}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water Dripping into a Big Bucket_bip_12Gurgle Sounds" ID="{E4CCB1DE-56C9-460E-8854-944DE9841EAF}" ShortID="692163332">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water Dripping into a Big Bucket_bip_12Gurgle Sounds" ID="{4F3CBE9E-2FF0-4FED-8B9A-6424D5FC8E3B}" ShortID="275406166">
+											<Language>SFX</Language>
+											<AudioFile>Water Dripping into a Big Bucket_bip.12Gurgle Sounds.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water Dripping into a Big Bucket_bip_12Gurgle Sounds" ID="{4F3CBE9E-2FF0-4FED-8B9A-6424D5FC8E3B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water Dripping into a Big Bucket_bip_15Gurgle Sounds" ID="{4BCFEBC6-7776-4B83-BC4E-DE4A662A9433}" ShortID="580470001">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water Dripping into a Big Bucket_bip_15Gurgle Sounds" ID="{2FF4C431-3CD8-4802-BB05-7C32C422D4E9}" ShortID="983107732">
+											<Language>SFX</Language>
+											<AudioFile>Water Dripping into a Big Bucket_bip.15Gurgle Sounds.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water Dripping into a Big Bucket_bip_15Gurgle Sounds" ID="{2FF4C431-3CD8-4802-BB05-7C32C422D4E9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water Dripping into a Big Bucket_bip_18Gurgle Sounds" ID="{42F489DD-A609-4603-A7CE-D05AE3A60584}" ShortID="416398197">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water Dripping into a Big Bucket_bip_18Gurgle Sounds" ID="{B822D283-46B2-4E8E-A1CB-4C4EAFF886FF}" ShortID="749488580">
+											<Language>SFX</Language>
+											<AudioFile>Water Dripping into a Big Bucket_bip.18Gurgle Sounds.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water Dripping into a Big Bucket_bip_18Gurgle Sounds" ID="{B822D283-46B2-4E8E-A1CB-4C4EAFF886FF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water Dripping into a Big Bucket_bip_19Gurgle Sounds" ID="{4FF94A6A-ACFC-4719-A40C-E2683DD6B207}" ShortID="867441079">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water Dripping into a Big Bucket_bip_19Gurgle Sounds" ID="{D6994C13-FBD9-4AF5-AC1D-510D310DF87D}" ShortID="860811947">
+											<Language>SFX</Language>
+											<AudioFile>Water Dripping into a Big Bucket_bip.19Gurgle Sounds.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water Dripping into a Big Bucket_bip_19Gurgle Sounds" ID="{D6994C13-FBD9-4AF5-AC1D-510D310DF87D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water Dripping into a Big Bucket_bip_23Gurgle Sounds" ID="{9A9CBB98-F828-45DD-B2D7-8A3EB554C86D}" ShortID="1011869776">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water Dripping into a Big Bucket_bip_23Gurgle Sounds" ID="{8A20F3B0-2204-4C63-8315-8A710FBD05B0}" ShortID="818483300">
+											<Language>SFX</Language>
+											<AudioFile>Water Dripping into a Big Bucket_bip.23Gurgle Sounds.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water Dripping into a Big Bucket_bip_23Gurgle Sounds" ID="{8A20F3B0-2204-4C63-8315-8A710FBD05B0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water Dripping into a Big Bucket_bip_27Gurgle Sounds" ID="{271D8FA3-8B65-4B5E-B2F9-335ED453F825}" ShortID="372230041">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water Dripping into a Big Bucket_bip_27Gurgle Sounds" ID="{559A0264-122F-4348-9F53-5587BFA51ADD}" ShortID="155942631">
+											<Language>SFX</Language>
+											<AudioFile>Water Dripping into a Big Bucket_bip.27Gurgle Sounds.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water Dripping into a Big Bucket_bip_27Gurgle Sounds" ID="{559A0264-122F-4348-9F53-5587BFA51ADD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water Dripping into a Big Bucket_bip_34Gurgle Sounds" ID="{C9D44F1B-F41A-4C19-9FAA-6D7C16B17A0B}" ShortID="641045280">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water Dripping into a Big Bucket_bip_34Gurgle Sounds" ID="{98B8B2FE-458A-45FD-85D9-3FBC73FFD4B3}" ShortID="445560886">
+											<Language>SFX</Language>
+											<AudioFile>Water Dripping into a Big Bucket_bip.34Gurgle Sounds.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water Dripping into a Big Bucket_bip_34Gurgle Sounds" ID="{98B8B2FE-458A-45FD-85D9-3FBC73FFD4B3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water Dripping into a Big Bucket_bip_37Gurgle Sounds" ID="{3EE3DE44-2684-4881-AB86-E3A9F07D39A5}" ShortID="809826224">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water Dripping into a Big Bucket_bip_37Gurgle Sounds" ID="{7326C715-FB70-445E-90AF-6E5D337117A0}" ShortID="1041937041">
+											<Language>SFX</Language>
+											<AudioFile>Water Dripping into a Big Bucket_bip.37Gurgle Sounds.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water Dripping into a Big Bucket_bip_37Gurgle Sounds" ID="{7326C715-FB70-445E-90AF-6E5D337117A0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water Dripping into a Big Bucket_bip_41Gurgle Sounds" ID="{5040E007-1A16-421C-AA9F-E345FB734BBE}" ShortID="811083054">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water Dripping into a Big Bucket_bip_41Gurgle Sounds" ID="{C2807243-2C92-4690-B663-AB97CDF8087E}" ShortID="249981021">
+											<Language>SFX</Language>
+											<AudioFile>Water Dripping into a Big Bucket_bip.41Gurgle Sounds.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water Dripping into a Big Bucket_bip_41Gurgle Sounds" ID="{C2807243-2C92-4690-B663-AB97CDF8087E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water Dripping into a Big Bucket_bip_45Gurgle Sounds" ID="{6897CCCE-F4B7-4CEF-9B69-29E7DFC4613C}" ShortID="918339762">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water Dripping into a Big Bucket_bip_45Gurgle Sounds" ID="{75AA5C87-8B70-4A42-871F-542989F10953}" ShortID="515689105">
+											<Language>SFX</Language>
+											<AudioFile>Water Dripping into a Big Bucket_bip.45Gurgle Sounds.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water Dripping into a Big Bucket_bip_45Gurgle Sounds" ID="{75AA5C87-8B70-4A42-871F-542989F10953}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water Dripping into a Big Bucket_bip_46Gurgle Sounds" ID="{A7150185-1410-485A-A946-D3F8121FF0A9}" ShortID="446028031">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water Dripping into a Big Bucket_bip_46Gurgle Sounds" ID="{EA7CE420-1E11-4397-AD10-34E6BB3A052F}" ShortID="587991794">
+											<Language>SFX</Language>
+											<AudioFile>Water Dripping into a Big Bucket_bip.46Gurgle Sounds.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water Dripping into a Big Bucket_bip_46Gurgle Sounds" ID="{EA7CE420-1E11-4397-AD10-34E6BB3A052F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Music" ID="{E62082F9-B299-48D8-8D2C-6EB2C0C8EC40}" ShortID="379333118">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music" ID="{BCC29BB4-674E-44E7-B638-0982105F268D}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Drip Title theme" ID="{5A54D182-1891-43DD-B47F-706A658442D6}" ShortID="1053446604">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Drip Title theme" ID="{D14292A0-A407-44DD-AA31-F1AE26A27337}" ShortID="339358187">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="1.19868708971554"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.07045951859957"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="43.4796498905908"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Drip Title theme.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Drip Title theme" ID="{D14292A0-A407-44DD-AA31-F1AE26A27337}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="FootstepsSFX" ID="{2E49F41D-F53E-4C14-8DAD-AE7C87616C1B}" ShortID="244130310">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Environmental" ID="{9BFD25F4-E473-474D-BA82-7796C62F6630}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Footsteps" ID="{B56F343B-5012-4E4B-9D2C-363F794B18C1}" ShortID="451294732">
+							<PropertyList>
+								<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{D7EBCB8A-8EC3-456D-9C2D-738B07A2B1A4}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="150"/>
+													<Property Name="Min" Type="Real64" Value="-150"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+								</Reference>
+								<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Plate_Small" ID="{5681977F-CD7F-4D09-AA58-118BEFA48C8C}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Footstep1" ID="{6451854C-67F0-4D2A-B03F-6189C0A12746}" ShortID="603440444">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep1" ID="{D5AEC768-D502-4C8A-B621-9B3B53132DA4}" ShortID="478617509">
+											<Language>SFX</Language>
+											<AudioFile>Footstep1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep1" ID="{D5AEC768-D502-4C8A-B621-9B3B53132DA4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep2" ID="{D53BB645-B57A-4DF4-B80B-53382E025704}" ShortID="159133197">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep2" ID="{DAF326DB-5706-4C02-939C-8081C4F5E7C4}" ShortID="953994048">
+											<Language>SFX</Language>
+											<AudioFile>Footstep2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep2" ID="{DAF326DB-5706-4C02-939C-8081C4F5E7C4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep3" ID="{0CE33B67-DC3B-4AC5-B53C-CA03A3EB74AA}" ShortID="991036636">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep3" ID="{43995B24-BC58-4AC4-BB24-0D85FB18DA54}" ShortID="288126464">
+											<Language>SFX</Language>
+											<AudioFile>Footstep3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep3" ID="{43995B24-BC58-4AC4-BB24-0D85FB18DA54}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep4" ID="{B80B63FB-4744-44D0-9D30-89DAA1804CA0}" ShortID="1026680997">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep4" ID="{6CC2B00C-265C-4EDC-B9E3-3EE8D95751E8}" ShortID="593282852">
+											<Language>SFX</Language>
+											<AudioFile>Footstep4.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep4" ID="{6CC2B00C-265C-4EDC-B9E3-3EE8D95751E8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep5" ID="{010EA0C4-2723-4A23-BFD2-1E4CFBF3CE11}" ShortID="455497479">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep5" ID="{432297B6-6F3B-40A6-B90B-43FC99A3D9A3}" ShortID="691053170">
+											<Language>SFX</Language>
+											<AudioFile>Footstep5.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep5" ID="{432297B6-6F3B-40A6-B90B-43FC99A3D9A3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="ButtonsSFX" ID="{936EE277-B784-485F-978F-F3EE85CAB7AB}" ShortID="287781727">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Environmental" ID="{9BFD25F4-E473-474D-BA82-7796C62F6630}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="MouseOver" ID="{E60DD256-1802-4731-AA2D-A5F04603FBEC}" ShortID="784368416">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MouseOver" ID="{0950016C-8830-45E0-A76A-01E312A5897B}" ShortID="879809132">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0145060212268715"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0469995087750636"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.158115631372899"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>MouseOver.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MouseOver" ID="{0950016C-8830-45E0-A76A-01E312A5897B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PlaySound" ID="{0F16B8D1-5AD6-4F73-9C30-361295A67FD7}" ShortID="305390836">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PlayGameButtonSound" ID="{2A402864-3D8F-4A32-8BD3-52D2D5AE443C}" ShortID="586312605">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="4.10940919037199"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="7.64113785557987"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>PlayGameButtonSound.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="PlayGameButtonSound" ID="{2A402864-3D8F-4A32-8BD3-52D2D5AE443C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SettingValve" ID="{A14B377D-DAD0-4DA5-94B3-3A70B35BC713}" ShortID="739736937">
+							<PropertyList>
+								<Property Name="EnablePanner" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Settings Valve" ID="{FFA68C11-62CA-4F7E-BDD6-6DB40D8CD333}" ShortID="224819954">
+									<PropertyList>
+										<Property Name="LoopEnd" Type="Real64" Value="3.26584676759106"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.119899968740231"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Settings Valve.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{FB9D5E31-83A2-4697-ABCA-D1CAD95845E6}"/>
+							</PositioningInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="Settings Valve" ID="{FFA68C11-62CA-4F7E-BDD6-6DB40D8CD333}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

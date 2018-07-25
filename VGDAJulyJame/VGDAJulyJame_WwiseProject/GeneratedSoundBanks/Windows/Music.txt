@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	540993415	Start_Music			\Default Work Unit\Start_Music	
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	339358187	Drip Title theme	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Windows\SFX\Drip Title theme_0F716B19.wem	339358187.wem	\Actor-Mixer Hierarchy\Default Work Unit\Drip Title theme	
+
