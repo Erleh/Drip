@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="128">
 	<RootPaths>
-		<ProjectRoot>/Users/DanielKim/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/y:/Desktop/VGDAJulyJam-master/VGDAJulyJame/VGDAJulyJame_WwiseProject/</ProjectRoot>
-		<SourceFilesRoot>/Users/DanielKim/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/y:/Desktop/VGDAJulyJam-master/VGDAJulyJame/VGDAJulyJame_WwiseProject/.cache/Mac/</SourceFilesRoot>
-		<SoundBanksRoot>/Users/DanielKim/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/y:/Desktop/VGDAJulyJam-master/VGDAJulyJame/VGDAJulyJame_WwiseProject/GeneratedSoundBanks/Mac/</SoundBanksRoot>
+		<ProjectRoot>/Users/DanielKim/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/y:/Desktop/GitHub/VGDAJulyJam/VGDAJulyJame/VGDAJulyJame_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/DanielKim/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/y:/Desktop/GitHub/VGDAJulyJam/VGDAJulyJame/VGDAJulyJame_WwiseProject/.cache/Mac/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/DanielKim/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/y:/Desktop/GitHub/VGDAJulyJam/VGDAJulyJame/VGDAJulyJame_WwiseProject/GeneratedSoundBanks/Mac/</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>/Users/DanielKim/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/y:/Desktop/VGDAJulyJam-master/VGDAJulyJame/VGDAJulyJame_WwiseProject/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>/Users/DanielKim/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/y:/Desktop/GitHub/VGDAJulyJam/VGDAJulyJame/VGDAJulyJame_WwiseProject/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>

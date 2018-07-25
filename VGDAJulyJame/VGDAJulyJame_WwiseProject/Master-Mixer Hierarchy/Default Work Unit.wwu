@@ -10,12 +10,97 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AuxBus Name="Music" ID="{D68926C7-1D49-4FBB-A92E-BA7AE72F2280}"/>
-						<AuxBus Name="Environmental" ID="{9167EB4F-EA7C-4A61-AECD-7F1E41F00C72}">
+						<Bus Name="SFX" ID="{4BD43423-504C-4902-A5ED-932BC82A983D}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{B7719D0C-FA9D-4F77-A27D-8763605510DE}" ShortID="884410294">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="SFXVolume" ID="{215E0CAB-4F13-490E-B56C-5CCBC6F75BBC}" WorkUnitID="{8DFAB3CB-05FD-4802-8FDC-C4E8552E127F}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{8D85DCA4-CC3D-4756-BE3B-4B67658CB0D3}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
 							<ChildrenList>
-								<AuxBus Name="SFX" ID="{E4F420EF-872B-4559-A556-0094F5811456}"/>
+								<Bus Name="Environmental" ID="{9BFD25F4-E473-474D-BA82-7796C62F6630}">
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="PlayerLife" ID="{8D9256AF-E785-4D56-8577-4B969335BD36}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Dead" ID="{F96DBACD-053A-439E-AF86-35FC806B2AF3}"/>
+												<State Name="" ID="{B27B996C-7D1A-4ED2-8BE1-0019514B031A}" ShortID="993770931">
+													<PropertyList>
+														<Property Name="BusVolume" Type="Real64" Value="-96"/>
+														<Property Name="Lowpass" Type="int16" Value="100"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Alive" ID="{D1086BC6-23A2-4797-8E01-1E35DAD80DFF}"/>
+												<State Name="" ID="{025EE7CD-89F3-48E2-956A-47D04BF1B4C3}" ShortID="148871880"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+								</Bus>
+								<Bus Name="Drip" ID="{C36D9A23-337E-4840-AE58-0B7617E1F35E}"/>
 							</ChildrenList>
-						</AuxBus>
+						</Bus>
+						<Bus Name="Music" ID="{BCC29BB4-674E-44E7-B638-0982105F268D}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{4964098B-E659-4D4F-982F-6C3D3D10A6C7}" ShortID="167540016">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="MusicVolume" ID="{679B2C7C-CD45-45B6-9658-F72FE61D6B95}" WorkUnitID="{8DFAB3CB-05FD-4802-8FDC-C4E8552E127F}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{28180242-6A97-4DE7-B20D-D06AFCCA67C4}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+						</Bus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

@@ -99,6 +99,48 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Player_Walking" ID="{75ACE853-5528-4CCD-A20A-F7DC2147561D}">
+					<ChildrenList>
+						<Action Name="" ID="{DD8341F8-4DAE-4339-B008-0C62BEB6B1B3}" ShortID="472851582">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps" ID="{B56F343B-5012-4E4B-9D2C-363F794B18C1}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_Idle" ID="{710465D1-92EE-4ADB-999C-D259F7FD29A3}">
+					<ChildrenList>
+						<Action Name="" ID="{8B40DFE9-7010-46CA-83FF-D37CC8061020}" ShortID="779602629">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="34"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps" ID="{B56F343B-5012-4E4B-9D2C-363F794B18C1}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Monster_Drip" ID="{81510B09-D646-4947-A0FC-176508949F29}">
+					<ChildrenList>
+						<Action Name="" ID="{93591974-D830-40C6-9525-F891BC60DB61}" ShortID="119418827">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Drips Random Folder" ID="{16F5133A-7DED-4FA8-A713-B44D2A6EBD5D}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

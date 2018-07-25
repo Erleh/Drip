@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8DFAB3CB-05FD-4802-8FDC-C4E8552E127F}" SchemaVersion="85">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{8DFAB3CB-05FD-4802-8FDC-C4E8552E127F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8DFAB3CB-05FD-4802-8FDC-C4E8552E127F}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Distance" ID="{6334306D-FEDD-465D-941C-512D24DA7A7E}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1500"/>
+						<Property Name="Max" Type="Real64" Value="1500"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="MusicVolume" ID="{679B2C7C-CD45-45B6-9658-F72FE61D6B95}"/>
+				<GameParameter Name="SFXVolume" ID="{215E0CAB-4F13-490E-B56C-5CCBC6F75BBC}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

@@ -5,11 +5,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	3215021356	Click_Play			\Default Work Unit\Click_Play	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	70994745	Valve4	Y:\Desktop\VGDAJulyJam-master\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Windows\SFX\Valve_Folder\Valve4_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\Valve SFX\Valve_Folder\Valve4		8310
-	224819954	SettingValve	Y:\Desktop\VGDAJulyJam-master\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Windows\SFX\Settings Valve_8362C9FA.wem		\Actor-Mixer Hierarchy\Default Work Unit\SettingValve		65548
-	413463645	Valve3	Y:\Desktop\VGDAJulyJam-master\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Windows\SFX\Valve_Folder\Valve3_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\Valve SFX\Valve_Folder\Valve3		5099
-	586312605	PlaySound	Y:\Desktop\VGDAJulyJam-master\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Windows\SFX\PlayGameButtonSound_10E72CEF.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlaySound		110623
-	829649723	Valve1	Y:\Desktop\VGDAJulyJam-master\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Windows\SFX\Valve_Folder\Valve1_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\Valve SFX\Valve_Folder\Valve1		7337
-	879809132	MouseOver	Y:\Desktop\VGDAJulyJam-master\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Windows\SFX\MouseOver_DBDA5625.wem		\Actor-Mixer Hierarchy\Default Work Unit\MouseOver		2080
-	964048617	Valve2	Y:\Desktop\VGDAJulyJam-master\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Windows\SFX\Valve_Folder\Valve2_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\Valve SFX\Valve_Folder\Valve2		8966
+	70994745	Valve4	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Windows\SFX\Valve_Folder\Valve4_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\Valve SFX\Valve_Folder\Valve4		8310
+	224819954	SettingValve	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Windows\SFX\Settings Valve_8362C9FA.wem		\Actor-Mixer Hierarchy\Default Work Unit\SettingValve		65548
+	413463645	Valve3	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Windows\SFX\Valve_Folder\Valve3_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\Valve SFX\Valve_Folder\Valve3		5099
+	586312605	PlaySound	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Windows\SFX\PlayGameButtonSound_10E72CEF.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlaySound		110623
+	829649723	Valve1	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Windows\SFX\Valve_Folder\Valve1_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\Valve SFX\Valve_Folder\Valve1		7337
+	879809132	MouseOver	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Windows\SFX\MouseOver_DBDA5625.wem		\Actor-Mixer Hierarchy\Default Work Unit\MouseOver		2080
+	964048617	Valve2	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Windows\SFX\Valve_Folder\Valve2_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\Valve SFX\Valve_Folder\Valve2		8966
 
