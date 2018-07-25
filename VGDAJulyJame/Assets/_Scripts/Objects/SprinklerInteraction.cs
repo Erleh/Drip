@@ -5,6 +5,9 @@ using UnityEngine;
 public class SprinklerInteraction : MonoBehaviour
 {
     [SerializeField]
+    private Animator sprinklerAnim;
+
+    [SerializeField]
     private GameObject SlowField;
 
     [SerializeField]
@@ -24,6 +27,7 @@ public class SprinklerInteraction : MonoBehaviour
         {
             //Debug.Log("Attempting Interaction...");
             //Turn the sprinkler on for the determined amount of time
+            sprinklerAnim.SetBool("SprinklerActive", true);
             SprinklerCD = StartCoroutine(SprinklerCooldown());
             SlowField.SetActive(true);
         }
@@ -43,6 +47,7 @@ public class SprinklerInteraction : MonoBehaviour
         //Debug.Log("Begin Cooldown.");
         yield return new WaitForSeconds(sprinklerDuration);
         //Debug.Log("End Cooldown.");
+        sprinklerAnim.SetBool("SprinklerActive", false);
         SlowField.SetActive(false);
         SprinklerCD = null;
     }
