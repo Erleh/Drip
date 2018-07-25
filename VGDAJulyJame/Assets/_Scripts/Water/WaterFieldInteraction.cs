@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class WaterFieldInteraction : MonoBehaviour
 {
-    [SerializeField]
-    private ParticleSystem monsterParticleSystem;
+    //[SerializeField]
+    //private ParticleSystem playerParticleSystem;
+    //[SerializeField]
+    //private ParticleSystem monsterParticleSystem;
     [SerializeField]
     private EnemyStatus monsterStatus;
     [SerializeField]
@@ -13,7 +15,6 @@ public class WaterFieldInteraction : MonoBehaviour
 
     private void OnDisable()
     {
-        //print("Disabled");
         foreach(Collider2D col in affected)
         {
             WaterWalkingManager.CreateWaterResponseRequest(col.gameObject, WaterReaction, false);
@@ -22,31 +23,36 @@ public class WaterFieldInteraction : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        affected.Add(col);
-        
+        affected.Add(col);        
         WaterWalkingManager.CreateWaterResponseRequest(col.gameObject, WaterReaction, true);
     }
 
     void OnTriggerExit2D(Collider2D col)
     {
-        //print("exit");
         affected.Remove(col);
         WaterWalkingManager.CreateWaterResponseRequest(col.gameObject, WaterReaction, false);
     }
 
-    void WaterReaction(bool enemy, bool player, bool onWater)
+    void WaterReaction(bool enemy, bool player, bool onWater, Collider2D col)
     {
         if (enemy)
         {
             if (onWater)
-                monsterParticleSystem.Play();
+                WaterWalkingManager.ActivateEnemyWaterParticles();
+                //col.GetComponentInChildren<ParticleSystem>().Play();
             else if (!onWater)
-                monsterParticleSystem.Stop();
+                WaterWalkingManager.DisableEnemyWaterParticles();
+                //col.GetComponentInChildren<ParticleSystem>().Stop();
         }
 
         if (player)
         {
-
+            if (onWater)
+                WaterWalkingManager.ActivatePlayerWaterParticles();
+            //col.GetComponent<ParticleSystem>().Play();
+            else if (!onWater)
+                WaterWalkingManager.DisablePlayerWaterParticles();
+                //col.GetComponent<ParticleSystem>().Stop();
         }
     }
 }

@@ -13,21 +13,13 @@ public class WaterWalkingManager : MonoBehaviour
     OnWaterRequest currRequest;
 
     [SerializeField]
-    EnemyStatus monsterStatus;
-    [SerializeField]
     WaterWalking waterWalking;
+    [SerializeField]
+    ParticleManager particleReference;
 
     //bool processingRequest = false;
 
-    public bool IsMonsterOnWater()
-    {
-        return monsterStatus.IsOnWater;
-    }
-
-    public void SetMonsterWaterStatus(bool isOnWater)
-    {
-        monsterStatus.IsOnWater = isOnWater;
-    }
+    #region RequestQueueSystem
 
     private void Awake()
     {
@@ -35,7 +27,8 @@ public class WaterWalkingManager : MonoBehaviour
     }
 
     // create request for response to walking on water
-    public static void CreateWaterResponseRequest(GameObject self, Action<bool, bool, bool> reply, bool onWater)
+    public static void CreateWaterResponseRequest
+        (GameObject self, Action<bool, bool, bool, Collider2D> reply, bool onWater)
     {
         OnWaterRequest newRequest = new OnWaterRequest(reply, self);
 
@@ -67,21 +60,46 @@ public class WaterWalkingManager : MonoBehaviour
     }
 
     // send results to apply appropriate response
-    public void FinishedProcess(bool enemy, bool player, bool onWater)
+    public void FinishedProcess(bool enemy, bool player, bool onWater, Collider2D col)
     {
-        currRequest.response(enemy, player, onWater);
+        currRequest.response(enemy, player, onWater, col);
     }
 
     // make request to have response from walking on water
     struct OnWaterRequest
     {
-        public Action<bool, bool, bool> response;
+        public Action<bool, bool, bool, Collider2D> response;
         public GameObject self;
 
-        public OnWaterRequest(Action<bool, bool, bool> _response, GameObject _self)
+        public OnWaterRequest(Action<bool, bool, bool, Collider2D> _response, GameObject _self)
         {
             response = _response;
             self = _self;
         }
     }
+    #endregion
+
+    #region ParticleRequest
+
+    public static void ActivatePlayerWaterParticles()
+    {
+        instance.particleReference.TurnOnPlayerWaterParticles();
+    }
+
+    public static void DisablePlayerWaterParticles()
+    {
+        instance.particleReference.TurnOffPlayerWaterParticles();
+    }
+
+    public static void ActivateEnemyWaterParticles()
+    {
+        instance.particleReference.TurnOnEnemyWaterParticles();
+    }
+
+    public static void DisableEnemyWaterParticles()
+    {
+        instance.particleReference.TurnOffEnemyWaterParticles();
+    }
+
+    #endregion
 }
