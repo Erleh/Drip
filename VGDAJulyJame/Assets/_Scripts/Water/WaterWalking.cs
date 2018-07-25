@@ -12,12 +12,12 @@ public class WaterWalking : MonoBehaviour
         if(self.CompareTag("Enemy"))
         {
             //print("enemy found");
-            waterManager.FinishedProcess(true, false, onWater);
+            waterManager.FinishedProcess(true, false, onWater, self.GetComponent<Collider2D>());
         }
         if(self.CompareTag("Player"))
         {
             //print("player found");
-            waterManager.FinishedProcess(false, true, onWater);
+            waterManager.FinishedProcess(false, true, onWater, self.GetComponent<Collider2D>());
         }
     }
 }
