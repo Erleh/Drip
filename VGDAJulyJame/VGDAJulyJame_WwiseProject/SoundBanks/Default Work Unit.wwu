@@ -12,8 +12,11 @@
 						</Property>
 					</PropertyList>
 					<ObjectInclusionList>
+						<ObjectRef Name="Release_Hold" ID="{689BF115-7DA2-4381-860E-927183B93A17}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="MouseOver" ID="{C18CF850-ECB1-449C-80A7-DF401D21EA8E}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Click_Play" ID="{EDDE5941-B70A-4749-A483-70D2796C6604}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Hold_Adjuster" ID="{BACE2EF7-E4CA-481B-BF69-ED44D80857E3}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="SFX" ID="{4BD43423-504C-4902-A5ED-932BC82A983D}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Monster_Drip" ID="{81510B09-D646-4947-A0FC-176508949F29}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Click_Setting" ID="{9A80467A-93EF-4975-94D4-AFCDFBA21A62}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Release_Adjustment" ID="{D74B9D3F-0590-49C4-88CA-59C4A50805D8}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
@@ -32,6 +35,7 @@
 						</Property>
 					</PropertyList>
 					<ObjectInclusionList>
+						<ObjectRef Name="Music" ID="{BCC29BB4-674E-44E7-B638-0982105F268D}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Start_Music" ID="{B527279B-E33B-4A26-9D78-99BC04690B12}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
