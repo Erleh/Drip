@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{304B9BE2-9D9E-4E24-8CF6-14A758EE62B4}" SchemaVersion="85">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{304B9BE2-9D9E-4E24-8CF6-14A758EE62B4}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Moving" ID="{BAB5AB4A-7309-4FE4-9ED1-5973B4835A17}">
+					<ChildrenList>
+						<State Name="None" ID="{1BC1462C-3EF7-42C0-9753-04DE558A6FC6}"/>
+						<State Name="Walking" ID="{B19F24A1-59B3-4D27-A2B3-C4CAA1F17CCC}"/>
+						<State Name="Idle" ID="{3236C64D-BFAE-4540-BC51-2F99FFCF4073}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="PlayerLife" ID="{8D9256AF-E785-4D56-8577-4B969335BD36}">
+					<ChildrenList>
+						<State Name="None" ID="{0D391687-6347-406C-AC86-69E9780B665E}"/>
+						<State Name="Alive" ID="{D1086BC6-23A2-4797-8E01-1E35DAD80DFF}"/>
+						<State Name="Dead" ID="{F96DBACD-053A-439E-AF86-35FC806B2AF3}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Alive" ID="{D1086BC6-23A2-4797-8E01-1E35DAD80DFF}"/>
+							<EndState Name="Dead" ID="{F96DBACD-053A-439E-AF86-35FC806B2AF3}"/>
+							<Time>5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>
