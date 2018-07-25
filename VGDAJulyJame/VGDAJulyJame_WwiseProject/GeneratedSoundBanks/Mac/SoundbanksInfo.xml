@@ -28,37 +28,110 @@
 			<IncludedEvents>
 				<Event Id="3215021356" Name="Click_Play" ObjectPath="\Events\Default Work Unit\Click_Play"/>
 				<Event Id="803012562" Name="Click_Setting" ObjectPath="\Events\Default Work Unit\Click_Setting"/>
+				<Event Id="455730641" Name="Hold_Adjuster" ObjectPath="\Events\Default Work Unit\Hold_Adjuster"/>
+				<Event Id="2698226929" Name="Monster_Drip" ObjectPath="\Events\Default Work Unit\Monster_Drip"/>
 				<Event Id="1020366504" Name="MouseOver" ObjectPath="\Events\Default Work Unit\MouseOver"/>
+				<Event Id="3643401235" Name="Player_Idle" ObjectPath="\Events\Default Work Unit\Player_Idle" MaxAttenuation="0.000000"/>
+				<Event Id="2308042502" Name="Player_Walking" ObjectPath="\Events\Default Work Unit\Player_Walking"/>
 				<Event Id="36310742" Name="Release_Adjustment" ObjectPath="\Events\Default Work Unit\Release_Adjustment"/>
+				<Event Id="600834356" Name="Release_Hold" ObjectPath="\Events\Default Work Unit\Release_Hold" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="70994745" Language="SFX">
 					<ShortName>Valve_Folder\Valve4.wav</ShortName>
 					<Path>SFX/Valve_Folder/Valve4_F7D0E330.wem</Path>
 				</File>
+				<File Id="155942631" Language="SFX">
+					<ShortName>Water Dripping into a Big Bucket_bip.27Gurgle Sounds.wav</ShortName>
+					<Path>SFX/Water Dripping into a Big Bucket_bip.27Gurgle Sounds_F7D0E330.wem</Path>
+				</File>
 				<File Id="224819954" Language="SFX">
 					<ShortName>Settings Valve.wav</ShortName>
 					<Path>SFX/Settings Valve_8362C9FA.wem</Path>
+				</File>
+				<File Id="249981021" Language="SFX">
+					<ShortName>Water Dripping into a Big Bucket_bip.41Gurgle Sounds.wav</ShortName>
+					<Path>SFX/Water Dripping into a Big Bucket_bip.41Gurgle Sounds_F7D0E330.wem</Path>
+				</File>
+				<File Id="275406166" Language="SFX">
+					<ShortName>Water Dripping into a Big Bucket_bip.12Gurgle Sounds.wav</ShortName>
+					<Path>SFX/Water Dripping into a Big Bucket_bip.12Gurgle Sounds_F7D0E330.wem</Path>
+				</File>
+				<File Id="288126464" Language="SFX">
+					<ShortName>Footstep3.wav</ShortName>
+					<Path>SFX/Footstep3_F7D0E330.wem</Path>
 				</File>
 				<File Id="413463645" Language="SFX">
 					<ShortName>Valve_Folder\Valve3.wav</ShortName>
 					<Path>SFX/Valve_Folder/Valve3_F7D0E330.wem</Path>
 				</File>
+				<File Id="445560886" Language="SFX">
+					<ShortName>Water Dripping into a Big Bucket_bip.34Gurgle Sounds.wav</ShortName>
+					<Path>SFX/Water Dripping into a Big Bucket_bip.34Gurgle Sounds_F7D0E330.wem</Path>
+				</File>
+				<File Id="478617509" Language="SFX">
+					<ShortName>Footstep1.wav</ShortName>
+					<Path>SFX/Footstep1_F7D0E330.wem</Path>
+				</File>
+				<File Id="515689105" Language="SFX">
+					<ShortName>Water Dripping into a Big Bucket_bip.45Gurgle Sounds.wav</ShortName>
+					<Path>SFX/Water Dripping into a Big Bucket_bip.45Gurgle Sounds_F7D0E330.wem</Path>
+				</File>
 				<File Id="586312605" Language="SFX">
 					<ShortName>PlayGameButtonSound.wav</ShortName>
 					<Path>SFX/PlayGameButtonSound_10E72CEF.wem</Path>
+				</File>
+				<File Id="587991794" Language="SFX">
+					<ShortName>Water Dripping into a Big Bucket_bip.46Gurgle Sounds.wav</ShortName>
+					<Path>SFX/Water Dripping into a Big Bucket_bip.46Gurgle Sounds_F7D0E330.wem</Path>
+				</File>
+				<File Id="593282852" Language="SFX">
+					<ShortName>Footstep4.wav</ShortName>
+					<Path>SFX/Footstep4_F7D0E330.wem</Path>
+				</File>
+				<File Id="691053170" Language="SFX">
+					<ShortName>Footstep5.wav</ShortName>
+					<Path>SFX/Footstep5_F7D0E330.wem</Path>
+				</File>
+				<File Id="711721849" Language="SFX">
+					<ShortName>Water Dripping into a Big Bucket_bip.3Gurgle Sounds.wav</ShortName>
+					<Path>SFX/Water Dripping into a Big Bucket_bip.3Gurgle Sounds_F7D0E330.wem</Path>
+				</File>
+				<File Id="749488580" Language="SFX">
+					<ShortName>Water Dripping into a Big Bucket_bip.18Gurgle Sounds.wav</ShortName>
+					<Path>SFX/Water Dripping into a Big Bucket_bip.18Gurgle Sounds_F7D0E330.wem</Path>
+				</File>
+				<File Id="818483300" Language="SFX">
+					<ShortName>Water Dripping into a Big Bucket_bip.23Gurgle Sounds.wav</ShortName>
+					<Path>SFX/Water Dripping into a Big Bucket_bip.23Gurgle Sounds_F7D0E330.wem</Path>
 				</File>
 				<File Id="829649723" Language="SFX">
 					<ShortName>Valve_Folder\Valve1.wav</ShortName>
 					<Path>SFX/Valve_Folder/Valve1_F7D0E330.wem</Path>
 				</File>
+				<File Id="860811947" Language="SFX">
+					<ShortName>Water Dripping into a Big Bucket_bip.19Gurgle Sounds.wav</ShortName>
+					<Path>SFX/Water Dripping into a Big Bucket_bip.19Gurgle Sounds_F7D0E330.wem</Path>
+				</File>
 				<File Id="879809132" Language="SFX">
 					<ShortName>MouseOver.wav</ShortName>
 					<Path>SFX/MouseOver_DBDA5625.wem</Path>
 				</File>
+				<File Id="953994048" Language="SFX">
+					<ShortName>Footstep2.wav</ShortName>
+					<Path>SFX/Footstep2_F7D0E330.wem</Path>
+				</File>
 				<File Id="964048617" Language="SFX">
 					<ShortName>Valve_Folder\Valve2.wav</ShortName>
 					<Path>SFX/Valve_Folder/Valve2_F7D0E330.wem</Path>
+				</File>
+				<File Id="983107732" Language="SFX">
+					<ShortName>Water Dripping into a Big Bucket_bip.15Gurgle Sounds.wav</ShortName>
+					<Path>SFX/Water Dripping into a Big Bucket_bip.15Gurgle Sounds_F7D0E330.wem</Path>
+				</File>
+				<File Id="1041937041" Language="SFX">
+					<ShortName>Water Dripping into a Big Bucket_bip.37Gurgle Sounds.wav</ShortName>
+					<Path>SFX/Water Dripping into a Big Bucket_bip.37Gurgle Sounds_F7D0E330.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

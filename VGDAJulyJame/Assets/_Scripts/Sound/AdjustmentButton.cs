@@ -17,4 +17,12 @@ public class AdjustmentButton : MonoBehaviour {
     {
         AkSoundEngine.PostEvent("MouseOver", gameObject);
     }
+    public void PointerDown()
+    {
+        AkSoundEngine.PostEvent("Hold_Adjuster", gameObject);
+    }
+    public void PointerUp()
+    {
+        AkSoundEngine.PostEvent("Release_Hold", gameObject);
+    }
 }

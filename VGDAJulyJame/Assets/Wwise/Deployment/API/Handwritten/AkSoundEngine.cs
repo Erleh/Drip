@@ -202,6 +202,11 @@ public partial class AkSoundEngine
         throw new NotImplementedException();
     }
 
+    internal static void SetRTPCValue(string musicVolume, float v1, object aK_INVALID_GAME_OBJECT, double v2)
+    {
+        throw new NotImplementedException();
+    }
+
     #endregion
 }
 #endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
