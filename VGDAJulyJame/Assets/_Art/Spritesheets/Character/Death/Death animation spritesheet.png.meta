@@ -1,7 +1,23 @@
 fileFormatVersion: 2
 guid: e8e066a057fab9b48b40ef4f66848c04
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Death animation spritesheet_0
+    21300002: Death animation spritesheet_1
+    21300004: Death animation spritesheet_2
+    21300006: Death animation spritesheet_3
+    21300008: Death animation spritesheet_4
+    21300010: Death animation spritesheet_5
+    21300012: Death animation spritesheet_6
+    21300014: Death animation spritesheet_7
+    21300016: Death animation spritesheet_8
+    21300018: Death animation spritesheet_9
+    21300020: Death animation spritesheet_10
+    21300022: Death animation spritesheet_11
+    21300024: Death animation spritesheet_12
+    21300026: Death animation spritesheet_13
+    21300028: Death animation spritesheet_14
+    21300030: Death animation spritesheet_15
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -102,7 +118,327 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Death animation spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 1882
+        width: 280
+        height: 610
+      alignment: 9
+      pivot: {x: 0.5, y: 0.076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f55cfeb6176ca941b08f78fff2139d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death animation spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 1886
+        width: 280
+        height: 610
+      alignment: 9
+      pivot: {x: 0.5, y: 0.076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e782b16c43fa3d4999fb0821925df85
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death animation spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 1886
+        width: 280
+        height: 610
+      alignment: 9
+      pivot: {x: 0.5, y: 0.076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d8c1796725e39499fcb33b38eb83a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death animation spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 1886
+        width: 280
+        height: 610
+      alignment: 9
+      pivot: {x: 0.5, y: 0.076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd666878b98ff2046a63a8881aeb2546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death animation spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1267
+        width: 320
+        height: 562
+      alignment: 9
+      pivot: {x: 0.5, y: 0.076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2284c9983cd22104a841199dcc0ef48e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death animation spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1267
+        width: 325
+        height: 562
+      alignment: 9
+      pivot: {x: 0.5, y: 0.076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e582d7f9c2284354bb87cfca5ae14a6b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death animation spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1267
+        width: 364
+        height: 562
+      alignment: 9
+      pivot: {x: 0.5, y: 0.076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f95aeb323874d47adf21558ac6dcb4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death animation spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 1267
+        width: 356
+        height: 562
+      alignment: 9
+      pivot: {x: 0.5, y: 0.076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b89027bf5aaa08546bd67c250db6d461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death animation spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 651
+        width: 359
+        height: 459
+      alignment: 9
+      pivot: {x: 0.5, y: 0.065}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e691316df1932448c8318f4e861705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death animation spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 651
+        width: 364
+        height: 459
+      alignment: 9
+      pivot: {x: 0.5, y: 0.076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fcbaafddf7a681489e24a893316b7e1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death animation spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 651
+        width: 365
+        height: 459
+      alignment: 9
+      pivot: {x: 0.5, y: 0.076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2788fd6cca800d24ba58832e8571e60f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death animation spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 651
+        width: 367
+        height: 459
+      alignment: 9
+      pivot: {x: 0.5, y: 0.076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4064735df5da4204ba691b69fead33dd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death animation spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 31
+        width: 359
+        height: 401
+      alignment: 9
+      pivot: {x: 0.5, y: 0.076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 069c803cebe58574c8340a0aa5026ae8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death animation spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 31
+        width: 364
+        height: 398
+      alignment: 9
+      pivot: {x: 0.5, y: 0.076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfa54e0571a5153439aa1e1e87eb17aa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death animation spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 31
+        width: 364
+        height: 398
+      alignment: 9
+      pivot: {x: 0.5, y: 0.076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0812e1b9e209ce458f61d28eb6439df
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death animation spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 31
+        width: 364
+        height: 398
+      alignment: 9
+      pivot: {x: 0.5, y: 0.076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60bad9f8c6e2eb6409ba041786da04e9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
