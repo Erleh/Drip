@@ -85,20 +85,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Hold_Adjustment" ID="{5FCFEE6A-569A-4905-BBEC-C8C6DFDD7975}">
-					<ChildrenList>
-						<Action Name="" ID="{451A45D7-71C6-4B33-8942-AEFCC9B01EA5}" ShortID="373669046">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Valve_Folder" ID="{E496B65D-CB1D-48BF-909F-E94DE9843016}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Player_Walking" ID="{75ACE853-5528-4CCD-A20A-F7DC2147561D}">
 					<ChildrenList>
 						<Action Name="" ID="{DD8341F8-4DAE-4339-B008-0C62BEB6B1B3}" ShortID="472851582">
@@ -136,6 +122,34 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Drips Random Folder" ID="{16F5133A-7DED-4FA8-A713-B44D2A6EBD5D}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Hold_Adjuster" ID="{BACE2EF7-E4CA-481B-BF69-ED44D80857E3}">
+					<ChildrenList>
+						<Action Name="" ID="{19D13101-C220-4224-99BD-D7CAE01DEBDD}" ShortID="290860990">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Valve_Hold" ID="{5EC66579-81EC-4CDE-8B92-E899A7A7BC04}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Release_Hold" ID="{689BF115-7DA2-4381-860E-927183B93A17}">
+					<ChildrenList>
+						<Action Name="" ID="{B2170CFC-3F8A-4BC3-B121-85B7F5D62FD6}" ShortID="762860086">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Valve_Hold" ID="{5EC66579-81EC-4CDE-8B92-E899A7A7BC04}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
