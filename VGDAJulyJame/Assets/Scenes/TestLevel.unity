@@ -2359,6 +2359,12 @@ Prefab:
       propertyPath: mapGrid
       value: 
       objectReference: {fileID: 290927593}
+    - target: {fileID: 114388680339956634, guid: 6c10d5df14a2a2444bab768c019a68e1,
+        type: 2}
+      propertyPath: dripObject
+      value: 
+      objectReference: {fileID: 1177281733775402, guid: 01f95c8fc722cc64b9136f709e5e1e2e,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6c10d5df14a2a2444bab768c019a68e1, type: 2}
   m_IsPrefabParent: 0
