@@ -192,7 +192,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &454692854
 GameObject:
@@ -240,7 +240,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &454692857
 SpriteRenderer:
@@ -287,6 +287,71 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1001 &1535319423
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114504597200500356, guid: 7653ab0229f1ab645a6e87e2844933a1,
+        type: 2}
+      propertyPath: puddleSprites.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510055717591160, guid: 7653ab0229f1ab645a6e87e2844933a1, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -3.8036764
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510055717591160, guid: 7653ab0229f1ab645a6e87e2844933a1, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.121329
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510055717591160, guid: 7653ab0229f1ab645a6e87e2844933a1, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.058130838
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510055717591160, guid: 7653ab0229f1ab645a6e87e2844933a1, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510055717591160, guid: 7653ab0229f1ab645a6e87e2844933a1, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510055717591160, guid: 7653ab0229f1ab645a6e87e2844933a1, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510055717591160, guid: 7653ab0229f1ab645a6e87e2844933a1, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510055717591160, guid: 7653ab0229f1ab645a6e87e2844933a1, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114504597200500356, guid: 7653ab0229f1ab645a6e87e2844933a1,
+        type: 2}
+      propertyPath: puddleSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 142ef9e6c4522d44ca9be20fb35d6a53,
+        type: 3}
+    - target: {fileID: 114504597200500356, guid: 7653ab0229f1ab645a6e87e2844933a1,
+        type: 2}
+      propertyPath: puddleSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 77b821ad45e1aeb468aa730d51704cd8,
+        type: 3}
+    - target: {fileID: 114504597200500356, guid: 7653ab0229f1ab645a6e87e2844933a1,
+        type: 2}
+      propertyPath: puddleSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 624dba63d7b69774dba8cf2fcf850648,
+        type: 3}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 7653ab0229f1ab645a6e87e2844933a1, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1825286746
 GameObject:
   m_ObjectHideFlags: 0
