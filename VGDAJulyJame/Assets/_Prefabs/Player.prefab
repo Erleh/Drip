@@ -135,7 +135,7 @@ MonoBehaviour:
   pAnim: {fileID: 95557843687962578}
   playerRB: {fileID: 0}
   findPlayerRB: 1
-  speed: 300
+  speed: 200
   axes: {x: 0, y: 0}
   PlayerDir: 0
   idleTimer: 0
