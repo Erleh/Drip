@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<Attenuation Name="Objects" ID="{0301DFDC-AA02-46BB-A0A4-A58B824AD521}" ShortID="689072585">
 					<PropertyList>
+						<Property Name="ConeOuterAngle" Type="int32" Value="360"/>
 						<Property Name="RadiusMax" Type="Real64" Value="30"/>
 					</PropertyList>
 					<CurveUsageInfoList>
@@ -54,8 +55,8 @@
 											<SegmentShape>Exp2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>21.1128526645768</XPos>
-											<YPos>28</YPos>
+											<XPos>8.51097</XPos>
+											<YPos>24</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>

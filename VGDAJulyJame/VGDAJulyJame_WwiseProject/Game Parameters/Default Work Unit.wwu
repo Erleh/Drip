@@ -5,6 +5,11 @@
 			<ChildrenList>
 				<GameParameter Name="MusicVolume" ID="{679B2C7C-CD45-45B6-9658-F72FE61D6B95}"/>
 				<GameParameter Name="SFXVolume" ID="{215E0CAB-4F13-490E-B56C-5CCBC6F75BBC}"/>
+				<GameParameter Name="Distance" ID="{2DFB149D-4118-483E-A2C3-31C49175655F}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
