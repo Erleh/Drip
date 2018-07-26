@@ -21,9 +21,6 @@ public class Pathfind : MonoBehaviour
     }
 
     // finds a path within the grid from start node to end node
-    //previous iteration----
-    //public void FindPath(Vector2 startPos, Vector2 endPos)
-    //-------
     IEnumerator FindPath(Vector2 startPos, Vector2 endPos)
     {
         ItemHeap<Node> openSet = new ItemHeap<Node>(grid.MaxSize);

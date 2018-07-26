@@ -6,6 +6,9 @@ using System;
 public class DoorDurability : MonoBehaviour, BreakableBase
 {
     [SerializeField]
+    private ParticleSystem doorSplinters;
+
+    [SerializeField]
     private GameObject door;
 
     [SerializeField]
@@ -23,6 +26,7 @@ public class DoorDurability : MonoBehaviour, BreakableBase
 
     public void OnDestroyed()
     {
+        doorSplinters.Play();
         Destroy(door);
     }
 
