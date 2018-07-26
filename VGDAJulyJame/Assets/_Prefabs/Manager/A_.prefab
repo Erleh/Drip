@@ -80,8 +80,8 @@ MonoBehaviour:
   unpassableMask:
     serializedVersion: 2
     m_Bits: 256
-  gridSize: {x: 50, y: 50}
+  gridSize: {x: 20, y: 10}
   nodeRadius: 0.2
-  showGizmos: 1
+  showGizmos: 0
   player: {fileID: 0}
   enemy: {fileID: 0}
