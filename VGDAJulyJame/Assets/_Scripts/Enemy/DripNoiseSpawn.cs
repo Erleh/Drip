@@ -9,8 +9,6 @@ public class DripNoiseSpawn : MonoBehaviour
 
     void Start()
     {
-        //insert play sound here
-
         StartCoroutine(TerminateDelay());
     }
 
