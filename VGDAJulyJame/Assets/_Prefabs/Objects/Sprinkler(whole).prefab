@@ -102,7 +102,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1278216554110942}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.03, y: -1.390799, z: 0.058130838}
+  m_LocalPosition: {x: -3.53, y: -1.390799, z: 0.058130838}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4510055717591160}
@@ -115,7 +115,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1165704864748172}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.7, y: -1.76, z: 0}
+  m_LocalPosition: {x: -2.8599997, y: -1.76, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 4475817458507402}
@@ -155,7 +155,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1367883305652156}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.49, y: 8.04, z: -0.058130838}
+  m_LocalPosition: {x: 8.15, y: 8.04, z: -0.058130838}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4430637870617686}
@@ -258,7 +258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprinklerAnim: {fileID: 95616583093058288}
   SlowField: {fileID: 1165704864748172}
-  sprinklerDuration: 5
+  sprinklerDuration: 6
 --- !u!114 &114504597200500356
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -270,8 +270,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28e2bcc311cf85e4494087de3868c87d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dragCoeff: 20
+  dragCoeff: 40
   affectedRigidbodies: []
+  puddleSprites: []
 --- !u!212 &212224530484599168
 SpriteRenderer:
   m_ObjectHideFlags: 1
