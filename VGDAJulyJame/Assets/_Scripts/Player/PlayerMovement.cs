@@ -88,7 +88,7 @@ public class PlayerMovement : MonoBehaviour
         if (CheckIsAlive())
         {
             //Important to get raw values of axes for more precise movement
-            axes = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+            axes = DetermineProperMovement();
             //If movement is made, move the player and determine the direction they are facing...
             if (!axes.Equals(Vector2.zero))
             {
@@ -111,7 +111,15 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
-
+    //Because we get raw input, values are not smoothed nor processed. 
+    //To get the proper unit vector, we divide the input (at 1) by 1.4144 to get .707
+    private Vector2 DetermineProperMovement()
+    {
+        if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) >= 1 && Mathf.Abs(Input.GetAxisRaw("Vertical")) >= 1)
+            return new Vector2(Input.GetAxisRaw("Horizontal") / 1.4144f, Input.GetAxisRaw("Vertical") / 1.4144f);
+        else
+            return new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+    }
     bool CheckIdle()
     {
         if (idleTimer >= idleLimit)
