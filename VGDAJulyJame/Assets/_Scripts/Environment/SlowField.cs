@@ -19,7 +19,7 @@ public class SlowField : MonoBehaviour {
     private SpriteRenderer psr;
     public void Awake()
     {
-        psr = GetComponent<SpriteRenderer>();
+        psr = GetComponentInChildren<SpriteRenderer>();
     }
     //Grabs random sprite from entire list when it is turned on
     public void OnEnable()
