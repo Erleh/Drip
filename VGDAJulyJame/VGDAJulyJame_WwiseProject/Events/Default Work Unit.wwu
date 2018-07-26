@@ -155,6 +155,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Sprinkler" ID="{6A9FC798-EB9E-4E2F-8777-C18D68133C33}">
+					<ChildrenList>
+						<Action Name="" ID="{FFC88BFF-20EB-483C-AA01-CD878F46E1DE}" ShortID="292848272">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sprinkler" ID="{07C2602F-030C-4ACF-994C-8ADE3E446ED3}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

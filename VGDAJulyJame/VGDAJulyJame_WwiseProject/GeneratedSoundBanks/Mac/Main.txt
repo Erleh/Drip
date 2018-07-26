@@ -2,6 +2,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	36310742	Release_Adjustment			\Default Work Unit\Release_Adjustment	
 	455730641	Hold_Adjuster			\Default Work Unit\Hold_Adjuster	
 	600834356	Release_Hold			\Default Work Unit\Release_Hold	
+	745682999	Sprinkler			\Default Work Unit\Sprinkler	
 	803012562	Click_Setting			\Default Work Unit\Click_Setting	
 	1020366504	MouseOver			\Default Work Unit\MouseOver	
 	2308042502	Player_Walking			\Default Work Unit\Player_Walking	
@@ -22,7 +23,6 @@ Custom State	ID	Name	State Group	Owner		Notes
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	988953028	SFXVolume			\Default Work Unit\SFXVolume	
-	1240670792	Distance			\Default Work Unit\Distance	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
@@ -32,6 +32,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	70994745	Valve4	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Valve_Folder\Valve4_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\Valve SFX\Valve_Hold\Valve4		8310
+	106061577	Sprinkler	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Sprinkler_AD29F36A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sprinkler		55550
 	155942631	Water Dripping into a Big Bucket_bip_27Gurgle Sounds	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Water Dripping into a Big Bucket_bip.27Gurgle Sounds_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\DripsSFX\Drips Random Folder\Water Dripping into a Big Bucket_bip_27Gurgle Sounds		34786
 	224819954	SettingValve	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Settings Valve_8362C9FA.wem		\Actor-Mixer Hierarchy\Default Work Unit\ButtonsSFX\SettingValve		65548
 	249981021	Water Dripping into a Big Bucket_bip_41Gurgle Sounds	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Water Dripping into a Big Bucket_bip.41Gurgle Sounds_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\DripsSFX\Drips Random Folder\Water Dripping into a Big Bucket_bip_41Gurgle Sounds		34058

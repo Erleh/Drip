@@ -29,17 +29,22 @@
 				<Event Id="3215021356" Name="Click_Play" ObjectPath="\Events\Default Work Unit\Click_Play"/>
 				<Event Id="803012562" Name="Click_Setting" ObjectPath="\Events\Default Work Unit\Click_Setting"/>
 				<Event Id="455730641" Name="Hold_Adjuster" ObjectPath="\Events\Default Work Unit\Hold_Adjuster"/>
-				<Event Id="2698226929" Name="Monster_Drip" ObjectPath="\Events\Default Work Unit\Monster_Drip"/>
+				<Event Id="2698226929" Name="Monster_Drip" ObjectPath="\Events\Default Work Unit\Monster_Drip" MaxAttenuation="30.000000"/>
 				<Event Id="1020366504" Name="MouseOver" ObjectPath="\Events\Default Work Unit\MouseOver"/>
 				<Event Id="3643401235" Name="Player_Idle" ObjectPath="\Events\Default Work Unit\Player_Idle" MaxAttenuation="0.000000"/>
-				<Event Id="2308042502" Name="Player_Walking" ObjectPath="\Events\Default Work Unit\Player_Walking"/>
+				<Event Id="2308042502" Name="Player_Walking" ObjectPath="\Events\Default Work Unit\Player_Walking" MaxAttenuation="30.000000"/>
 				<Event Id="36310742" Name="Release_Adjustment" ObjectPath="\Events\Default Work Unit\Release_Adjustment"/>
 				<Event Id="600834356" Name="Release_Hold" ObjectPath="\Events\Default Work Unit\Release_Hold" MaxAttenuation="0.000000"/>
+				<Event Id="745682999" Name="Sprinkler" ObjectPath="\Events\Default Work Unit\Sprinkler" MaxAttenuation="30.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="70994745" Language="SFX">
 					<ShortName>Valve_Folder\Valve4.wav</ShortName>
 					<Path>SFX/Valve_Folder/Valve4_F7D0E330.wem</Path>
+				</File>
+				<File Id="106061577" Language="SFX">
+					<ShortName>Sprinkler.wav</ShortName>
+					<Path>SFX/Sprinkler_AD29F36A.wem</Path>
 				</File>
 				<File Id="155942631" Language="SFX">
 					<ShortName>Water Dripping into a Big Bucket_bip.27Gurgle Sounds.wav</ShortName>
