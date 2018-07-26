@@ -5,6 +5,9 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField]
+    private PlayerState playerState;
+
+    [SerializeField]
     private Animator pAnim;
 
     [SerializeField]
@@ -31,11 +34,11 @@ public class PlayerMovement : MonoBehaviour
         Up, Down, Left, Right
     }
 
-
     private void Awake()
     {
         pAnim = GetComponent<Animator>();
     }
+
     void Start ()
     {
         PlayerDir = Direction.Down;
@@ -82,36 +85,44 @@ public class PlayerMovement : MonoBehaviour
     // makes use of unity input
     void MakeMovement()
     {
-        //Important to get raw values of axes for more precise movement
-        axes = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        //If movement is made, move the player and determine the direction they are facing...
-        if (!axes.Equals(Vector2.zero))
+        if (CheckIsAlive())
         {
-            setRandomIdle = false;
-            pAnim.SetBool("moving", true);
-            idleTimer = 0;
-            Vector2 movForce = axes * speed;
-            playerRB.AddForce(movForce);
-            DetermineDirection();
-            pAnim.SetInteger("PlayerDirection", (int)PlayerDir);
-        }
-        else
-        {
-            if(!setRandomIdle && idle)
+            //Important to get raw values of axes for more precise movement
+            axes = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+            //If movement is made, move the player and determine the direction they are facing...
+            if (!axes.Equals(Vector2.zero))
             {
-                pAnim.SetInteger("randIdle", Random.Range(0, 3));
-                setRandomIdle = true;
+                setRandomIdle = false;
+                pAnim.SetBool("moving", true);
+                idleTimer = 0;
+                Vector2 movForce = axes * speed;
+                playerRB.AddForce(movForce);
+                DetermineDirection();
+                pAnim.SetInteger("PlayerDirection", (int)PlayerDir);
             }
-            pAnim.SetBool("moving", false);
+            else
+            {
+                if (!setRandomIdle && idle)
+                {
+                    pAnim.SetInteger("randIdle", Random.Range(0, 3));
+                    setRandomIdle = true;
+                }
+                pAnim.SetBool("moving", false);
+            }
         }
-
     }
+
     bool CheckIdle()
     {
         if (idleTimer >= idleLimit)
             return true;
         else
             return false;
+    }
+
+    bool CheckIsAlive()
+    {
+        return playerState.IsAlive();
     }
 
     //Non-physics controls
