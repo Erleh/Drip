@@ -5,6 +5,9 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour, EnemyMovementBase
 {
     [SerializeField]
+    GameObject dripObject;
+
+    [SerializeField]
     private float speed = 5;
     [SerializeField]
     private Transform target;
@@ -79,6 +82,7 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
                 {
                     posIndex = 0;
 
+                    Instantiate(dripObject, enemyTrans.position, enemyTrans.rotation);
                     yield return new WaitForSeconds(1);
 
                     hunting = false;
@@ -98,7 +102,7 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
             // if stuck
             if (ApproxVals(currPos.x, oldPosX, .01f) && ApproxVals(currPos.y, oldPosY, .01f))
             {
-                print("stuck");
+                //print("stuck");
                 yield return new WaitForSeconds(1);
 
                 hunting = false;
