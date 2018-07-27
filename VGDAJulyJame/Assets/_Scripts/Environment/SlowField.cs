@@ -19,12 +19,18 @@ public class SlowField : MonoBehaviour {
     private SpriteRenderer psr;
     public void Awake()
     {
-        psr = GetComponentInChildren<SpriteRenderer>();
+        Init();
+    }
+    private void Init()
+    {
+        if(puddleSprites.Count > 0)
+            psr = GetComponentInChildren<SpriteRenderer>();
     }
     //Grabs random sprite from entire list when it is turned on
     public void OnEnable()
     {
-        psr.sprite = puddleSprites[Random.Range(0, puddleSprites.Count)];
+        if(psr)
+            psr.sprite = puddleSprites[Random.Range(0, puddleSprites.Count)];
     }
     //Set entering drag coefficient of rigidbody to number defined in inspector
     public void OnTriggerEnter2D(Collider2D col)
