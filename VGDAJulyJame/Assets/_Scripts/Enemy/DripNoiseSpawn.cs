@@ -10,7 +10,7 @@ public class DripNoiseSpawn : MonoBehaviour
     void Start()
     {
         //insert play sound here
-        AkSoundEngine.PostEvent("Monster_Drip", gameObject);
+
         StartCoroutine(TerminateDelay());
     }
 
