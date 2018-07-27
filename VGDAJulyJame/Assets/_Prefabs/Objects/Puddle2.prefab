@@ -66,8 +66,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1744738873106210}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18.68, y: -20.12, z: -0.058130838}
-  m_LocalScale: {x: 3, y: 4, z: 1}
+  m_LocalPosition: {x: 1.9659367, y: 10.059709, z: -0.16945896}
+  m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children:
   - {fileID: 4202689512206496}
   m_Father: {fileID: 0}
@@ -85,7 +85,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.3560468, y: -0.025738478}
+  m_Offset: {x: -0.6381773, y: -1.0131952}
   m_SpriteTilingProperty:
     border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
     pivot: {x: 0.5, y: 0.5}
@@ -96,7 +96,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.4108236, y: 2.0681405}
+  m_Size: {x: 2.8465626, y: 1.9740965}
   m_EdgeRadius: 0
 --- !u!114 &114012215665087000
 MonoBehaviour:
@@ -122,7 +122,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragCoeff: 20
   affectedRigidbodies: []
-  puddleSprites: []
 --- !u!114 &114495885492641080
 MonoBehaviour:
   m_ObjectHideFlags: 1
