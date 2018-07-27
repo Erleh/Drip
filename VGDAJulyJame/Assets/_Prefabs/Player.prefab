@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 199681111841651764}
   - component: {fileID: 198730959670748544}
   - component: {fileID: 114727334361662064}
+  - component: {fileID: 114431636994655086}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -41,7 +42,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1279621555320180}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.528, y: -1.086, z: 0}
+  m_LocalPosition: {x: -11.9, y: -23.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -110,6 +111,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114431636994655086
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1279621555320180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecba62347eadbc24ca2f738eb5fb6e8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114727334361662064
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -132,6 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3cfd2e84ea8cf948b35a57bedeea6d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerState: {fileID: 114431636994655086}
   pAnim: {fileID: 95557843687962578}
   playerRB: {fileID: 0}
   findPlayerRB: 1
@@ -140,6 +153,7 @@ MonoBehaviour:
   PlayerDir: 0
   idleTimer: 0
   idleLimit: 4
+  pushing: 0
 --- !u!198 &198730959670748544
 ParticleSystem:
   m_ObjectHideFlags: 1
