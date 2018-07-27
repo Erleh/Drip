@@ -32,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
     public enum Direction{  Up, Down, Left, Right   }
     [SerializeField]
     private bool pushing;
+    private bool moving;
     private void Awake()
     {
         pAnim = GetComponent<Animator>();
@@ -108,7 +109,8 @@ public class PlayerMovement : MonoBehaviour
             if (!axes.Equals(Vector2.zero))
             {
                 setRandomIdle = false;
-                pAnim.SetBool("moving", true);
+                moving = true;
+                pAnim.SetBool("moving", moving);
                 idleTimer = 0;
                 Vector2 movForce = axes * speed;
                 playerRB.AddForce(movForce);
@@ -117,12 +119,13 @@ public class PlayerMovement : MonoBehaviour
             }
             else
             {
+                moving = false;
                 if (!setRandomIdle && idle)
                 {
                     pAnim.SetInteger("randIdle", Random.Range(0, 3));
                     setRandomIdle = true;
                 }
-                pAnim.SetBool("moving", false);
+                pAnim.SetBool("moving", moving);
             }
         }
     }
@@ -176,6 +179,8 @@ public class PlayerMovement : MonoBehaviour
             pfd = true;
         
     }
+    public bool GetMoving(){    return moving;  }
+    public bool GetPushing(){   return pushing;  }
     //Non-physics controls
     /*void MakeMovement()
     {
