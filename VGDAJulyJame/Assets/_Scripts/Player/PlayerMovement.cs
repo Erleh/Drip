@@ -30,9 +30,9 @@ public class PlayerMovement : MonoBehaviour
     private bool idle;
     private bool setRandomIdle;
 
-    public enum Direction{
-        Up, Down, Left, Right
-    }
+    public enum Direction{  Up, Down, Left, Right   }
+
+    private List<Collider2D> touchingThis;
 
     private void Awake()
     {
@@ -133,10 +133,25 @@ public class PlayerMovement : MonoBehaviour
         return playerState.IsAlive();
     }
 
-    /*private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D col)
     {
-        
-    }*/
+        if (col.otherCollider.gameObject.CompareTag("Pushable"))
+        {
+            pAnim.SetBool("colliding", true);
+            touchingThis.Add(col.otherCollider);
+        }
+    }
+    private void OnCollisionExit2D(Collision2D col)
+    {
+        if (col.otherCollider.gameObject.CompareTag("Pushable"))
+        {
+            touchingThis.Remove(col.otherCollider);
+            if(touchingThis.Count == 0)
+            {
+                pAnim.SetBool("colliding", false);
+            }
+        }
+    }
     //Non-physics controls
     /*void MakeMovement()
     {
