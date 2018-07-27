@@ -1818,11 +1818,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114014406440038742, guid: 7653ab0229f1ab645a6e87e2844933a1,
-        type: 2}
-      propertyPath: betweenTransition
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7653ab0229f1ab645a6e87e2844933a1, type: 2}
   m_IsPrefabParent: 0
