@@ -38,6 +38,8 @@ GameObject:
   - component: {fileID: 114504597200500356}
   - component: {fileID: 114078103377178234}
   - component: {fileID: 61242097545315192}
+  - component: {fileID: 114124971293717610}
+  - component: {fileID: 114014406440038742}
   m_Layer: 0
   m_Name: SlowField
   m_TagString: Untagged
@@ -232,6 +234,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114014406440038742
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1165704864748172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2f88f63a7a4f7449363b7547679a01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeDuration: 1.4
+  fadeToAlpha: 141
+  betweenTransition: 3.2
 --- !u!114 &114078103377178234
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -259,6 +275,18 @@ MonoBehaviour:
   sprinklerAnim: {fileID: 95616583093058288}
   SlowField: {fileID: 1165704864748172}
   sprinklerDuration: 5
+--- !u!114 &114124971293717610
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1165704864748172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a9e7d9c57e60634591845c738b943a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites: []
 --- !u!114 &114504597200500356
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -272,6 +300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragCoeff: 20
   affectedRigidbodies: []
+  puddleSprites: []
 --- !u!212 &212224530484599168
 SpriteRenderer:
   m_ObjectHideFlags: 1
