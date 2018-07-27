@@ -69,13 +69,29 @@ public class PlayerMovement : MonoBehaviour
 
         //Movement Prioritization
         if (axes.y > 0 && axes.x > 0)
+        {
             PlayerDir = Direction.Right;
+            if (pfd)
+                PlayerDir = Direction.Up;
+        }
         if (axes.y > 0 && axes.x < 0)
+        {
             PlayerDir = Direction.Left;
+            if (pfd)
+                PlayerDir = Direction.Up;
+        }
         if (axes.y < 0 && axes.x < 0)
+        {
             PlayerDir = Direction.Left;
+            if (pfu)
+                PlayerDir = Direction.Down;
+        }
         if (axes.y < 0 && axes.x > 0)
+        {
             PlayerDir = Direction.Right;
+            if (pfu)
+                PlayerDir = Direction.Down;
+        }
         //If player does not input, change nothing.
     }
 
@@ -136,6 +152,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Pushable"))
         {
+            CheckPushingDirection(col);
             pushing = true;
         }
     }
@@ -143,35 +160,20 @@ public class PlayerMovement : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Pushable"))
         {
+            pfl = pfr = pfu = pfd = false;
             pushing = false;
         }
     }
     //Better directional pushing animations
     private void CheckPushingDirection(Collision2D col)
     {
-        float myX = transform.position.x;
         float myY = transform.position.y;
-        //centerpoint of sides of other object collider
-        float otherLeftX = col.collider.bounds.center.x - col.collider.bounds.extents.x;
-        float otherRightX = col.collider.bounds.center.x + col.collider.bounds.extents.x;
         float otherUpY = col.collider.bounds.center.y + col.collider.bounds.extents.y;
         float otherDownY = col.collider.bounds.center.y - col.collider.bounds.extents.y;
-        if(myX > otherRightX)
-        {
-            pfl = true;
-        }
-        else if(myX < otherLeftX)
-        {
-            pfr = true;
-        }
-        else if(myY > otherUpY)
-        {
+        if(myY > otherUpY)
             pfu = true;
-        }
         else if(myY < otherDownY)
-        {
             pfd = true;
-        }
         
     }
     //Non-physics controls
