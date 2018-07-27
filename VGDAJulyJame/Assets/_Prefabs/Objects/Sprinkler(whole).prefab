@@ -20,9 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4475817458507402}
   - component: {fileID: 212980256751542596}
-  - component: {fileID: 114638364987778102}
   m_Layer: 0
-  m_Name: Puddle
+  m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39,8 +38,6 @@ GameObject:
   - component: {fileID: 114504597200500356}
   - component: {fileID: 114078103377178234}
   - component: {fileID: 61242097545315192}
-  - component: {fileID: 114582711144853386}
-  - component: {fileID: 114782096677650738}
   m_Layer: 0
   m_Name: SlowField
   m_TagString: Untagged
@@ -145,8 +142,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1078355238318378}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.64, y: 0.99, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.33, y: -0.2, z: 0}
+  m_LocalScale: {x: 15, y: 15, z: 1}
   m_Children: []
   m_Father: {fileID: 4430637870617686}
   m_RootOrder: 0
@@ -157,13 +154,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1367883305652156}
-<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.49, y: 8.04, z: -0.058130838}
-=======
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.958626, y: 9.936786, z: -0.058130838}
->>>>>>> master
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4430637870617686}
@@ -280,49 +272,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragCoeff: 20
   affectedRigidbodies: []
-<<<<<<< HEAD
-=======
---- !u!114 &114582711144853386
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1165704864748172}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b371225c34451b34eb210b3a84657232, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprites:
-  - {fileID: 21300000, guid: 142ef9e6c4522d44ca9be20fb35d6a53, type: 3}
-  - {fileID: 21300000, guid: 77b821ad45e1aeb468aa730d51704cd8, type: 3}
-  - {fileID: 21300000, guid: 624dba63d7b69774dba8cf2fcf850648, type: 3}
---- !u!114 &114638364987778102
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1078355238318378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68924946385f269459ca806ee2d36a56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114782096677650738
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1165704864748172}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cfc7f54547fa9446897723031933545, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadeDuration: 1.4
-  fadeToAlpha: 142
-  betweenTransition: 3.2
->>>>>>> master
 --- !u!212 &212224530484599168
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -448,8 +397,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 142ef9e6c4522d44ca9be20fb35d6a53, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.09019608}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
