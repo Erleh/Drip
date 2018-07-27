@@ -27,11 +27,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float idleLimit;
 
-    private bool idle;
-    private bool setRandomIdle;
+    private bool idle, setRandomIdle, pfu, pfd, pfl, pfr;
 
     public enum Direction{  Up, Down, Left, Right   }
-
     [SerializeField]
     private bool pushing;
     private void Awake()
@@ -136,15 +134,45 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.CompareTag("Pushable")){ pushing = true; }
+        if (col.gameObject.CompareTag("Pushable"))
+        {
+            pushing = true;
+        }
     }
     private void OnCollisionExit2D(Collision2D col)
     {
         if (col.gameObject.CompareTag("Pushable"))
         {
-            Debug.Log("Pushable object left this collider.");
             pushing = false;
         }
+    }
+    //Better directional pushing animations
+    private void CheckPushingDirection(Collision2D col)
+    {
+        float myX = transform.position.x;
+        float myY = transform.position.y;
+        //centerpoint of sides of other object collider
+        float otherLeftX = col.collider.bounds.center.x - col.collider.bounds.extents.x;
+        float otherRightX = col.collider.bounds.center.x + col.collider.bounds.extents.x;
+        float otherUpY = col.collider.bounds.center.y + col.collider.bounds.extents.y;
+        float otherDownY = col.collider.bounds.center.y - col.collider.bounds.extents.y;
+        if(myX > otherRightX)
+        {
+            pfl = true;
+        }
+        else if(myX < otherLeftX)
+        {
+            pfr = true;
+        }
+        else if(myY > otherUpY)
+        {
+            pfu = true;
+        }
+        else if(myY < otherDownY)
+        {
+            pfd = true;
+        }
+        
     }
     //Non-physics controls
     /*void MakeMovement()
