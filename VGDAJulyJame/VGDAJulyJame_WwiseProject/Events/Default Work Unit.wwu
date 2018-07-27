@@ -3,20 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Click_Setting" ID="{9A80467A-93EF-4975-94D4-AFCDFBA21A62}">
-					<ChildrenList>
-						<Action Name="" ID="{6FB31AAB-477A-4394-AF8B-7DADFDDE2AF1}" ShortID="12682327">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="SettingValve" ID="{A14B377D-DAD0-4DA5-94B3-3A70B35BC713}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Start_Music" ID="{B527279B-E33B-4A26-9D78-99BC04690B12}">
 					<ChildrenList>
 						<Action Name="" ID="{BE9B720F-3895-4187-86DD-39983C342379}" ShortID="1066742733">
@@ -31,144 +17,175 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Release_Adjustment" ID="{D74B9D3F-0590-49C4-88CA-59C4A50805D8}">
+				<Folder Name="Sprinklers" ID="{012677B1-1227-4A1E-A5F7-6689BDF772FB}" ShortID="121328188">
 					<ChildrenList>
-						<Action Name="" ID="{06805DA4-1800-4307-8552-42F755A45E32}" ShortID="999268279">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Valve_Folder" ID="{E496B65D-CB1D-48BF-909F-E94DE9843016}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Sprinkler_Start" ID="{6A9FC798-EB9E-4E2F-8777-C18D68133C33}">
+							<ChildrenList>
+								<Action Name="" ID="{FFC88BFF-20EB-483C-AA01-CD878F46E1DE}" ShortID="292848272">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Sprinkler" ID="{07C2602F-030C-4ACF-994C-8ADE3E446ED3}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Sprinkler_Finish" ID="{51D7A62F-03E8-434C-96F5-A8E780A565F9}"/>
 					</ChildrenList>
-				</Event>
-				<Event Name="Click_Play" ID="{EDDE5941-B70A-4749-A483-70D2796C6604}">
+				</Folder>
+				<Folder Name="Player" ID="{85C84880-ACF5-44E2-908F-25485C0FCE6D}" ShortID="992198837">
 					<ChildrenList>
-						<Action Name="" ID="{BF924EE5-883A-4791-9182-0C5F155330B4}" ShortID="984009130">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="PlaySound" ID="{0F16B8D1-5AD6-4F73-9C30-361295A67FD7}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{A669DA44-6F70-4FAB-B65D-AD8D4C6EAC7E}" ShortID="797146276">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="5"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Drip Title theme" ID="{5A54D182-1891-43DD-B47F-706A658442D6}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Player_Walking" ID="{75ACE853-5528-4CCD-A20A-F7DC2147561D}">
+							<ChildrenList>
+								<Action Name="" ID="{DD8341F8-4DAE-4339-B008-0C62BEB6B1B3}" ShortID="472851582">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps" ID="{B56F343B-5012-4E4B-9D2C-363F794B18C1}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Player_Idle" ID="{710465D1-92EE-4ADB-999C-D259F7FD29A3}">
+							<ChildrenList>
+								<Action Name="" ID="{8B40DFE9-7010-46CA-83FF-D37CC8061020}" ShortID="779602629">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="34"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps" ID="{B56F343B-5012-4E4B-9D2C-363F794B18C1}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="MouseOver" ID="{C18CF850-ECB1-449C-80A7-DF401D21EA8E}">
+				</Folder>
+				<Folder Name="Monster" ID="{06C1B477-690A-4358-8CA7-A0CE5A73E418}" ShortID="904729820">
 					<ChildrenList>
-						<Action Name="" ID="{27260747-EA2A-46C5-9A2F-2B3FAF29E544}" ShortID="895562270">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="MouseOver" ID="{E60DD256-1802-4731-AA2D-A5F04603FBEC}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Monster_Drip" ID="{81510B09-D646-4947-A0FC-176508949F29}">
+							<ChildrenList>
+								<Action Name="" ID="{93591974-D830-40C6-9525-F891BC60DB61}" ShortID="119418827">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Drips Random Folder" ID="{16F5133A-7DED-4FA8-A713-B44D2A6EBD5D}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Player_Walking" ID="{75ACE853-5528-4CCD-A20A-F7DC2147561D}">
+				</Folder>
+				<Folder Name="UI" ID="{430FC71A-EF30-41B3-A1B1-701B19792E16}" ShortID="628774091">
 					<ChildrenList>
-						<Action Name="" ID="{DD8341F8-4DAE-4339-B008-0C62BEB6B1B3}" ShortID="472851582">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Footsteps" ID="{B56F343B-5012-4E4B-9D2C-363F794B18C1}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Release_Adjustment" ID="{D74B9D3F-0590-49C4-88CA-59C4A50805D8}">
+							<ChildrenList>
+								<Action Name="" ID="{06805DA4-1800-4307-8552-42F755A45E32}" ShortID="999268279">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Valve_Folder" ID="{E496B65D-CB1D-48BF-909F-E94DE9843016}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Release_Hold" ID="{689BF115-7DA2-4381-860E-927183B93A17}">
+							<ChildrenList>
+								<Action Name="" ID="{B2170CFC-3F8A-4BC3-B121-85B7F5D62FD6}" ShortID="762860086">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Valve_Hold" ID="{5EC66579-81EC-4CDE-8B92-E899A7A7BC04}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MouseOver" ID="{C18CF850-ECB1-449C-80A7-DF401D21EA8E}">
+							<ChildrenList>
+								<Action Name="" ID="{27260747-EA2A-46C5-9A2F-2B3FAF29E544}" ShortID="895562270">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MouseOver" ID="{E60DD256-1802-4731-AA2D-A5F04603FBEC}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Hold_Adjuster" ID="{BACE2EF7-E4CA-481B-BF69-ED44D80857E3}">
+							<ChildrenList>
+								<Action Name="" ID="{19D13101-C220-4224-99BD-D7CAE01DEBDD}" ShortID="290860990">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Valve_Hold" ID="{5EC66579-81EC-4CDE-8B92-E899A7A7BC04}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Click_Play" ID="{EDDE5941-B70A-4749-A483-70D2796C6604}">
+							<ChildrenList>
+								<Action Name="" ID="{BF924EE5-883A-4791-9182-0C5F155330B4}" ShortID="984009130">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PlaySound" ID="{0F16B8D1-5AD6-4F73-9C30-361295A67FD7}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A669DA44-6F70-4FAB-B65D-AD8D4C6EAC7E}" ShortID="797146276">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="5"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Drip Title theme" ID="{5A54D182-1891-43DD-B47F-706A658442D6}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Click_Setting" ID="{9A80467A-93EF-4975-94D4-AFCDFBA21A62}">
+							<ChildrenList>
+								<Action Name="" ID="{6FB31AAB-477A-4394-AF8B-7DADFDDE2AF1}" ShortID="12682327">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SettingValve" ID="{A14B377D-DAD0-4DA5-94B3-3A70B35BC713}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Player_Idle" ID="{710465D1-92EE-4ADB-999C-D259F7FD29A3}">
-					<ChildrenList>
-						<Action Name="" ID="{8B40DFE9-7010-46CA-83FF-D37CC8061020}" ShortID="779602629">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="34"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Footsteps" ID="{B56F343B-5012-4E4B-9D2C-363F794B18C1}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Monster_Drip" ID="{81510B09-D646-4947-A0FC-176508949F29}">
-					<ChildrenList>
-						<Action Name="" ID="{93591974-D830-40C6-9525-F891BC60DB61}" ShortID="119418827">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Drips Random Folder" ID="{16F5133A-7DED-4FA8-A713-B44D2A6EBD5D}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Hold_Adjuster" ID="{BACE2EF7-E4CA-481B-BF69-ED44D80857E3}">
-					<ChildrenList>
-						<Action Name="" ID="{19D13101-C220-4224-99BD-D7CAE01DEBDD}" ShortID="290860990">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Valve_Hold" ID="{5EC66579-81EC-4CDE-8B92-E899A7A7BC04}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Release_Hold" ID="{689BF115-7DA2-4381-860E-927183B93A17}">
-					<ChildrenList>
-						<Action Name="" ID="{B2170CFC-3F8A-4BC3-B121-85B7F5D62FD6}" ShortID="762860086">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Valve_Hold" ID="{5EC66579-81EC-4CDE-8B92-E899A7A7BC04}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Sprinkler" ID="{6A9FC798-EB9E-4E2F-8777-C18D68133C33}">
-					<ChildrenList>
-						<Action Name="" ID="{FFC88BFF-20EB-483C-AA01-CD878F46E1DE}" ShortID="292848272">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Sprinkler" ID="{07C2602F-030C-4ACF-994C-8ADE3E446ED3}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
