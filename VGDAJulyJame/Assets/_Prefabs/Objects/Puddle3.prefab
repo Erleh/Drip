@@ -124,7 +124,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragCoeff: 20
   affectedRigidbodies: []
-  puddleSprites: []
 --- !u!114 &114905449665326872
 MonoBehaviour:
   m_ObjectHideFlags: 1
