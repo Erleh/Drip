@@ -28,8 +28,8 @@ MonoBehaviour:
     List: []
   BankWwu:
   - Guid: '{F3F75FBD-6C18-4F1E-91B6-BAF75923EF9F}'
-    m_lastTimePart2: -1999244777
-    m_lastTimePsrt1: 729037184
+    m_lastTimePart2: -1999244683
+    m_lastTimePsrt1: 682111360
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks/Default Work Unit.wwu
     List:
@@ -57,8 +57,8 @@ MonoBehaviour:
   defaultPoolSize: 4096
   EventWwu:
   - Guid: '{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}'
-    m_lastTimePart2: -1999244777
-    m_lastTimePsrt1: 729037184
+    m_lastTimePart2: -1999244683
+    m_lastTimePsrt1: 62111360
     ParentPhysicalPath: 
     PhysicalPath: Events/Default Work Unit.wwu
     List:
@@ -107,7 +107,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Monster_Drip
         ObjectType: 3
-      maxAttenuation: 0
+      maxAttenuation: 30
       maxDuration: 0
       minDuration: 0
     - Guid: 50f88cc1b1ec9c4480a7df401d21ea8e
@@ -143,7 +143,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Player_Walking
         ObjectType: 3
-      maxAttenuation: 0
+      maxAttenuation: 30
       maxDuration: 0
       minDuration: 0
     - Guid: 3f9d4bd79005c44988ca59c4a50805d8
@@ -168,6 +168,18 @@ MonoBehaviour:
       - ElementName: Release_Hold
         ObjectType: 3
       maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 98c79f6a9eeb2f4e8777c18d68133c33
+      ID: 745682999
+      Name: Sprinkler
+      Path: Default Work Unit/Sprinkler
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Sprinkler
+        ObjectType: 3
+      maxAttenuation: 30
       maxDuration: 0
       minDuration: 0
     - Guid: 9b2727b53be3264a9d7899bc04690b12
@@ -197,20 +209,11 @@ MonoBehaviour:
   preparePoolSize: 0
   RtpcWwu:
   - Guid: '{8DFAB3CB-05FD-4802-8FDC-C4E8552E127F}'
-    m_lastTimePart2: -1999244811
-    m_lastTimePsrt1: -2137042048
+    m_lastTimePart2: -1999244684
+    m_lastTimePsrt1: -1717888640
     ParentPhysicalPath: 
     PhysicalPath: Game Parameters/Default Work Unit.wwu
     List:
-    - Guid: 6d303463ddfe5d46941c512d24da7a7e
-      ID: 1240670792
-      Name: Distance
-      Path: Default Work Unit/Distance
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Distance
-        ObjectType: 13
     - Guid: 7c2c9b6745cdb6459658f72fe61d6b95
       ID: -1948435988
       Name: MusicVolume

@@ -293,7 +293,13 @@
 					</PositioningInfo>
 				</ActorMixer>
 				<ActorMixer Name="DripsSFX" ID="{E7CA5B96-F251-4F64-94B3-2135370315BD}" ShortID="648725798">
+					<PropertyList>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Objects" ID="{0301DFDC-AA02-46BB-A0A4-A58B824AD521}" WorkUnitID="{C2777A27-743F-4EDE-8EE2-6DFB4218D8BC}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
 						</Reference>
@@ -304,92 +310,6 @@
 					<ChildrenList>
 						<RandomSequenceContainer Name="Drips Random Folder" ID="{16F5133A-7DED-4FA8-A713-B44D2A6EBD5D}" ShortID="423807405">
 							<PropertyList>
-								<Property Name="Highpass" Type="int16">
-									<RTPCList>
-										<RTPC Name="" ID="{9B7B484D-9DA1-448A-8405-328E153412B3}" ShortID="619904265">
-											<ReferenceList>
-												<Reference Name="ControlInput">
-													<ObjectRef Name="Distance" ID="{6334306D-FEDD-465D-941C-512D24DA7A7E}" WorkUnitID="{8DFAB3CB-05FD-4802-8FDC-C4E8552E127F}"/>
-												</Reference>
-											</ReferenceList>
-											<Curve Name="" ID="{71A2C9A9-4BA0-4775-AD00-423FABDAE5D4}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="65537"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>-100</YPos>
-														<Flags>5</Flags>
-													</Point>
-													<Point>
-														<XPos>108.59729</XPos>
-														<YPos>-24</YPos>
-														<Flags>0</Flags>
-													</Point>
-													<Point>
-														<XPos>244.34389</XPos>
-														<YPos>13</YPos>
-														<Flags>0</Flags>
-													</Point>
-													<Point>
-														<XPos>502.26245</XPos>
-														<YPos>33</YPos>
-														<Flags>0</Flags>
-													</Point>
-													<Point>
-														<XPos>1500</XPos>
-														<YPos>93</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</RTPC>
-									</RTPCList>
-								</Property>
-								<Property Name="Lowpass" Type="int16">
-									<RTPCList>
-										<RTPC Name="" ID="{1C38D5F5-82F6-484B-B4F0-3B0E9CA81B57}" ShortID="51393328">
-											<ReferenceList>
-												<Reference Name="ControlInput">
-													<ObjectRef Name="Distance" ID="{6334306D-FEDD-465D-941C-512D24DA7A7E}" WorkUnitID="{8DFAB3CB-05FD-4802-8FDC-C4E8552E127F}"/>
-												</Reference>
-											</ReferenceList>
-											<Curve Name="" ID="{B320636D-26E7-4164-97A8-A31CD5A6FA2F}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="65537"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>-100</YPos>
-														<Flags>5</Flags>
-													</Point>
-													<Point>
-														<XPos>90.49774</XPos>
-														<YPos>-24</YPos>
-														<Flags>0</Flags>
-													</Point>
-													<Point>
-														<XPos>300.90498</XPos>
-														<YPos>25</YPos>
-														<Flags>0</Flags>
-													</Point>
-													<Point>
-														<XPos>592.76017</XPos>
-														<YPos>36</YPos>
-														<Flags>0</Flags>
-													</Point>
-													<Point>
-														<XPos>1500</XPos>
-														<YPos>49</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</RTPC>
-									</RTPCList>
-								</Property>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
@@ -405,6 +325,7 @@
 									</ModifierList>
 								</Property>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2"/>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="7"/>
 								<Property Name="Volume" Type="Real64">
 									<ModifierList>
@@ -412,47 +333,6 @@
 											<Modifier Name="" ID="{FEBFF222-3FF8-44E0-8375-E51F11D09FDF}"/>
 										</ModifierInfo>
 									</ModifierList>
-									<RTPCList>
-										<RTPC Name="" ID="{735E4BEB-DFEE-48E6-BAD7-24D08AA0F129}" ShortID="758043210">
-											<ReferenceList>
-												<Reference Name="ControlInput">
-													<ObjectRef Name="Distance" ID="{6334306D-FEDD-465D-941C-512D24DA7A7E}" WorkUnitID="{8DFAB3CB-05FD-4802-8FDC-C4E8552E127F}"/>
-												</Reference>
-											</ReferenceList>
-											<Curve Name="" ID="{6DF9B73A-B9DE-44C0-BEBC-7E1F477B44A6}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="3"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>0.11429</YPos>
-														<Flags>5</Flags>
-													</Point>
-													<Point>
-														<XPos>138.00905</XPos>
-														<YPos>-0.03763</YPos>
-														<Flags>0</Flags>
-													</Point>
-													<Point>
-														<XPos>635.74661</XPos>
-														<YPos>-1.3057</YPos>
-														<Flags>0</Flags>
-													</Point>
-													<Point>
-														<XPos>1002.26244</XPos>
-														<YPos>-6.54718</YPos>
-														<Flags>0</Flags>
-													</Point>
-													<Point>
-														<XPos>1500</XPos>
-														<YPos>-28.1308</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</RTPC>
-									</RTPCList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -742,7 +622,13 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="FootstepsSFX" ID="{2E49F41D-F53E-4C14-8DAD-AE7C87616C1B}" ShortID="244130310">
+					<PropertyList>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Objects" ID="{0301DFDC-AA02-46BB-A0A4-A58B824AD521}" WorkUnitID="{C2777A27-743F-4EDE-8EE2-6DFB4218D8BC}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
 						</Reference>
@@ -985,6 +871,116 @@
 						</Sound>
 					</ChildrenList>
 				</ActorMixer>
+				<Sound Name="Sprinkler" ID="{07C2602F-030C-4ACF-994C-8ADE3E446ED3}" ShortID="556543104">
+					<PropertyList>
+						<Property Name="EnablePanner" Type="bool" Value="True"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="Spatialization" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Objects" ID="{0301DFDC-AA02-46BB-A0A4-A58B824AD521}" WorkUnitID="{C2777A27-743F-4EDE-8EE2-6DFB4218D8BC}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Environmental" ID="{9BFD25F4-E473-474D-BA82-7796C62F6630}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Sprinkler" ID="{5BF93944-E122-47C1-BDB4-DAE5C4B45F78}" ShortID="106061577">
+							<Language>SFX</Language>
+							<AudioFile>Sprinkler.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{9297922A-20B3-4E85-B11F-E779AA6F0515}">
+							<PropertyList>
+								<Property Name="PanY" Type="Real64" Value="10"/>
+							</PropertyList>
+						</Panner>
+						<Position Name="" ID="{57ACED00-E1B7-4F96-B408-BACE63290C68}"/>
+					</PositioningInfo>
+					<ActiveSourceList>
+						<ActiveSource Name="Sprinkler" ID="{5BF93944-E122-47C1-BDB4-DAE5C4B45F78}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="CreepyViolins" ID="{B012F5D2-2162-44BC-A93C-178826FD3763}" ShortID="245828696">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{8D827176-83D8-4D70-848B-198A2FE78438}" ShortID="250483831">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Distance" ID="{2DFB149D-4118-483E-A2C3-31C49175655F}" WorkUnitID="{8DFAB3CB-05FD-4802-8FDC-C4E8552E127F}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{FF330A90-D495-43CB-BA3B-80830E6A94E5}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>0.05696</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>30.2189781021898</XPos>
+												<YPos>-200</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>-200</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="CreepyViolins" ID="{FCD05030-BD12-4FE7-9719-DB62E06B831E}" ShortID="457290408">
+							<Language>SFX</Language>
+							<AudioFile>CreepyViolins.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="CreepyViolins" ID="{FCD05030-BD12-4FE7-9719-DB62E06B831E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Jumpscare" ID="{34FF2303-46DD-44D6-BD8A-5E56AD88536D}" ShortID="971644092">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Jumpscare" ID="{44EC975A-CB43-465A-A3BB-0DFD60695DC7}" ShortID="1046647013">
+							<Language>SFX</Language>
+							<AudioFile>Jumpscare.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Jumpscare" ID="{44EC975A-CB43-465A-A3BB-0DFD60695DC7}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
