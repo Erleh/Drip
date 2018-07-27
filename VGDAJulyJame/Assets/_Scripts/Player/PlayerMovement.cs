@@ -133,6 +133,10 @@ public class PlayerMovement : MonoBehaviour
         return playerState.IsAlive();
     }
 
+    /*private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
+    }*/
     //Non-physics controls
     /*void MakeMovement()
     {
