@@ -14,18 +14,6 @@ public class SlowField : MonoBehaviour {
     [SerializeField]
     private List<Rigidbody2D> affectedRigidbodies;
 
-    [SerializeField]
-    private List<Sprite> puddleSprites;
-    private SpriteRenderer psr;
-    public void Awake()
-    {
-        psr = GetComponentInChildren<SpriteRenderer>();
-    }
-    //Grabs random sprite from entire list when it is turned on
-    public void OnEnable()
-    {
-        psr.sprite = puddleSprites[Random.Range(0, puddleSprites.Count+1)];
-    }
     //Set entering drag coefficient of rigidbody to number defined in inspector
     public void OnTriggerEnter2D(Collider2D col)
     {
