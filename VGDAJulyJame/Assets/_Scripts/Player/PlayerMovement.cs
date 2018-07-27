@@ -32,8 +32,8 @@ public class PlayerMovement : MonoBehaviour
 
     public enum Direction{  Up, Down, Left, Right   }
 
-    private List<Collider2D> touchingThis;
-
+    [SerializeField]
+    private bool pushing;
     private void Awake()
     {
         pAnim = GetComponent<Animator>();
@@ -51,6 +51,7 @@ public class PlayerMovement : MonoBehaviour
         idleTimer += Time.deltaTime;
         idle = CheckIdle();
         pAnim.SetBool("isIdle", idle);
+        pAnim.SetBool("colliding", pushing);
         MakeMovement();
 
         playerRB.velocity = new Vector2(0, 0); //comment out this line for non-physics movement
@@ -135,21 +136,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.otherCollider.gameObject.CompareTag("Pushable"))
-        {
-            pAnim.SetBool("colliding", true);
-            touchingThis.Add(col.otherCollider);
-        }
+        if (col.gameObject.CompareTag("Pushable")){ pushing = true; }
     }
     private void OnCollisionExit2D(Collision2D col)
     {
-        if (col.otherCollider.gameObject.CompareTag("Pushable"))
+        if (col.gameObject.CompareTag("Pushable"))
         {
-            touchingThis.Remove(col.otherCollider);
-            if(touchingThis.Count == 0)
-            {
-                pAnim.SetBool("colliding", false);
-            }
+            Debug.Log("Pushable object left this collider.");
+            pushing = false;
         }
     }
     //Non-physics controls
