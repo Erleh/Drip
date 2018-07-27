@@ -1,39 +1,24 @@
 Event	ID	Name			Wwise Object Path	Notes
-	36310742	Release_Adjustment			\Default Work Unit\Release_Adjustment	
-	455730641	Hold_Adjuster			\Default Work Unit\Hold_Adjuster	
-	600834356	Release_Hold			\Default Work Unit\Release_Hold	
-	745682999	Sprinkler			\Default Work Unit\Sprinkler	
-	803012562	Click_Setting			\Default Work Unit\Click_Setting	
-	1020366504	MouseOver			\Default Work Unit\MouseOver	
-	2308042502	Player_Walking			\Default Work Unit\Player_Walking	
-	2698226929	Monster_Drip			\Default Work Unit\Monster_Drip	
-	3215021356	Click_Play			\Default Work Unit\Click_Play	
-	3643401235	Player_Idle			\Default Work Unit\Player_Idle	
-
-State Group	ID	Name			Wwise Object Path	Notes
-	444815956	PlayerLife			\Default Work Unit\PlayerLife	
-
-State	ID	Name	State Group			Notes
-	0	None	PlayerLife			
-	655265632	Alive	PlayerLife			
-	2044049779	Dead	PlayerLife			
-
-Custom State	ID	Name	State Group	Owner		Notes
-	993770931	Dead	PlayerLife	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Environmental		
-
-Game Parameter	ID	Name			Wwise Object Path	Notes
-	988953028	SFXVolume			\Default Work Unit\SFXVolume	
-
-Audio Bus	ID	Name			Wwise Object Path	Notes
-	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
-	1778020528	Drip			\Default Work Unit\Master Audio Bus\SFX\Drip	
-	1973600711	Environmental			\Default Work Unit\Master Audio Bus\SFX\Environmental	
-	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	36310742	Release_Adjustment			\Default Work Unit\UI\Release_Adjustment	
+	108465146	Sprinkler_Start			\Default Work Unit\Sprinklers\Sprinkler_Start	
+	160038168	Splash			\Default Work Unit\Splash	
+	455730641	Hold_Adjuster			\Default Work Unit\UI\Hold_Adjuster	
+	600834356	Release_Hold			\Default Work Unit\UI\Release_Hold	
+	803012562	Click_Setting			\Default Work Unit\UI\Click_Setting	
+	1020366504	MouseOver			\Default Work Unit\UI\MouseOver	
+	2308042502	Player_Walking			\Default Work Unit\Player\Player_Walking	
+	2698226929	Monster_Drip			\Default Work Unit\Monster\Monster_Drip	
+	3083087645	Player_Death			\Default Work Unit\Player\Player_Death	
+	3215021356	Click_Play			\Default Work Unit\UI\Click_Play	
+	3643401235	Player_Idle			\Default Work Unit\Player\Player_Idle	
+	4005320019	Sprinkler_Finish			\Default Work Unit\Sprinklers\Sprinkler_Finish	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	70994745	Valve4	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Valve_Folder\Valve4_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\Valve SFX\Valve_Hold\Valve4		8310
+	80360196	Splash6	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Water Sploshing\Splash6_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\Splashing\Water Splashing\Splash6		6800
 	106061577	Sprinkler	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Sprinkler_AD29F36A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sprinkler		55550
 	155942631	Water Dripping into a Big Bucket_bip_27Gurgle Sounds	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Water Dripping into a Big Bucket_bip.27Gurgle Sounds_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\DripsSFX\Drips Random Folder\Water Dripping into a Big Bucket_bip_27Gurgle Sounds		34786
+	161386613	Splash1	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Water Sploshing\Splash1_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\Splashing\Water Splashing\Splash1		7008
 	224819954	SettingValve	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Settings Valve_8362C9FA.wem		\Actor-Mixer Hierarchy\Default Work Unit\ButtonsSFX\SettingValve		65548
 	249981021	Water Dripping into a Big Bucket_bip_41Gurgle Sounds	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Water Dripping into a Big Bucket_bip.41Gurgle Sounds_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\DripsSFX\Drips Random Folder\Water Dripping into a Big Bucket_bip_41Gurgle Sounds		34058
 	275406166	Water Dripping into a Big Bucket_bip_12Gurgle Sounds	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Water Dripping into a Big Bucket_bip.12Gurgle Sounds_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\DripsSFX\Drips Random Folder\Water Dripping into a Big Bucket_bip_12Gurgle Sounds		34876
@@ -41,6 +26,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	413463645	Valve3	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Valve_Folder\Valve3_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\Valve SFX\Valve_Hold\Valve3		5099
 	445560886	Water Dripping into a Big Bucket_bip_34Gurgle Sounds	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Water Dripping into a Big Bucket_bip.34Gurgle Sounds_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\DripsSFX\Drips Random Folder\Water Dripping into a Big Bucket_bip_34Gurgle Sounds		32343
 	478617509	Footstep1	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Footstep1_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\FootstepsSFX\Footsteps\Footstep1		8304
+	488787267	Splash4	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Water Sploshing\Splash4_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\Splashing\Water Splashing\Splash4		6883
+	509557125	Splash2	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Water Sploshing\Splash2_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\Splashing\Water Splashing\Splash2		7124
 	515689105	Water Dripping into a Big Bucket_bip_45Gurgle Sounds	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Water Dripping into a Big Bucket_bip.45Gurgle Sounds_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\DripsSFX\Drips Random Folder\Water Dripping into a Big Bucket_bip_45Gurgle Sounds		36020
 	586312605	PlaySound	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\PlayGameButtonSound_10E72CEF.wem		\Actor-Mixer Hierarchy\Default Work Unit\ButtonsSFX\PlaySound		110623
 	587991794	Water Dripping into a Big Bucket_bip_46Gurgle Sounds	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Water Dripping into a Big Bucket_bip.46Gurgle Sounds_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\DripsSFX\Drips Random Folder\Water Dripping into a Big Bucket_bip_46Gurgle Sounds		47405
@@ -48,12 +35,14 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	691053170	Footstep5	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Footstep5_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\FootstepsSFX\Footsteps\Footstep5		10839
 	711721849	Water Dripping into a Big Bucket_bip_3Gurgle Sounds	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Water Dripping into a Big Bucket_bip.3Gurgle Sounds_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\DripsSFX\Drips Random Folder\Water Dripping into a Big Bucket_bip_3Gurgle Sounds		36981
 	749488580	Water Dripping into a Big Bucket_bip_18Gurgle Sounds	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Water Dripping into a Big Bucket_bip.18Gurgle Sounds_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\DripsSFX\Drips Random Folder\Water Dripping into a Big Bucket_bip_18Gurgle Sounds		33074
+	776925586	Splash5	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Water Sploshing\Splash5_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\Splashing\Water Splashing\Splash5		6806
 	818483300	Water Dripping into a Big Bucket_bip_23Gurgle Sounds	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Water Dripping into a Big Bucket_bip.23Gurgle Sounds_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\DripsSFX\Drips Random Folder\Water Dripping into a Big Bucket_bip_23Gurgle Sounds		33780
 	829649723	Valve1	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Valve_Folder\Valve1_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\Valve SFX\Valve_Hold\Valve1		7337
 	860811947	Water Dripping into a Big Bucket_bip_19Gurgle Sounds	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Water Dripping into a Big Bucket_bip.19Gurgle Sounds_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\DripsSFX\Drips Random Folder\Water Dripping into a Big Bucket_bip_19Gurgle Sounds		30034
 	879809132	MouseOver	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\MouseOver_DBDA5625.wem		\Actor-Mixer Hierarchy\Default Work Unit\ButtonsSFX\MouseOver		2080
 	953994048	Footstep2	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Footstep2_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\FootstepsSFX\Footsteps\Footstep2		9285
 	964048617	Valve2	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Valve_Folder\Valve2_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\Valve SFX\Valve_Hold\Valve2		8966
-	983107732	Water Dripping into a Big Bucket_bip_15Gurgle Sounds	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Water Dripping into a Big Bucket_bip.15Gurgle Sounds_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\DripsSFX\Drips Random Folder\Water Dripping into a Big Bucket_bip_15Gurgle Sounds		34899
+	1017817842	Splash3	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Water Sploshing\Splash3_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\Splashing\Water Splashing\Splash3		7552
 	1041937041	Water Dripping into a Big Bucket_bip_37Gurgle Sounds	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Water Dripping into a Big Bucket_bip.37Gurgle Sounds_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\DripsSFX\Drips Random Folder\Water Dripping into a Big Bucket_bip_37Gurgle Sounds		20438
+	1046647013	Jumpscare	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Mac\SFX\Jumpscare_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jumpscare		40399
 
