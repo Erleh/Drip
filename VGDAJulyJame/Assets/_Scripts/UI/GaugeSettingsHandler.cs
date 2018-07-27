@@ -54,7 +54,7 @@ public class GaugeSettingsHandler : MonoBehaviour {
         currentAngle = UINeedle.transform.eulerAngles;
         rotatingQueue = new CoroutineQueue(this);
         rotatingQueue.StartLoop();
-        meterVal.text = 0 + "";
+        meterVal.text = currVal + "";
     }
     private void FixedUpdate()
     {
