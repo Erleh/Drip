@@ -71,6 +71,7 @@ public class GaugeSettingsHandler : MonoBehaviour {
     public void ChangeHeldPD() { checkHeldP = true; }
     public void ChangeHeldPU() { checkHeldP = false; }
 
+    public float GetValue() { return currVal; }
     public void IncreaseValue()
     {
         if (holdingCo == null)
