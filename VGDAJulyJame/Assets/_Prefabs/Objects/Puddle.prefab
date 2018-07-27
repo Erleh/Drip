@@ -38,8 +38,6 @@ GameObject:
   - component: {fileID: 114333109613198492}
   - component: {fileID: 114726143341362176}
   - component: {fileID: 61022689047166144}
-  - component: {fileID: 114226548958335554}
-  - component: {fileID: 114891294727589166}
   m_Layer: 0
   m_Name: Puddle
   m_TagString: Untagged
@@ -54,8 +52,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1748503230422912}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.46, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalPosition: {x: -10.12, y: -8.880977, z: 0}
+  m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children:
   - {fileID: 4888989252580782}
   m_Father: {fileID: 0}
@@ -83,10 +81,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.0063715, y: -0.23208034}
+  m_Offset: {x: -2.0063715, y: -1.4561286}
   m_SpriteTilingProperty:
     border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
     pivot: {x: 0.5, y: 0.5}
@@ -97,20 +95,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.4256144, y: 2.482319}
+  m_Size: {x: 3.4256144, y: 2.3312006}
   m_EdgeRadius: 0
---- !u!114 &114226548958335554
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1748503230422912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a9e7d9c57e60634591845c738b943a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprites: []
 --- !u!114 &114333109613198492
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -124,7 +110,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragCoeff: 20
   affectedRigidbodies: []
-  puddleSprites: []
 --- !u!114 &114726143341362176
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -138,20 +123,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monsterStatus: {fileID: 0}
   affected: []
---- !u!114 &114891294727589166
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1748503230422912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e2f88f63a7a4f7449363b7547679a01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadeDuration: 1.4
-  fadeToAlpha: 141
-  betweenTransition: 3.2
 --- !u!212 &212067289664686702
 SpriteRenderer:
   m_ObjectHideFlags: 1

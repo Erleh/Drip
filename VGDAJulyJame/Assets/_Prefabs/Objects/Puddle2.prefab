@@ -38,8 +38,6 @@ GameObject:
   - component: {fileID: 114442786080669750}
   - component: {fileID: 114360814410928504}
   - component: {fileID: 61883309273716438}
-  - component: {fileID: 114705050898635626}
-  - component: {fileID: 114616541294645400}
   m_Layer: 0
   m_Name: Puddle2
   m_TagString: Untagged
@@ -54,7 +52,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1801487094393690}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.46, y: 0, z: 0}
+  m_LocalPosition: {x: -34.397675, y: -17.244389, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 4737359790829566}
@@ -86,7 +84,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.0063715, y: -0.23208034}
+  m_Offset: {x: -2.0063715, y: -1.4410167}
   m_SpriteTilingProperty:
     border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
     pivot: {x: 0.5, y: 0.5}
@@ -97,7 +95,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.4256144, y: 2.482319}
+  m_Size: {x: 3.4256144, y: 2.3614264}
   m_EdgeRadius: 0
 --- !u!114 &114360814410928504
 MonoBehaviour:
@@ -125,33 +123,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragCoeff: 20
   affectedRigidbodies: []
-  puddleSprites: []
---- !u!114 &114616541294645400
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1801487094393690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e2f88f63a7a4f7449363b7547679a01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadeDuration: 1.4
-  fadeToAlpha: 141
-  betweenTransition: 3.2
---- !u!114 &114705050898635626
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1801487094393690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a9e7d9c57e60634591845c738b943a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprites: []
 --- !u!212 &212824465404725194
 SpriteRenderer:
   m_ObjectHideFlags: 1
