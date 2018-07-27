@@ -15,9 +15,12 @@ public class WaterFieldInteraction : MonoBehaviour
 
     private void OnDisable()
     {
-        foreach(Collider2D col in affected)
+        if (affected.Count > 0)
         {
-            WaterWalkingManager.CreateWaterResponseRequest(col.gameObject, WaterReaction, false);
+            foreach (Collider2D col in affected)
+            {
+                WaterWalkingManager.CreateWaterResponseRequest(col.gameObject, WaterReaction, false);
+            }
         }
     }
 
