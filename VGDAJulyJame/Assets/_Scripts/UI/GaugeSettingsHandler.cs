@@ -44,13 +44,16 @@ public class GaugeSettingsHandler : MonoBehaviour {
     private bool checkHeldM;
     //Saved reference to prevent player from overlapping coroutine calls
     private Coroutine holdingCo;
-    // Use this for initialization
+    // currVal needs to be set before Start so that the sound handler may access it properly
+    private void Awake()
+    {
+        currVal = startingVal;
+    }
     void Start () {
         UINeedle.transform.rotation = Quaternion.Euler(0,0, startingAngle);
         currentAngle = UINeedle.transform.eulerAngles;
         rotatingQueue = new CoroutineQueue(this);
         rotatingQueue.StartLoop();
-        currVal = startingVal;
         meterVal.text = 0 + "";
     }
     private void FixedUpdate()

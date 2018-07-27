@@ -27,13 +27,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float idleLimit;
 
-    private bool idle;
-    private bool setRandomIdle;
+    private bool idle, setRandomIdle, pfu, pfd, pfl, pfr;
 
-    public enum Direction{
-        Up, Down, Left, Right
-    }
-
+    public enum Direction{  Up, Down, Left, Right   }
+    [SerializeField]
+    private bool pushing;
     private void Awake()
     {
         pAnim = GetComponent<Animator>();
@@ -51,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
         idleTimer += Time.deltaTime;
         idle = CheckIdle();
         pAnim.SetBool("isIdle", idle);
+        pAnim.SetBool("colliding", pushing);
         MakeMovement();
 
         playerRB.velocity = new Vector2(0, 0); //comment out this line for non-physics movement
@@ -70,13 +69,29 @@ public class PlayerMovement : MonoBehaviour
 
         //Movement Prioritization
         if (axes.y > 0 && axes.x > 0)
+        {
             PlayerDir = Direction.Right;
+            if (pfd)
+                PlayerDir = Direction.Up;
+        }
         if (axes.y > 0 && axes.x < 0)
+        {
             PlayerDir = Direction.Left;
+            if (pfd)
+                PlayerDir = Direction.Up;
+        }
         if (axes.y < 0 && axes.x < 0)
+        {
             PlayerDir = Direction.Left;
+            if (pfu)
+                PlayerDir = Direction.Down;
+        }
         if (axes.y < 0 && axes.x > 0)
+        {
             PlayerDir = Direction.Right;
+            if (pfu)
+                PlayerDir = Direction.Down;
+        }
         //If player does not input, change nothing.
     }
 
@@ -133,10 +148,34 @@ public class PlayerMovement : MonoBehaviour
         return playerState.IsAlive();
     }
 
-    /*private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D col)
     {
+        if (col.gameObject.CompareTag("Pushable"))
+        {
+            CheckPushingDirection(col);
+            pushing = true;
+        }
+    }
+    private void OnCollisionExit2D(Collision2D col)
+    {
+        if (col.gameObject.CompareTag("Pushable"))
+        {
+            pfl = pfr = pfu = pfd = false;
+            pushing = false;
+        }
+    }
+    //Better directional pushing animations
+    private void CheckPushingDirection(Collision2D col)
+    {
+        float myY = transform.position.y;
+        float otherUpY = col.collider.bounds.center.y + col.collider.bounds.extents.y;
+        float otherDownY = col.collider.bounds.center.y - col.collider.bounds.extents.y;
+        if(myY > otherUpY)
+            pfu = true;
+        else if(myY < otherDownY)
+            pfd = true;
         
-    }*/
+    }
     //Non-physics controls
     /*void MakeMovement()
     {
