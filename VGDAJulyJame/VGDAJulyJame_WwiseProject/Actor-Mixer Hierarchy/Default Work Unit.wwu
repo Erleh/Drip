@@ -910,39 +910,6 @@
 				<Sound Name="CreepyViolins" ID="{B012F5D2-2162-44BC-A93C-178826FD3763}" ShortID="245828696">
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="Volume" Type="Real64">
-							<RTPCList>
-								<RTPC Name="" ID="{8D827176-83D8-4D70-848B-198A2FE78438}" ShortID="250483831">
-									<ReferenceList>
-										<Reference Name="ControlInput">
-											<ObjectRef Name="Distance" ID="{2DFB149D-4118-483E-A2C3-31C49175655F}" WorkUnitID="{8DFAB3CB-05FD-4802-8FDC-C4E8552E127F}"/>
-										</Reference>
-									</ReferenceList>
-									<Curve Name="" ID="{FF330A90-D495-43CB-BA3B-80830E6A94E5}">
-										<PropertyList>
-											<Property Name="Flags" Type="int32" Value="3"/>
-										</PropertyList>
-										<PointList>
-											<Point>
-												<XPos>0</XPos>
-												<YPos>0.05696</YPos>
-												<Flags>5</Flags>
-											</Point>
-											<Point>
-												<XPos>30.2189781021898</XPos>
-												<YPos>-200</YPos>
-												<Flags>0</Flags>
-											</Point>
-											<Point>
-												<XPos>100</XPos>
-												<YPos>-200</YPos>
-												<Flags>37</Flags>
-											</Point>
-										</PointList>
-									</Curve>
-								</RTPC>
-							</RTPCList>
-						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
