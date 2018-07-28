@@ -34,4 +34,16 @@ public class GaugeSoundHandler : MonoBehaviour {
         musicVolume = MusicGaugeSettings.GetValue();
 	}
 
+    private void Update()
+    {
+
+        sfxVolume = SFXGaugeSettings.GetValue();
+        musicVolume = MusicGaugeSettings.GetValue();
+
+        AkSoundEngine.SetRTPCValue("MusicVolume", musicVolume);
+        AkSoundEngine.SetRTPCValue("SFXVolume", sfxVolume);
+
+        Debug.Log(sfxVolume);
+        Debug.Log(musicVolume);
+    }
 }

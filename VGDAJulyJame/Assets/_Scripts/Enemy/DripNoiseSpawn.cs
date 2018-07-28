@@ -5,11 +5,11 @@ using UnityEngine;
 public class DripNoiseSpawn : MonoBehaviour
 {
     [SerializeField]
-    private float lifeTime = 3f;
+    private float lifeTime = 2.5f;
 
     void Start()
     {
-        //insert play sound here
+        AkSoundEngine.PostEvent("Monster_Drip", gameObject); 
 
         StartCoroutine(TerminateDelay());
     }
