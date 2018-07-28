@@ -12,6 +12,7 @@ State	ID	Name	State Group			Notes
 	1934885551	Pushing	Moving			
 
 Custom State	ID	Name	State Group	Owner		Notes
+	326955034	Dead	PlayerLife	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX		
 	993770931	Dead	PlayerLife	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Environmental		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes

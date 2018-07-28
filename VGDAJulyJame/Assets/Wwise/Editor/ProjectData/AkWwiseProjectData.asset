@@ -21,8 +21,8 @@ MonoBehaviour:
   autoPopulateEnabled: 1
   AuxBusWwu:
   - Guid: '{F77BEB74-7DE8-4B55-950E-8A6899C309EB}'
-    m_lastTimePart2: -1999244276
-    m_lastTimePsrt1: 1530421888
+    m_lastTimePart2: -1999244195
+    m_lastTimePsrt1: -206896384
     ParentPhysicalPath: 
     PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
     List:
@@ -61,8 +61,8 @@ MonoBehaviour:
         ObjectType: 1
   BankWwu:
   - Guid: '{F3F75FBD-6C18-4F1E-91B6-BAF75923EF9F}'
-    m_lastTimePart2: -1999244267
-    m_lastTimePsrt1: -1269251072
+    m_lastTimePart2: -1999244174
+    m_lastTimePsrt1: 1293757696
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks/Default Work Unit.wwu
     List:
@@ -90,8 +90,8 @@ MonoBehaviour:
   defaultPoolSize: 4096
   EventWwu:
   - Guid: '{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}'
-    m_lastTimePart2: -1999244258
-    m_lastTimePsrt1: -233956736
+    m_lastTimePart2: -1999244178
+    m_lastTimePsrt1: 383626880
     ParentPhysicalPath: 
     PhysicalPath: Events/Default Work Unit.wwu
     List:
@@ -180,43 +180,15 @@ MonoBehaviour:
       maxDuration: 0
       minDuration: 0
     - Guid: d1650471ee92db4a999cd259f7fd29a3
-      ID: -651566061
-      Name: Player_Idle
-      Path: Default Work Unit/Player/Player_Idle
+      ID: -1812459602
+      Name: Player_MoveCheck
+      Path: Default Work Unit/Player/Player_MoveCheck
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Player
         ObjectType: 4
-      - ElementName: Player_Idle
-        ObjectType: 3
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - Guid: c1f0f36d857b6247a44d6ffc0e005c60
-      ID: 550224491
-      Name: Player_Pushing
-      Path: Default Work Unit/Player/Player_Pushing
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Player
-        ObjectType: 4
-      - ElementName: Player_Pushing
-        ObjectType: 3
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - Guid: 53e8ac752855cd4ca20af7dc2147561d
-      ID: -1986924794
-      Name: Player_Walking
-      Path: Default Work Unit/Player/Player_Walking
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Player
-        ObjectType: 4
-      - ElementName: Player_Walking
+      - ElementName: Player_MoveCheck
         ObjectType: 3
       maxAttenuation: 30
       maxDuration: 0
@@ -308,7 +280,6 @@ MonoBehaviour:
   - /VGDAJulyJame_WwiseProject/Events/Default Work Unit/Player
   - /VGDAJulyJame_WwiseProject/SoundBanks
   - /VGDAJulyJame_WwiseProject/SoundBanks/Default Work Unit
-  - /VGDAJulyJame_WwiseProject/States
   language: English(US)
   lowerPoolSize: 2048
   m_lastPopulateTimePart2: 0
@@ -351,8 +322,8 @@ MonoBehaviour:
         ObjectType: 13
   StateWwu:
   - Guid: '{304B9BE2-9D9E-4E24-8CF6-14A758EE62B4}'
-    m_lastTimePart2: -1999244811
-    m_lastTimePsrt1: -2137042048
+    m_lastTimePart2: -1999244193
+    m_lastTimePsrt1: -1296830976
     ParentPhysicalPath: 
     PhysicalPath: States/Default Work Unit.wwu
     List:
@@ -368,18 +339,22 @@ MonoBehaviour:
       ValueGuids:
       - bytes: 4dc63632aebf4045bc512f99ffcf4073
       - bytes: 2c46c11bf73ec042975304de558a6fc6
+      - bytes: 56321df11d6a55489f40d24deebf24a6
       - bytes: a1249fb1b359274da2b3c4caa1f17ccc
       ValueIcons:
       - ElementName: Idle
         ObjectType: 8
       - ElementName: None
         ObjectType: 8
+      - ElementName: Pushing
+        ObjectType: 8
       - ElementName: Walking
         ObjectType: 8
-      valueIDs: ff60b76fdb3ba32c42234814
+      valueIDs: ff60b76fdb3ba32caf02547342234814
       values:
       - Idle
       - None
+      - Pushing
       - Walking
     - Guid: af56928d85e7564d85774b969335bd36
       ID: 444815956

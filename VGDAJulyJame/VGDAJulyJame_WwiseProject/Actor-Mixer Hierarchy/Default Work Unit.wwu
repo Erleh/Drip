@@ -617,8 +617,27 @@
 				</ActorMixer>
 				<ActorMixer Name="FootstepsSFX" ID="{2E49F41D-F53E-4C14-8DAD-AE7C87616C1B}" ShortID="244130310">
 					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{F983C50D-E177-477C-9B84-618FEA05D7DA}">
+										<PropertyList>
+											<Property Name="Max" Type="Real64" Value="100"/>
+											<Property Name="Min" Type="Real64" Value="-100"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
 						<Property Name="PositioningType" Type="int16" Value="1"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{6CA37304-E5DE-49C4-ABE1-E1EFC59E2119}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -632,7 +651,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<RandomSequenceContainer Name="RandomFootsteps" ID="{2696B9EC-B1C8-441F-9D81-BD3841514423}" ShortID="163069200">
+						<RandomSequenceContainer Name="RandomSteps" ID="{777D3164-93EA-48A8-8722-FB743B5C3716}" ShortID="393823894">
 							<PropertyList>
 								<Property Name="Highpass" Type="int16">
 									<ValueList>
@@ -642,7 +661,7 @@
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
-											<Modifier Name="" ID="{AD1E5DB1-9F0C-4823-A73F-9E9AE4E602B4}">
+											<Modifier Name="" ID="{F8A58EC1-C797-4E0C-9222-AAB5452E14E3}">
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
 													<Property Name="Max" Type="Real64" Value="150"/>
@@ -657,7 +676,7 @@
 								<Property Name="Volume" Type="Real64">
 									<ModifierList>
 										<ModifierInfo>
-											<Modifier Name="" ID="{9B4AC2CE-D469-4DEE-84F3-8F7F45FC8D18}">
+											<Modifier Name="" ID="{2ED10570-E238-451D-8D45-BB3BDF62CB4A}">
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
 													<Property Name="Max" Type="Real64" Value="1.5"/>
@@ -684,7 +703,6 @@
 												<ModifierInfo>
 													<Modifier Name="" ID="{B008809F-D288-4D9D-B80E-5D3FBA5C76BE}">
 														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
 															<Property Name="Max" Type="Real64" Value="20"/>
 														</PropertyList>
 													</Modifier>
@@ -698,7 +716,7 @@
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
 															<Property Name="Max" Type="Real64" Value="150"/>
-															<Property Name="Min" Type="Real64" Value="-100"/>
+															<Property Name="Min" Type="Real64" Value="-150"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
@@ -714,7 +732,6 @@
 												<ModifierInfo>
 													<Modifier Name="" ID="{55C88216-E001-4E09-8BF5-A663E96F0DA6}">
 														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
 															<Property Name="Max" Type="Real64" Value="1.5"/>
 															<Property Name="Min" Type="Real64" Value="-1.5"/>
 														</PropertyList>
@@ -754,7 +771,7 @@
 								<CustomStateList>
 									<CustomState>
 										<StateRef Name="Idle" ID="{3236C64D-BFAE-4540-BC51-2F99FFCF4073}"/>
-										<State Name="" ID="{3AA32B2F-88AC-4980-9288-6D3FC7407C32}" ShortID="997597463">
+										<State Name="" ID="{0E2AB1FD-F501-4A7B-95A3-E1571F71937A}" ShortID="126674139">
 											<PropertyList>
 												<Property Name="Volume" Type="Real64" Value="-96"/>
 											</PropertyList>
@@ -762,17 +779,15 @@
 									</CustomState>
 									<CustomState>
 										<StateRef Name="Pushing" ID="{F11D3256-6A1D-4855-9F40-D24DEEBF24A6}"/>
-										<State Name="" ID="{F8B6CE6B-EFB1-47C8-A999-22A66BC1DB2C}" ShortID="49209721">
+										<State Name="" ID="{351F4295-7940-4790-9862-96B3F09E2903}" ShortID="676021631">
 											<PropertyList>
-												<Property Name="Lowpass" Type="int16" Value="10"/>
-												<Property Name="Pitch" Type="int32" Value="-3"/>
-												<Property Name="Volume" Type="Real64" Value="-10"/>
+												<Property Name="Pitch" Type="int32" Value="-800"/>
 											</PropertyList>
 										</State>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="Walking" ID="{B19F24A1-59B3-4D27-A2B3-C4CAA1F17CCC}"/>
-										<State Name="" ID="{558570ED-CDC8-4EE4-8198-1F33849E493F}" ShortID="281892367"/>
+										<State Name="" ID="{A1B57B7F-1C92-4CEE-B20B-7906098EFCCC}" ShortID="459502125"/>
 									</CustomState>
 								</CustomStateList>
 							</StateInfo>
