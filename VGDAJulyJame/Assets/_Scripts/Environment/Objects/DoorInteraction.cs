@@ -7,6 +7,8 @@ public class DoorInteraction : MonoBehaviour
     [Header("Set fields bellow")]
     [SerializeField]
     private BoxCollider2D doorCollider;
+    [SerializeField]
+    private Animator doorAnimation;
 
     private bool open;
 
@@ -15,12 +17,12 @@ public class DoorInteraction : MonoBehaviour
         open = false;
     }
 
-    void OpenDoor()
+    public void OpenDoor()
     {
         doorCollider.enabled = false;
     }
 
-    void CloseDoor()
+    public void CloseDoor()
     {
         doorCollider.enabled = true;
     }
@@ -34,12 +36,15 @@ public class DoorInteraction : MonoBehaviour
             //print("hit");
             if (!open)
             {
-                OpenDoor();
+                doorAnimation.SetBool("DoorOpened", true);
+                doorAnimation.SetBool("DoorClosed", false);
                 open = true;
+                
             }
             else
             {
-                CloseDoor();
+                doorAnimation.SetBool("DoorOpened", false);
+                doorAnimation.SetBool("DoorClosed", true);
                 open = false;
             }
         }
