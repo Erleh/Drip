@@ -16,20 +16,14 @@ public class GameOverFade : MonoBehaviour {
 
     public void FadeToDeathScreen()
     {
-        StartCoroutine(Delay(delayDuration));
         foreach (Button b in deathScreenUIButtons)
-            StartCoroutine(FadeInImg(b.image, fadeDuration));
-        StartCoroutine(FadeInImg(deathScreen, fadeDuration));
+            StartCoroutine(FadeInAfterDelay(b.image, fadeDuration, delayDuration));
+        StartCoroutine(FadeInAfterDelay(deathScreen, fadeDuration, delayDuration));
     }
-    IEnumerator Delay(float duration)
+    IEnumerator FadeInAfterDelay(Image img, float duration, float delay)
     {
-        yield return new WaitForSeconds(duration);
-    }
-    IEnumerator FadeInImg(Image img, float duration)
-    {
-
         img.canvasRenderer.SetAlpha(0.0f);
+        yield return new WaitForSeconds(delay);
         img.CrossFadeAlpha(255f, duration, false);
-        yield return null;
     }
 }

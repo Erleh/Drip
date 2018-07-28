@@ -8,6 +8,14 @@ public class MenuHandler: MonoBehaviour {
     {
         SceneManager.LoadScene(levelToLoad, LoadSceneMode.Single);
     }
+    public void Retry()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
+    }
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("_mainMenu", LoadSceneMode.Single);
+    }
     public void QuitGame()
     {
         Application.Quit();
