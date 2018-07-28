@@ -6,7 +6,7 @@
 				<Attenuation Name="Objects" ID="{0301DFDC-AA02-46BB-A0A4-A58B824AD521}" ShortID="689072585">
 					<PropertyList>
 						<Property Name="ConeOuterAngle" Type="int32" Value="360"/>
-						<Property Name="RadiusMax" Type="Real64" Value="30"/>
+						<Property Name="RadiusMax" Type="Real64" Value="80"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -22,12 +22,12 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>9.075234</XPos>
-											<YPos>-7.36582</YPos>
+											<XPos>39.87461</XPos>
+											<YPos>-5.83704</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>30</XPos>
+											<XPos>80</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -55,12 +55,12 @@
 											<SegmentShape>Exp2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>8.51097</XPos>
+											<XPos>22.69592</XPos>
 											<YPos>24</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>30</XPos>
+											<XPos>80</XPos>
 											<YPos>50</YPos>
 											<Flags>37</Flags>
 										</Point>

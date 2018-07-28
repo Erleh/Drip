@@ -46,6 +46,7 @@
 									</RTPCList>
 								</Property>
 							</PropertyList>
+							<ReferenceList/>
 							<ChildrenList>
 								<Bus Name="Environmental" ID="{9BFD25F4-E473-474D-BA82-7796C62F6630}">
 									<StateInfo>
@@ -134,10 +135,39 @@
 						</Bus>
 						<AuxBus Name="SmallReverb" ID="{C1F46D32-D013-4A1D-BB86-B0DB731334F8}">
 							<ReferenceList>
-								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-									<ObjectRef Name="Room_Medium" ID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
 							</ReferenceList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Room" ID="{0F8A97E5-C97E-41A4-B377-3AB091B46BB0}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Medium" ID="{5FA2B765-D242-4459-8095-F5E9E4C5B291}"/>
+										<State Name="" ID="{D4689008-0965-46E8-9AC1-054E4A7BCE5D}" ShortID="218408429">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Small" ID="{C88CD9D5-162B-4A7E-B73A-83A5800F6A5B}"/>
+										<State Name="" ID="{A42FAAA6-5417-4E2C-96EB-9D4F61ABE079}" ShortID="378530565"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Large" ID="{03CDDA42-F6F8-4C89-89E5-A92C3F84F19B}"/>
+										<State Name="" ID="{58574313-4EE6-4E7F-BD32-BCA06DCDDF37}" ShortID="279034206">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</AuxBus>
 						<AuxBus Name="MediumReverb" ID="{F3A89E4B-50DB-499B-BB58-BC71D84713BD}">
 							<ReferenceList>
@@ -145,6 +175,35 @@
 									<ObjectRef Name="Room_Medium" ID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
 							</ReferenceList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Room" ID="{0F8A97E5-C97E-41A4-B377-3AB091B46BB0}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Medium" ID="{5FA2B765-D242-4459-8095-F5E9E4C5B291}"/>
+										<State Name="" ID="{ECDB5C69-494E-4396-AA08-C7D854578408}" ShortID="1061629564"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Small" ID="{C88CD9D5-162B-4A7E-B73A-83A5800F6A5B}"/>
+										<State Name="" ID="{C07179D3-9511-4847-AD85-BE8E120C7135}" ShortID="241088966">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Large" ID="{03CDDA42-F6F8-4C89-89E5-A92C3F84F19B}"/>
+										<State Name="" ID="{DBE0B6FE-C1CD-4D11-9018-8EC74C5C7FAD}" ShortID="487758178">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</AuxBus>
 						<AuxBus Name="LargeReverb" ID="{8DB2B997-DA4B-4217-9906-D2A35AE7E311}">
 							<ReferenceList>
@@ -152,6 +211,35 @@
 									<ObjectRef Name="Room_Large" ID="{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
 							</ReferenceList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Room" ID="{0F8A97E5-C97E-41A4-B377-3AB091B46BB0}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Medium" ID="{5FA2B765-D242-4459-8095-F5E9E4C5B291}"/>
+										<State Name="" ID="{E492CE50-34F2-4E39-9784-08149CCFE1FA}" ShortID="547452239">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Small" ID="{C88CD9D5-162B-4A7E-B73A-83A5800F6A5B}"/>
+										<State Name="" ID="{446D5C4D-0E80-436B-BAFB-5E8943ACF2CC}" ShortID="954344711">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Large" ID="{03CDDA42-F6F8-4C89-89E5-A92C3F84F19B}"/>
+										<State Name="" ID="{7F2AE456-273F-4FDE-98AF-D766F71AABA5}" ShortID="560022023"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</AuxBus>
 					</ChildrenList>
 				</Bus>

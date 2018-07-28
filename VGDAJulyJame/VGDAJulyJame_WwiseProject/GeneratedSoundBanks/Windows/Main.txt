@@ -14,16 +14,21 @@ Event	ID	Name			Wwise Object Path	Notes
 
 State Group	ID	Name			Wwise Object Path	Notes
 	2649703675	Moving			\Default Work Unit\Moving	
+	3767823045	SprinklerStatus			\Default Work Unit\SprinklerStatus	
 
 State	ID	Name	State Group			Notes
 	0	None	Moving			
 	340271938	Walking	Moving			
 	1874288895	Idle	Moving			
 	1934885551	Pushing	Moving			
+	0	None	SprinklerStatus			
+	930712164	Off	SprinklerStatus			
+	1651971902	On	SprinklerStatus			
 
 Custom State	ID	Name	State Group	Owner		Notes
 	126674139	Idle	Moving	\Actor-Mixer Hierarchy\Default Work Unit\FootstepsSFX\RandomSteps		
 	676021631	Pushing	Moving	\Actor-Mixer Hierarchy\Default Work Unit\FootstepsSFX\RandomSteps		
+	1007348841	Off	SprinklerStatus	\Actor-Mixer Hierarchy\Default Work Unit\Sprinkler		
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	70994745	Valve4	Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\.cache\Windows\SFX\Valve_Folder\Valve4_F7D0E330.wem		\Actor-Mixer Hierarchy\Default Work Unit\Valve SFX\Valve_Hold\Valve4		8310

@@ -18,6 +18,7 @@ public class SprinklerInteraction : MonoBehaviour
     private void Awake()
     {
         SprinklerCD = null;
+        AkSoundEngine.SetState("SprinklerStatus", "Off");
     }
 
     void GetInteraction()
@@ -30,6 +31,8 @@ public class SprinklerInteraction : MonoBehaviour
             sprinklerAnim.SetBool("SprinklerActive", true);
             SprinklerCD = StartCoroutine(SprinklerCooldown());
             SlowField.SetActive(true);
+            AkSoundEngine.PostEvent("Sprinkler_Start", gameObject);
+            Debug.Log("Yay!");
         }
     }
 
@@ -50,6 +53,7 @@ public class SprinklerInteraction : MonoBehaviour
         sprinklerAnim.SetBool("SprinklerActive", false);
         SlowField.SetActive(false);
         SprinklerCD = null;
+        AkSoundEngine.SetState("SprinklerStatus", "Off");
     }
 
     bool IsActive()
