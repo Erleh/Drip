@@ -23,7 +23,6 @@
 						<ObjectRef Name="Click_Setting" ID="{9A80467A-93EF-4975-94D4-AFCDFBA21A62}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Release_Adjustment" ID="{D74B9D3F-0590-49C4-88CA-59C4A50805D8}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Player_MoveCheck" ID="{710465D1-92EE-4ADB-999C-D259F7FD29A3}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Player_Walking" ID="{75ACE853-5528-4CCD-A20A-F7DC2147561D}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Sprinkler_Start" ID="{6A9FC798-EB9E-4E2F-8777-C18D68133C33}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

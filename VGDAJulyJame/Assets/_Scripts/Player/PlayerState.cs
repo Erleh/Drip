@@ -31,13 +31,15 @@ public class PlayerState : MonoBehaviour
     {
         _isAlive = false;
         GetComponent<Animator>().SetTrigger("die");
-        AkSoundEngine.PostEvent("Player_Death");
+        AkSoundEngine.PostEvent("Player_Death", gameObject);
+        AkSoundEngine.SetState("Moving", "Idle");
     }
     private void Update()
     {
         if (IsAlive()){AkSoundEngine.SetState("Moving","Idle");}
-        if (Moving()) { AkSoundEngine.SetState("Moving", "Walking");}
-        if (Pushing()) { AkSoundEngine.SetState("Moving", "Pushing");}
+        if (Moving()) {AkSoundEngine.SetState("Moving", "Walking");}
+        if (Pushing()) {AkSoundEngine.SetState("Moving", "Pushing");}
+
 
     }
 }

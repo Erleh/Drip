@@ -72,7 +72,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="RandomFootsteps" ID="{2696B9EC-B1C8-441F-9D81-BD3841514423}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+											<ObjectRef Name="RandomSteps" ID="{777D3164-93EA-48A8-8722-FB743B5C3716}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

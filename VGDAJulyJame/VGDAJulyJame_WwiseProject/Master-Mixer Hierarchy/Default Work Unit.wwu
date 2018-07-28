@@ -73,6 +73,27 @@
 								</Bus>
 								<Bus Name="Drip" ID="{C36D9A23-337E-4840-AE58-0B7617E1F35E}"/>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="PlayerLife" ID="{8D9256AF-E785-4D56-8577-4B969335BD36}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Dead" ID="{F96DBACD-053A-439E-AF86-35FC806B2AF3}"/>
+										<State Name="" ID="{E73CB213-73D2-48E5-A597-B5031047876F}" ShortID="326955034">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Alive" ID="{D1086BC6-23A2-4797-8E01-1E35DAD80DFF}"/>
+										<State Name="" ID="{97E1F6D0-5E9A-4680-A1D3-D0FA79D51CB8}" ShortID="976230306"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</Bus>
 						<Bus Name="Music" ID="{BCC29BB4-674E-44E7-B638-0982105F268D}">
 							<PropertyList>
