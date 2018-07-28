@@ -1,18 +1,33 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	444815956	PlayerLife			\Default Work Unit\PlayerLife	
+	2077253480	Room			\Default Work Unit\Room	
 	2649703675	Moving			\Default Work Unit\Moving	
+	3767823045	SprinklerStatus			\Default Work Unit\SprinklerStatus	
 
 State	ID	Name	State Group			Notes
 	0	None	PlayerLife			
 	655265632	Alive	PlayerLife			
 	2044049779	Dead	PlayerLife			
+	0	None	Room			
+	1846755610	Small	Room			
+	2849147824	Medium	Room			
+	4284352190	Large	Room			
 	0	None	Moving			
 	340271938	Walking	Moving			
 	1874288895	Idle	Moving			
 	1934885551	Pushing	Moving			
+	0	None	SprinklerStatus			
+	930712164	Off	SprinklerStatus			
+	1651971902	On	SprinklerStatus			
 
 Custom State	ID	Name	State Group	Owner		Notes
+	218408429	Medium	Room	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SmallReverb		
+	241088966	Small	Room	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MediumReverb		
+	279034206	Large	Room	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SmallReverb		
 	326955034	Dead	PlayerLife	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX		
+	487758178	Large	Room	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\MediumReverb		
+	547452239	Medium	Room	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeReverb		
+	954344711	Small	Room	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\LargeReverb		
 	993770931	Dead	PlayerLife	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Environmental		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
@@ -34,6 +49,7 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 Effect plug-ins	ID	Name	Type				Notes
 	602546716	Room_Large	Wwise RoomVerb			
 	1990128658	Room_Medium	Wwise RoomVerb			
+	2995775460	Room_Small	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

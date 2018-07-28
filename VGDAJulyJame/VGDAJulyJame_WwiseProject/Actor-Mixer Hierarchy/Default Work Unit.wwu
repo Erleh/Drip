@@ -946,6 +946,28 @@
 						</Panner>
 						<Position Name="" ID="{57ACED00-E1B7-4F96-B408-BACE63290C68}"/>
 					</PositioningInfo>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="SprinklerStatus" ID="{E21CCDF4-6B1D-4D29-8BE4-7F9FE07EE1A1}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="On" ID="{2D98BB27-F22E-4519-8910-235CB3BB566C}"/>
+								<State Name="" ID="{3606524D-FB62-4CDA-8D63-7021C5227954}" ShortID="850010032"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Off" ID="{A6B83CFB-8D84-4FB0-8198-071A092137B0}"/>
+								<State Name="" ID="{831D3E8C-D224-485E-B986-08E817EBB2C2}" ShortID="1007348841">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16" Value="50"/>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+								</State>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<ActiveSourceList>
 						<ActiveSource Name="Sprinkler" ID="{5BF93944-E122-47C1-BDB4-DAE5C4B45F78}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -1129,6 +1151,171 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="RoomTones" ID="{BA73E91B-9696-4E3B-AFFC-5D9E7A815305}" ShortID="53292283">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Ambiance1_Large" ID="{378C67EA-A9A4-42D3-B177-2ABD52B90499}" ShortID="346593462">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambiance1" ID="{A01F134B-906F-4895-877C-BBCF15206DB8}" ShortID="716732541">
+									<Language>SFX</Language>
+									<AudioFile>Ambiance1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Room" ID="{0F8A97E5-C97E-41A4-B377-3AB091B46BB0}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Medium" ID="{5FA2B765-D242-4459-8095-F5E9E4C5B291}"/>
+										<State Name="" ID="{4B8AD562-1BC5-4F2D-A7AB-C59217EDB44D}" ShortID="377021291">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Small" ID="{C88CD9D5-162B-4A7E-B73A-83A5800F6A5B}"/>
+										<State Name="" ID="{1A1E8D44-989C-4D40-BC6A-BD01921E8450}" ShortID="379846215">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Large" ID="{03CDDA42-F6F8-4C89-89E5-A92C3F84F19B}"/>
+										<State Name="" ID="{50F3F3EE-F8DA-4EE9-A086-3DFC99D5ADD5}" ShortID="206531178"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambiance1" ID="{A01F134B-906F-4895-877C-BBCF15206DB8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ambiance2_Small" ID="{1FB62D70-8796-437D-9081-118B83BE8110}" ShortID="564474837">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambiance2" ID="{960DDC31-CDBC-455C-A802-614024A8C512}" ShortID="831314962">
+									<Language>SFX</Language>
+									<AudioFile>Ambiance2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Room" ID="{0F8A97E5-C97E-41A4-B377-3AB091B46BB0}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Medium" ID="{5FA2B765-D242-4459-8095-F5E9E4C5B291}"/>
+										<State Name="" ID="{74208BEA-9D60-48A6-9E53-62820D1A38F3}" ShortID="586030561">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Small" ID="{C88CD9D5-162B-4A7E-B73A-83A5800F6A5B}"/>
+										<State Name="" ID="{28B3AFDF-2213-463B-8E6F-96CFB0E1CBDF}" ShortID="728762788"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Large" ID="{03CDDA42-F6F8-4C89-89E5-A92C3F84F19B}"/>
+										<State Name="" ID="{AE989E2C-28AD-443E-91DA-620EAEDEADEE}" ShortID="825226942">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambiance2" ID="{960DDC31-CDBC-455C-A802-614024A8C512}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ambiance3_Medium" ID="{600EF954-86F5-4D21-B37C-3B71462DE81B}" ShortID="202206792">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambiance3" ID="{569F6728-5F51-4365-9485-BFA422819A3A}" ShortID="851460475">
+									<Language>SFX</Language>
+									<AudioFile>Ambiance3.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Room" ID="{0F8A97E5-C97E-41A4-B377-3AB091B46BB0}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Medium" ID="{5FA2B765-D242-4459-8095-F5E9E4C5B291}"/>
+										<State Name="" ID="{CCCCFF6E-DE4F-402D-9C6E-4F369B7E1459}" ShortID="48906518"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Small" ID="{C88CD9D5-162B-4A7E-B73A-83A5800F6A5B}"/>
+										<State Name="" ID="{6B65F10D-0DFC-402C-90E8-299113F16AC6}" ShortID="568068121">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Large" ID="{03CDDA42-F6F8-4C89-89E5-A92C3F84F19B}"/>
+										<State Name="" ID="{98E0104C-ED87-401F-A3C1-1EB19492F64B}" ShortID="189954727">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambiance3" ID="{569F6728-5F51-4365-9485-BFA422819A3A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

@@ -31,7 +31,7 @@ public class PlayerState : MonoBehaviour
     {
         _isAlive = false;
         GetComponent<Animator>().SetTrigger("die");
-        AkSoundEngine.PostEvent("Player_Death", gameObject);
+        // AkSoundEngine.PostEvent("Player_Death", gameObject);
         AkSoundEngine.SetState("Moving", "Idle");
     }
     private void Update()
