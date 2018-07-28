@@ -94,7 +94,7 @@ public class Pathfind : MonoBehaviour
     }
 
     // find the distance between 2 nodes
-    int GetDistance(Node x, Node y)
+    public int GetDistance(Node x, Node y)
     {
         int xDistance = Mathf.Abs(y.gridX - x.gridX);
         int yDistance = Mathf.Abs(y.gridY - x.gridY);

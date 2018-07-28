@@ -23,6 +23,8 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
     MapGrid mapGrid;
     [SerializeField]
     ParticleSystem waterTrail;
+    
+    private float distFromPlayer = 0;
 
     // reps the index of the position on the path this object is on
     int posIndex;
@@ -41,7 +43,8 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
     {
         if (col.tag.CompareTo("Player") == 0 && !hunting)
         {
-            if (Vector2.Distance(transform.position, col.transform.position) > 1)
+            distFromPlayer = Vector2.Distance(transform.position, col.transform.position);
+            if (distFromPlayer > 1)
             {
                 hunting = true;
                 target = col.transform;
@@ -54,13 +57,19 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
     {
         if (col.tag.CompareTo("Player") == 0 && !hunting)
         {
-            if (Vector2.Distance(transform.position, col.transform.position) > 1)
+            distFromPlayer = Vector2.Distance(transform.position, col.transform.position);
+            if (distFromPlayer > 1)
             {
                 hunting = true;
                 target = col.transform;
                 RequestPath.CreatePathRequest(enemyTrans.position, target.position, OnPathFound);
             }
         }
+    }
+
+    public float GetDistanceFromPlayer()
+    {
+        return distFromPlayer;
     }
 
     public IEnumerator FollowPath()
