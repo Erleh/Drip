@@ -3,6 +3,8 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{5DB43D5C-23E8-4AC4-A509-20848400CE7D}">
 			<PropertyList>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="Y:\Desktop\ALL Final SFX for Drip"/>
+				<Property Name="Event Action List\{343D3B3F-F0C0-4CC1-83EE-1114C1777328}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{51D7A62F-03E8-434C-96F5-A8E780A565F9}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{5FCFEE6A-569A-4905-BBEC-C8C6DFDD7975}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{689BF115-7DA2-4381-860E-927183B93A17}\x64_Expand States" Type="string" Value=""/>

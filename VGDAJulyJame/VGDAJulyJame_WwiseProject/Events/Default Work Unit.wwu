@@ -21,11 +21,9 @@
 					<ChildrenList>
 						<Event Name="Sprinkler_Start" ID="{6A9FC798-EB9E-4E2F-8777-C18D68133C33}">
 							<ChildrenList>
-								<Action Name="" ID="{FFC88BFF-20EB-483C-AA01-CD878F46E1DE}" ShortID="292848272">
+								<Action Name="" ID="{8999D7C7-8243-4E18-BF6B-68D2D67B1A02}" ShortID="594788757">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.3"/>
-										<Property Name="Probability" Type="Real64" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -43,14 +41,36 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{FFC88BFF-20EB-483C-AA01-CD878F46E1DE}" ShortID="292848272">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.3"/>
+										<Property Name="Probability" Type="Real64" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="On" ID="{2D98BB27-F22E-4519-8910-235CB3BB566C}" WorkUnitID="{304B9BE2-9D9E-4E24-8CF6-14A758EE62B4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Sprinkler_Finish" ID="{51D7A62F-03E8-434C-96F5-A8E780A565F9}">
 							<ChildrenList>
 								<Action Name="" ID="{B9098820-B711-42D8-80B8-81D267B058FB}" ShortID="96118630">
 									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="ActionType" Type="int16" Value="22"/>
 										<Property Name="FadeTime" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Off" ID="{A6B83CFB-8D84-4FB0-8198-071A092137B0}" WorkUnitID="{304B9BE2-9D9E-4E24-8CF6-14A758EE62B4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{118DCA22-7749-4397-9028-4D0175A31C92}" ShortID="251348547">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -98,6 +118,16 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Dead" ID="{F96DBACD-053A-439E-AF86-35FC806B2AF3}" WorkUnitID="{304B9BE2-9D9E-4E24-8CF6-14A758EE62B4}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C75074C5-D8BA-4E8B-A4E4-2943166E2E84}" ShortID="617378676">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Small" ID="{C88CD9D5-162B-4A7E-B73A-83A5800F6A5B}" WorkUnitID="{304B9BE2-9D9E-4E24-8CF6-14A758EE62B4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -244,6 +274,16 @@
 									<ObjectRef Name="Water Splashing" ID="{46DE214A-A72A-4E02-A01D-E2C2E3E92028}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
 								</Reference>
 							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Start_Reverb" ID="{343D3B3F-F0C0-4CC1-83EE-1114C1777328}">
+					<ChildrenList>
+						<Action Name="" ID="{A42E77FA-A04F-4F7E-A0F8-DB31E0AA04EB}" ShortID="632065703">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList/>
 						</Action>
 					</ChildrenList>
 				</Event>
