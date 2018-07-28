@@ -12451,7 +12451,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+      objectReference: {fileID: 0}
     - target: {fileID: 199642078430707426, guid: 6c10d5df14a2a2444bab768c019a68e1,
         type: 2}
       propertyPath: m_Enabled
@@ -12497,6 +12497,50 @@ Prefab:
       propertyPath: UVModule.mode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 199642078430707426, guid: 6c10d5df14a2a2444bab768c019a68e1,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f25072410bd588344ba8c7978cfa353c, type: 2}
+    - target: {fileID: 198251630556625102, guid: 6c10d5df14a2a2444bab768c019a68e1,
+        type: 2}
+      propertyPath: UVModule.frameOverTime.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 198251630556625102, guid: 6c10d5df14a2a2444bab768c019a68e1,
+        type: 2}
+      propertyPath: UVModule.frameOverTime.minScalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198251630556625102, guid: 6c10d5df14a2a2444bab768c019a68e1,
+        type: 2}
+      propertyPath: UVModule.animationType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198251630556625102, guid: 6c10d5df14a2a2444bab768c019a68e1,
+        type: 2}
+      propertyPath: UVModule.sprites.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4fce0d3196f0bad42bfe1184518b4d43,
+        type: 3}
+    - target: {fileID: 198251630556625102, guid: 6c10d5df14a2a2444bab768c019a68e1,
+        type: 2}
+      propertyPath: UVModule.sprites.Array.data[1].sprite
+      value: 
+      objectReference: {fileID: 21300002, guid: 4fce0d3196f0bad42bfe1184518b4d43,
+        type: 3}
+    - target: {fileID: 198251630556625102, guid: 6c10d5df14a2a2444bab768c019a68e1,
+        type: 2}
+      propertyPath: UVModule.sprites.Array.data[2].sprite
+      value: 
+      objectReference: {fileID: 21300004, guid: 4fce0d3196f0bad42bfe1184518b4d43,
+        type: 3}
+    - target: {fileID: 198251630556625102, guid: 6c10d5df14a2a2444bab768c019a68e1,
+        type: 2}
+      propertyPath: UVModule.sprites.Array.data[3].sprite
+      value: 
+      objectReference: {fileID: 21300006, guid: 4fce0d3196f0bad42bfe1184518b4d43,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6c10d5df14a2a2444bab768c019a68e1, type: 2}
   m_IsPrefabParent: 0
