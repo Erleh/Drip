@@ -1092,7 +1092,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &121894527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16004,8 +16004,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1086492782}
-  - component: {fileID: 1086492781}
   - component: {fileID: 1086492779}
+  - component: {fileID: 1086492781}
   - component: {fileID: 1086492778}
   m_Layer: 0
   m_Name: SoundBankLoader
@@ -16022,23 +16022,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1086492777}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc4024b9ac8bc4734a5194fe50d81070, type: 3}
+  m_Script: {fileID: 11500000, guid: d0127953f1ce24c4f9f5e696b603c165, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   triggerList: f7e1664c
   useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  eventID: 540993415
-  m_callbackData: {fileID: 0}
-  playingId: 0
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  valueGuid: 9b2727b53be3264a9d7899bc04690b12
-  multiPositionArray: []
-  MultiPositionType: 1
-  multiPositionTypeLabel: 0
+  bankName: Music
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 
+  valueGuid: b84f77f0acb16d44b0aecdb7362cabac
 --- !u!114 &1086492779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24588,56 +24582,6 @@ MonoBehaviour:
   multiPositionArray: []
   MultiPositionType: 1
   multiPositionTypeLabel: 0
---- !u!114 &2118557149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2118557139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc4024b9ac8bc4734a5194fe50d81070, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  eventID: -1812459602
-  m_callbackData: {fileID: 0}
-  playingId: 0
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  valueGuid: d1650471ee92db4a999cd259f7fd29a3
-  multiPositionArray: []
-  MultiPositionType: 1
-  multiPositionTypeLabel: 0
---- !u!114 &2118557150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2118557139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc4024b9ac8bc4734a5194fe50d81070, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  eventID: -1986924794
-  m_callbackData: {fileID: 0}
-  playingId: 0
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  valueGuid: 53e8ac752855cd4ca20af7dc2147561d
-  multiPositionArray: []
-  MultiPositionType: 1
-  multiPositionTypeLabel: 0
 --- !u!114 &2118557151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24659,31 +24603,6 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
---- !u!114 &2118557152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2118557139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc4024b9ac8bc4734a5194fe50d81070, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: d1bbb3b5
-  useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  eventID: -1211879651
-  m_callbackData: {fileID: 0}
-  playingId: 0
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  valueGuid: db4f7ca257146b488ab2802c513a97e0
-  multiPositionArray: []
-  MultiPositionType: 1
-  multiPositionTypeLabel: 0
 --- !u!1001 &2118912744
 Prefab:
   m_ObjectHideFlags: 0
