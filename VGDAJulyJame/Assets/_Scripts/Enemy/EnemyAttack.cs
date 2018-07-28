@@ -13,7 +13,7 @@ public class EnemyAttack : MonoBehaviour
         {
             //print("Attacked");
             attacked = true;
-            player.GetComponent<PlayerState>().OnAttacked();
+            player.GetComponent<PlayerState>().Die();
         }
     }
 

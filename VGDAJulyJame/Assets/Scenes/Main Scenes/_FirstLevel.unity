@@ -9027,6 +9027,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114431636994655086, guid: 2459eb49ffa790b4c8233e069f8a7404,
+        type: 2}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4233151579099862, guid: 2459eb49ffa790b4c8233e069f8a7404, type: 2}
       propertyPath: m_LocalPosition.x
       value: -12.12
@@ -9059,9 +9064,40 @@ Prefab:
       propertyPath: m_RootOrder
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 114431636994655086, guid: 2459eb49ffa790b4c8233e069f8a7404,
+        type: 2}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114431636994655086, guid: 2459eb49ffa790b4c8233e069f8a7404,
+        type: 2}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114431636994655086, guid: 2459eb49ffa790b4c8233e069f8a7404,
+        type: 2}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 260216050}
+    - target: {fileID: 114431636994655086, guid: 2459eb49ffa790b4c8233e069f8a7404,
+        type: 2}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Die
+      objectReference: {fileID: 0}
+    - target: {fileID: 114431636994655086, guid: 2459eb49ffa790b4c8233e069f8a7404,
+        type: 2}
+      propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2459eb49ffa790b4c8233e069f8a7404, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &260216050 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114431636994655086, guid: 2459eb49ffa790b4c8233e069f8a7404,
+    type: 2}
+  m_PrefabInternal: {fileID: 260216049}
+  m_Script: {fileID: 11500000, guid: ecba62347eadbc24ca2f738eb5fb6e8b, type: 3}
 --- !u!4 &262948649 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4318488632426346, guid: 40fa6e5857bcc4a4eb090ee58fe2617d,
@@ -10025,8 +10061,11 @@ Transform:
   m_Children:
   - {fileID: 1531420232}
   - {fileID: 1204354129}
+  - {fileID: 2010970331}
   m_Father: {fileID: 0}
+
   m_RootOrder: 31
+
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &396076582
 GameObject:
@@ -10059,7 +10098,9 @@ Transform:
   - {fileID: 1865390267}
   - {fileID: 839479978}
   m_Father: {fileID: 0}
+
   m_RootOrder: 30
+
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &401228190 stripped
 Transform:
@@ -11197,7 +11238,9 @@ Transform:
   m_Children:
   - {fileID: 1269164232}
   m_Father: {fileID: 0}
+
   m_RootOrder: 26
+
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &572159706
 GameObject:
@@ -13778,7 +13821,9 @@ Transform:
   - {fileID: 1732739203}
   - {fileID: 2133041681}
   m_Father: {fileID: 0}
+
   m_RootOrder: 33
+
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &805794088 stripped
 Transform:
@@ -16417,7 +16462,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+
   m_RootOrder: 25
+
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1089928198 stripped
 Transform:
@@ -18063,7 +18110,9 @@ Transform:
   - {fileID: 2015352484}
   - {fileID: 842942181}
   m_Father: {fileID: 0}
+
   m_RootOrder: 28
+
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1282576498
 GameObject:
@@ -22564,7 +22613,9 @@ Transform:
   - {fileID: 1743765984}
   - {fileID: 726276182}
   m_Father: {fileID: 0}
+
   m_RootOrder: 29
+
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1859609703
 GameObject:
@@ -23938,8 +23989,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+
 --- !u!1 &2015352483
 GameObject:
   m_ObjectHideFlags: 0

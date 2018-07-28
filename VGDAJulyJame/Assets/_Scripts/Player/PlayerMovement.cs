@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float idleLimit;
 
-    private bool idle, setRandomIdle, pfu, pfd, pfl, pfr;
+    private bool idle, setRandomIdle, pfu, pfd;
 
     public enum Direction{  Up, Down, Left, Right   }
     [SerializeField]
@@ -163,7 +163,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Pushable"))
         {
-            pfl = pfr = pfu = pfd = false;
+            pfu = pfd = false;
             pushing = false;
         }
     }

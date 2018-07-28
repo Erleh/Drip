@@ -1,11 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 public class PlayerState : MonoBehaviour
 {
-    PlayerMovement pMovement;
+    [SerializeField]
+    private UnityEvent onDeath;
+
+
+    private PlayerMovement pMovement;
     bool _isAlive;
+
+    public delegate void onDeathEvent();
+    public event onDeathEvent Died;
 
     void Awake()
     {
@@ -16,11 +23,12 @@ public class PlayerState : MonoBehaviour
     public bool IsAlive(){  return _isAlive;                }
     public bool Moving(){   return pMovement.GetMoving();   }
     public bool Pushing(){  return pMovement.GetPushing();  }
-    public void OnAttacked()
+    public void Die()
     {
         _isAlive = false;
         GetComponent<Animator>().SetTrigger("die");
         AkSoundEngine.PostEvent("Player_Death");
+        Died();
     }
 
     private void Update()
