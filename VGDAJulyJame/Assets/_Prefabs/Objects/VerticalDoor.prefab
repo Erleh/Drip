@@ -9,69 +9,21 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1362625235386722}
+  m_RootGameObject: {fileID: 1822268709379950}
   m_IsPrefabParent: 1
---- !u!1 &1362625235386722
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4550715502018526}
-  m_Layer: 0
-  m_Name: VerticalDoor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1569712873060860
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4238578604870224}
-  - component: {fileID: 212688206648395434}
-  - component: {fileID: 114878226958452610}
-  - component: {fileID: 61282011723475558}
-  - component: {fileID: 114536334974467338}
-  m_Layer: 0
-  m_Name: VerticalClosedDoor_Still
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1579361119028200
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4020563839456022}
-  - component: {fileID: 198288615860260202}
-  - component: {fileID: 199015070843600860}
-  m_Layer: 0
-  m_Name: BreakSplinters ParticleSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1958289144911266
+--- !u!1 &1456929734770976
 GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4028673319769266}
-  - component: {fileID: 61784099134537992}
-  - component: {fileID: 114470546042769552}
+  - component: {fileID: 4173759374822224}
+  - component: {fileID: 61230136753772754}
+  - component: {fileID: 114517158467449254}
+  - component: {fileID: 212102055969347196}
+  - component: {fileID: 95915268138726506}
+  - component: {fileID: 114876038939383568}
   m_Layer: 0
   m_Name: InteractionZone
   m_TagString: Untagged
@@ -79,77 +31,126 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4020563839456022
+--- !u!1 &1551115728219016
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4308807769164628}
+  - component: {fileID: 61304797929396746}
+  - component: {fileID: 114499338944526348}
+  m_Layer: 0
+  m_Name: DoorAsset
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1596093653939880
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4614164577958746}
+  - component: {fileID: 198548808888685274}
+  - component: {fileID: 199004831524560080}
+  m_Layer: 0
+  m_Name: BreakSplinters ParticleSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1822268709379950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4263152643115438}
+  m_Layer: 0
+  m_Name: VerticalDoor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4173759374822224
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1579361119028200}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.66343623, y: 1, z: 0.99678636}
-  m_Children: []
-  m_Father: {fileID: 4550715502018526}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!4 &4028673319769266
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1958289144911266}
+  m_GameObject: {fileID: 1456929734770976}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4238578604870224}
+  m_Father: {fileID: 4308807769164628}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4238578604870224
+--- !u!4 &4263152643115438
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1569712873060860}
+  m_GameObject: {fileID: 1822268709379950}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.24, y: -7.03, z: -3.300015}
+  m_LocalScale: {x: 1.5073038, y: 1.003225, z: 1}
+  m_Children:
+  - {fileID: 4308807769164628}
+  - {fileID: 4614164577958746}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4308807769164628
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1551115728219016}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4028673319769266}
-  m_Father: {fileID: 4550715502018526}
+  - {fileID: 4173759374822224}
+  m_Father: {fileID: 4263152643115438}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4550715502018526
+--- !u!4 &4614164577958746
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1362625235386722}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.28, y: 0.6702724, z: -0.12336454}
-  m_LocalScale: {x: 1.5073038, y: 1.003225, z: 1}
-  m_Children:
-  - {fileID: 4238578604870224}
-  - {fileID: 4020563839456022}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61282011723475558
+  m_GameObject: {fileID: 1596093653939880}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.66343623, y: 1, z: 0.99678636}
+  m_Children: []
+  m_Father: {fileID: 4263152643115438}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!61 &61230136753772754
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1569712873060860}
+  m_GameObject: {fileID: 1456929734770976}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0010814816, y: 0.18175608}
+  m_Offset: {x: 0.05812937, y: -0.444783}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.39344653, y: 0.12245399}
+    pivot: {x: 0, y: 0.4}
     oldSize: {x: 0.1725, y: 2.22}
     newSize: {x: 0.69, y: 8.88}
     adaptiveTilingThreshold: 0.5
@@ -157,77 +158,96 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.35853663, y: 0.86302495}
+  m_Size: {x: 1.0696765, y: 0.83713454}
   m_EdgeRadius: 0
---- !u!61 &61784099134537992
+--- !u!61 &61304797929396746
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1958289144911266}
+  m_GameObject: {fileID: 1551115728219016}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.05069554, y: 0.18694079}
+  m_Offset: {x: 0.058583632, y: -0.44253594}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    pivot: {x: 0, y: 0.4}
+    oldSize: {x: 0.1725, y: 2.22}
+    newSize: {x: 0.69, y: 8.88}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2477539, y: 0.88172626}
+  m_Size: {x: 0.48907366, y: 0.8332964}
   m_EdgeRadius: 0
---- !u!114 &114470546042769552
-MonoBehaviour:
+--- !u!95 &95915268138726506
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1958289144911266}
+  m_GameObject: {fileID: 1456929734770976}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e63172f1c6c57fb4d8f1c17aa8593e49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  doorCollider: {fileID: 61282011723475558}
---- !u!114 &114536334974467338
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: abc24816ea71ac142a288f60ecfb7bbd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114499338944526348
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1569712873060860}
+  m_GameObject: {fileID: 1551115728219016}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7390164fb692a744b31be30898e65cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorSplinters: {fileID: 198288615860260202}
-  door: {fileID: 1569712873060860}
+  doorSplinters: {fileID: 198548808888685274}
+  door: {fileID: 1551115728219016}
   maxDurability: 100
   durabilityLoss: 0.5
---- !u!114 &114878226958452610
+--- !u!114 &114517158467449254
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1569712873060860}
+  m_GameObject: {fileID: 1456929734770976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e63172f1c6c57fb4d8f1c17aa8593e49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorCollider: {fileID: 61304797929396746}
+  doorAnimation: {fileID: 95915268138726506}
+--- !u!114 &114876038939383568
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456929734770976}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68924946385f269459ca806ee2d36a56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!198 &198288615860260202
+--- !u!198 &198548808888685274
 ParticleSystem:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1579361119028200}
+  m_GameObject: {fileID: 1596093653939880}
   serializedVersion: 5
   lengthInSec: 5
   simulationSpeed: 1
@@ -4812,13 +4832,13 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!199 &199015070843600860
+--- !u!199 &199004831524560080
 ParticleSystemRenderer:
   serializedVersion: 5
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1579361119028200}
+  m_GameObject: {fileID: 1596093653939880}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -4868,12 +4888,12 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!212 &212688206648395434
+--- !u!212 &212102055969347196
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1569712873060860}
+  m_GameObject: {fileID: 1456929734770976}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
