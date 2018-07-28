@@ -13,9 +13,10 @@ public class GameOverFade : MonoBehaviour {
     private float fadeDuration;
     [SerializeField]
     private float delayDuration;
+
     public void FadeToDeathScreen()
     {
-        StartCoroutine(Delay(fadeDuration));
+        StartCoroutine(Delay(delayDuration));
         foreach (Button b in deathScreenUIButtons)
             StartCoroutine(FadeInImg(b.image, fadeDuration));
         StartCoroutine(FadeInImg(deathScreen, fadeDuration));
@@ -26,7 +27,9 @@ public class GameOverFade : MonoBehaviour {
     }
     IEnumerator FadeInImg(Image img, float duration)
     {
-        img.CrossFadeAlpha(1, duration, true);
+
+        img.canvasRenderer.SetAlpha(0.0f);
+        img.CrossFadeAlpha(255f, duration, false);
         yield return null;
     }
 }

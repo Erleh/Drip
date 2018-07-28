@@ -25,22 +25,19 @@ public class PlayerState : MonoBehaviour
     public bool Pushing(){  return pMovement.GetPushing();  }
     public void OnAttacked()
     {
-        Debug.Log("Player Was Attacked.");
         onDeath.Invoke();
-        Debug.Log("Called onDeath functions.");
     }
     public void Die()
     {
         _isAlive = false;
         GetComponent<Animator>().SetTrigger("die");
         //AkSoundEngine.PostEvent("Player_Death");
-        Debug.Log("Triggered player death.");
     }
     private void Update()
     {
-        if (IsAlive()){AkSoundEngine.PostEvent("Player_Idle");}
+        /*if (IsAlive()){AkSoundEngine.PostEvent("Player_Idle");}
         if (Moving()) { AkSoundEngine.PostEvent("Player_Walking"); }
-        if (Pushing()) { AkSoundEngine.PostEvent("Player_Pushing"); }
+        if (Pushing()) { AkSoundEngine.PostEvent("Player_Pushing"); }*/
 
     }
 }
