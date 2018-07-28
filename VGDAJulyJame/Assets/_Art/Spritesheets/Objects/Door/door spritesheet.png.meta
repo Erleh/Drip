@@ -112,12 +112,12 @@ TextureImporter:
       name: door spritesheet_0
       rect:
         serializedVersion: 2
-        x: 483
-        y: 220
-        width: 491
-        height: 620
-      alignment: 6
-      pivot: {x: 0, y: 0}
+        x: 2
+        y: 0
+        width: 972
+        height: 840
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -132,12 +132,12 @@ TextureImporter:
       name: door spritesheet_1
       rect:
         serializedVersion: 2
-        x: 1450
-        y: 160
-        width: 480
-        height: 680
+        x: 974
+        y: 0
+        width: 972
+        height: 840
       alignment: 9
-      pivot: {x: 0.002560685, y: 0.000000044878792}
+      pivot: {x: 0.5, y: 0.27}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,12 +152,12 @@ TextureImporter:
       name: door spritesheet_2
       rect:
         serializedVersion: 2
-        x: 2427
-        y: 2
-        width: 417
-        height: 837
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 1949
+        y: 0
+        width: 972
+        height: 840
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -172,12 +172,12 @@ TextureImporter:
       name: door spritesheet_3
       rect:
         serializedVersion: 2
-        x: 2934
-        y: 128
-        width: 484
-        height: 712
+        x: 2911
+        y: 0
+        width: 972
+        height: 840
       alignment: 9
-      pivot: {x: 0.9923661, y: 0.115900084}
+      pivot: {x: 0.5, y: 0.27}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -192,12 +192,12 @@ TextureImporter:
       name: door spritesheet_4
       rect:
         serializedVersion: 2
-        x: 3898
-        y: 220
-        width: 476
-        height: 620
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 3888
+        y: 0
+        width: 972
+        height: 840
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
