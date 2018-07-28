@@ -43,8 +43,13 @@ public class SlowField : MonoBehaviour {
     public void OnDisable()
     {
         //If the puddle disappears with objects in it, return all objects inside to normal state
-        foreach(Rigidbody2D affected in affectedRigidbodies)
-            affected.drag = 0;
+        foreach (Rigidbody2D affected in affectedRigidbodies)
+        {
+            if (affected != null)
+            {
+                affected.drag = 0;
+            }
+        }
         affectedRigidbodies.Clear();
     }
 }

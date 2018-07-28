@@ -17,7 +17,10 @@ public class WaterFieldInteraction : MonoBehaviour
     {
         foreach(Collider2D col in affected)
         {
-            WaterWalkingManager.CreateWaterResponseRequest(col.gameObject, WaterReaction, false);
+            if (col != null)
+            {
+                WaterWalkingManager.CreateWaterResponseRequest(col.gameObject, WaterReaction, false);
+            }
         }
     }
 
