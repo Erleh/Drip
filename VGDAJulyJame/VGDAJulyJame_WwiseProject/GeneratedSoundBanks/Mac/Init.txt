@@ -9,6 +9,7 @@ State	ID	Name	State Group			Notes
 	0	None	Moving			
 	340271938	Walking	Moving			
 	1874288895	Idle	Moving			
+	1934885551	Pushing	Moving			
 
 Custom State	ID	Name	State Group	Owner		Notes
 	993770931	Dead	PlayerLife	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Environmental		
