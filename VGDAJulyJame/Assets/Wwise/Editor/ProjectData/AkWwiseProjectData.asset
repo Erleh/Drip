@@ -21,15 +21,48 @@ MonoBehaviour:
   autoPopulateEnabled: 1
   AuxBusWwu:
   - Guid: '{F77BEB74-7DE8-4B55-950E-8A6899C309EB}'
-    m_lastTimePart2: -1999244811
-    m_lastTimePsrt1: -2137042048
+    m_lastTimePart2: -1999244276
+    m_lastTimePsrt1: 1530421888
     ParentPhysicalPath: 
     PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
-    List: []
+    List:
+    - Guid: 97b9b28d4bda17429906d2a35ae7e311
+      ID: -610241662
+      Name: LargeReverb
+      Path: Default Work Unit/Master Audio Bus/LargeReverb
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: LargeReverb
+        ObjectType: 1
+    - Guid: 4b9ea8f3db509b49bb58bc71d84713bd
+      ID: 894231404
+      Name: MediumReverb
+      Path: Default Work Unit/Master Audio Bus/MediumReverb
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: MediumReverb
+        ObjectType: 1
+    - Guid: 326df4c113d01d4abb86b0db731334f8
+      ID: 2134960294
+      Name: SmallReverb
+      Path: Default Work Unit/Master Audio Bus/SmallReverb
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: SmallReverb
+        ObjectType: 1
   BankWwu:
   - Guid: '{F3F75FBD-6C18-4F1E-91B6-BAF75923EF9F}'
-    m_lastTimePart2: -1999244683
-    m_lastTimePsrt1: 682111360
+    m_lastTimePart2: -1999244267
+    m_lastTimePsrt1: -1269251072
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks/Default Work Unit.wwu
     List:
@@ -57,18 +90,20 @@ MonoBehaviour:
   defaultPoolSize: 4096
   EventWwu:
   - Guid: '{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}'
-    m_lastTimePart2: -1999244683
-    m_lastTimePsrt1: 62111360
+    m_lastTimePart2: -1999244258
+    m_lastTimePsrt1: -233956736
     ParentPhysicalPath: 
     PhysicalPath: Events/Default Work Unit.wwu
     List:
     - Guid: 4159deed0ab74947a48370d2796c6604
       ID: -1079945940
       Name: Click_Play
-      Path: Default Work Unit/Click_Play
+      Path: Default Work Unit/UI/Click_Play
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
       - ElementName: Click_Play
         ObjectType: 3
       maxAttenuation: 0
@@ -77,10 +112,12 @@ MonoBehaviour:
     - Guid: 7a46809aef93754994d4afcdfba21a62
       ID: 803012562
       Name: Click_Setting
-      Path: Default Work Unit/Click_Setting
+      Path: Default Work Unit/UI/Click_Setting
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
       - ElementName: Click_Setting
         ObjectType: 3
       maxAttenuation: 0
@@ -89,10 +126,12 @@ MonoBehaviour:
     - Guid: f72ecebacae41b48bf69ed44d80857e3
       ID: 455730641
       Name: Hold_Adjuster
-      Path: Default Work Unit/Hold_Adjuster
+      Path: Default Work Unit/UI/Hold_Adjuster
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
       - ElementName: Hold_Adjuster
         ObjectType: 3
       maxAttenuation: 0
@@ -101,10 +140,12 @@ MonoBehaviour:
     - Guid: 090b518146d64749a0fc176508949f29
       ID: -1596740367
       Name: Monster_Drip
-      Path: Default Work Unit/Monster_Drip
+      Path: Default Work Unit/Monster/Monster_Drip
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
+      - ElementName: Monster
+        ObjectType: 4
       - ElementName: Monster_Drip
         ObjectType: 3
       maxAttenuation: 30
@@ -113,11 +154,27 @@ MonoBehaviour:
     - Guid: 50f88cc1b1ec9c4480a7df401d21ea8e
       ID: 1020366504
       Name: MouseOver
-      Path: Default Work Unit/MouseOver
+      Path: Default Work Unit/UI/MouseOver
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
       - ElementName: MouseOver
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: db4f7ca257146b488ab2802c513a97e0
+      ID: -1211879651
+      Name: Player_Death
+      Path: Default Work Unit/Player/Player_Death
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Player_Death
         ObjectType: 3
       maxAttenuation: 0
       maxDuration: 0
@@ -125,11 +182,27 @@ MonoBehaviour:
     - Guid: d1650471ee92db4a999cd259f7fd29a3
       ID: -651566061
       Name: Player_Idle
-      Path: Default Work Unit/Player_Idle
+      Path: Default Work Unit/Player/Player_Idle
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
       - ElementName: Player_Idle
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: c1f0f36d857b6247a44d6ffc0e005c60
+      ID: 550224491
+      Name: Player_Pushing
+      Path: Default Work Unit/Player/Player_Pushing
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Player_Pushing
         ObjectType: 3
       maxAttenuation: 0
       maxDuration: 0
@@ -137,10 +210,12 @@ MonoBehaviour:
     - Guid: 53e8ac752855cd4ca20af7dc2147561d
       ID: -1986924794
       Name: Player_Walking
-      Path: Default Work Unit/Player_Walking
+      Path: Default Work Unit/Player/Player_Walking
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
       - ElementName: Player_Walking
         ObjectType: 3
       maxAttenuation: 30
@@ -149,10 +224,12 @@ MonoBehaviour:
     - Guid: 3f9d4bd79005c44988ca59c4a50805d8
       ID: 36310742
       Name: Release_Adjustment
-      Path: Default Work Unit/Release_Adjustment
+      Path: Default Work Unit/UI/Release_Adjustment
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
       - ElementName: Release_Adjustment
         ObjectType: 3
       maxAttenuation: 0
@@ -161,25 +238,55 @@ MonoBehaviour:
     - Guid: 15f19b68a27d8143860e927183b93a17
       ID: 600834356
       Name: Release_Hold
-      Path: Default Work Unit/Release_Hold
+      Path: Default Work Unit/UI/Release_Hold
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
       - ElementName: Release_Hold
         ObjectType: 3
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - Guid: 98c79f6a9eeb2f4e8777c18d68133c33
-      ID: 745682999
-      Name: Sprinkler
-      Path: Default Work Unit/Sprinkler
+    - Guid: 0ec3a1884b6a2b43be5651167ffe0a79
+      ID: 160038168
+      Name: Splash
+      Path: Default Work Unit/Splash
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Sprinkler
+      - ElementName: Splash
         ObjectType: 3
-      maxAttenuation: 30
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 2fa6d751e8034c4396f5a8e780a565f9
+      ID: -289647277
+      Name: Sprinkler_Finish
+      Path: Default Work Unit/Sprinklers/Sprinkler_Finish
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Sprinklers
+        ObjectType: 4
+      - ElementName: Sprinkler_Finish
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 98c79f6a9eeb2f4e8777c18d68133c33
+      ID: 108465146
+      Name: Sprinkler_Start
+      Path: Default Work Unit/Sprinklers/Sprinkler_Start
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Sprinklers
+        ObjectType: 4
+      - ElementName: Sprinkler_Start
+        ObjectType: 3
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
     - Guid: 9b2727b53be3264a9d7899bc04690b12
@@ -198,6 +305,7 @@ MonoBehaviour:
   - /VGDAJulyJame_WwiseProject
   - /VGDAJulyJame_WwiseProject/Events
   - /VGDAJulyJame_WwiseProject/Events/Default Work Unit
+  - /VGDAJulyJame_WwiseProject/Events/Default Work Unit/Player
   - /VGDAJulyJame_WwiseProject/SoundBanks
   - /VGDAJulyJame_WwiseProject/SoundBanks/Default Work Unit
   - /VGDAJulyJame_WwiseProject/States
@@ -209,11 +317,20 @@ MonoBehaviour:
   preparePoolSize: 0
   RtpcWwu:
   - Guid: '{8DFAB3CB-05FD-4802-8FDC-C4E8552E127F}'
-    m_lastTimePart2: -1999244684
-    m_lastTimePsrt1: -1717888640
+    m_lastTimePart2: -1999244418
+    m_lastTimePsrt1: -929189376
     ParentPhysicalPath: 
     PhysicalPath: Game Parameters/Default Work Unit.wwu
     List:
+    - Guid: 9d14fb2d18413e48a2c331c49175655f
+      ID: 1240670792
+      Name: Distance
+      Path: Default Work Unit/Distance
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Distance
+        ObjectType: 13
     - Guid: 7c2c9b6745cdb6459658f72fe61d6b95
       ID: -1948435988
       Name: MusicVolume

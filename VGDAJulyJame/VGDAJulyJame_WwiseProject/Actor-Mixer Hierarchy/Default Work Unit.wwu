@@ -43,7 +43,7 @@
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>5</Value>
+										<Value>2</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -163,7 +163,7 @@
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>5</Value>
+										<Value>2</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -295,6 +295,7 @@
 				<ActorMixer Name="DripsSFX" ID="{E7CA5B96-F251-4F64-94B3-2135370315BD}" ShortID="648725798">
 					<PropertyList>
 						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -310,6 +311,11 @@
 					<ChildrenList>
 						<RandomSequenceContainer Name="Drips Random Folder" ID="{16F5133A-7DED-4FA8-A713-B44D2A6EBD5D}" ShortID="423807405">
 							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>17</Value>
+									</ValueList>
+								</Property>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
@@ -380,25 +386,6 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="Water Dripping into a Big Bucket_bip_12Gurgle Sounds" ID="{4F3CBE9E-2FF0-4FED-8B9A-6424D5FC8E3B}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Water Dripping into a Big Bucket_bip_15Gurgle Sounds" ID="{4BCFEBC6-7776-4B83-BC4E-DE4A662A9433}" ShortID="580470001">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Water Dripping into a Big Bucket_bip_15Gurgle Sounds" ID="{2FF4C431-3CD8-4802-BB05-7C32C422D4E9}" ShortID="983107732">
-											<Language>SFX</Language>
-											<AudioFile>Water Dripping into a Big Bucket_bip.15Gurgle Sounds.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Water Dripping into a Big Bucket_bip_15Gurgle Sounds" ID="{2FF4C431-3CD8-4802-BB05-7C32C422D4E9}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Water Dripping into a Big Bucket_bip_18Gurgle Sounds" ID="{42F489DD-A609-4603-A7CE-D05AE3A60584}" ShortID="416398197">
@@ -535,6 +522,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Water Dripping into a Big Bucket_bip_45Gurgle Sounds" ID="{6897CCCE-F4B7-4CEF-9B69-29E7DFC4613C}" ShortID="918339762">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>28</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
@@ -624,6 +618,7 @@
 				<ActorMixer Name="FootstepsSFX" ID="{2E49F41D-F53E-4C14-8DAD-AE7C87616C1B}" ShortID="244130310">
 					<PropertyList>
 						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -775,6 +770,9 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="ButtonsSFX" ID="{936EE277-B784-485F-978F-F3EE85CAB7AB}" ShortID="287781727">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
@@ -842,6 +840,25 @@
 						<Sound Name="SettingValve" ID="{A14B377D-DAD0-4DA5-94B3-3A70B35BC713}" ShortID="739736937">
 							<PropertyList>
 								<Property Name="EnablePanner" Type="bool" Value="True"/>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{53C914A2-07EB-4A68-82BA-CB3DB5E802F6}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="50"/>
+													<Property Name="Min" Type="Real64" Value="-50"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -877,6 +894,7 @@
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="PositioningType" Type="int16" Value="1"/>
 						<Property Name="Spatialization" Type="int16" Value="1"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -949,7 +967,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+							<ObjectRef Name="Music" ID="{BCC29BB4-674E-44E7-B638-0982105F268D}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -968,7 +986,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+							<ObjectRef Name="Drip" ID="{C36D9A23-337E-4840-AE58-0B7617E1F35E}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -981,6 +999,168 @@
 						<ActiveSource Name="Jumpscare" ID="{44EC975A-CB43-465A-A3BB-0DFD60695DC7}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<ActorMixer Name="Splashing" ID="{202C9ACF-E52D-49C9-8642-A61823360FB8}" ShortID="569275724">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{E6C81DA9-202E-4EE8-B0E7-8ADA479DA385}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="100"/>
+											<Property Name="Min" Type="Real64" Value="-100"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Environmental" ID="{9BFD25F4-E473-474D-BA82-7796C62F6630}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Water Splashing" ID="{46DE214A-A72A-4E02-A01D-E2C2E3E92028}" ShortID="176449881">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>35</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Splash1" ID="{B7106DFB-9DB5-4F53-8021-AB909A185CB7}" ShortID="576278950">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Splash1" ID="{3FB13538-5445-42F3-A881-4543F275A5D8}" ShortID="161386613">
+											<Language>SFX</Language>
+											<AudioFile>Water Sploshing\Splash1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Splash1" ID="{3FB13538-5445-42F3-A881-4543F275A5D8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Splash2" ID="{A9911E4B-C879-43E5-B97A-EDC330374A9D}" ShortID="4543361">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Splash2" ID="{7433AC04-E717-4F4A-AF89-821C9DA65FA9}" ShortID="509557125">
+											<Language>SFX</Language>
+											<AudioFile>Water Sploshing\Splash2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Splash2" ID="{7433AC04-E717-4F4A-AF89-821C9DA65FA9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Splash3" ID="{4B654A2B-6CCD-4CD8-A49F-4F094D0FDFA3}" ShortID="633312090">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Splash3" ID="{CA8A7895-FB41-46BF-AAC2-6E75D1C5AACD}" ShortID="1017817842">
+											<Language>SFX</Language>
+											<AudioFile>Water Sploshing\Splash3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Splash3" ID="{CA8A7895-FB41-46BF-AAC2-6E75D1C5AACD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Splash4" ID="{62FBA62C-F09F-4D32-9B22-114F508DF9DE}" ShortID="387405508">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Splash4" ID="{65DBE506-273E-4274-AA0A-A603E6C9D04B}" ShortID="488787267">
+											<Language>SFX</Language>
+											<AudioFile>Water Sploshing\Splash4.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Splash4" ID="{65DBE506-273E-4274-AA0A-A603E6C9D04B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Splash5" ID="{C6BD777D-5F89-4366-8058-7AA27F2421FA}" ShortID="108671755">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Splash5" ID="{BF5ABDC6-4A02-4AEF-A1B4-AB103433747E}" ShortID="776925586">
+											<Language>SFX</Language>
+											<AudioFile>Water Sploshing\Splash5.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Splash5" ID="{BF5ABDC6-4A02-4AEF-A1B4-AB103433747E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Splash6" ID="{DF1404C6-6D71-4011-9CD4-3C93A451867D}" ShortID="279291197">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B7AAEB20-FEE1-4A9F-8F73-D5E8F79F19EE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F77BEB74-7DE8-4B55-950E-8A6899C309EB}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Splash6" ID="{B74F188A-608D-40F6-9B69-0F43101E05F3}" ShortID="80360196">
+											<Language>SFX</Language>
+											<AudioFile>Water Sploshing\Splash6.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Splash6" ID="{B74F188A-608D-40F6-9B69-0F43101E05F3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
