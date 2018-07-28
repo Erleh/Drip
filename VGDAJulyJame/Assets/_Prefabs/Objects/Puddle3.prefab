@@ -22,8 +22,6 @@ GameObject:
   - component: {fileID: 114001836916581832}
   - component: {fileID: 114764152280298004}
   - component: {fileID: 61499623902089518}
-  - component: {fileID: 114309092208893380}
-  - component: {fileID: 114713387676317112}
   m_Layer: 0
   m_Name: Puddle3
   m_TagString: Untagged
@@ -54,8 +52,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1166815841363826}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.46, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalPosition: {x: -12.52, y: -20.25, z: 0}
+  m_LocalScale: {x: 1.5, y: 2, z: 1}
   m_Children:
   - {fileID: 4732832023736872}
   m_Father: {fileID: 0}
@@ -68,8 +66,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1619269702585156}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.07, y: -0.2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -5.07, y: 2.14, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 4001132462050106}
   m_RootOrder: 0
@@ -83,10 +81,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.0808692, y: -0.23208034}
+  m_Offset: {x: -5.156463, y: -0.27556562}
   m_SpriteTilingProperty:
     border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
     pivot: {x: 0.5, y: 0.5}
@@ -97,7 +95,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.5746098, y: 2.482319}
+  m_Size: {x: 7.038392, y: 4.2087545}
   m_EdgeRadius: 0
 --- !u!114 &114001836916581832
 MonoBehaviour:
@@ -112,33 +110,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragCoeff: 20
   affectedRigidbodies: []
-  puddleSprites: []
---- !u!114 &114309092208893380
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1166815841363826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a9e7d9c57e60634591845c738b943a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprites: []
---- !u!114 &114713387676317112
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1166815841363826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e2f88f63a7a4f7449363b7547679a01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadeDuration: 1.4
-  fadeToAlpha: 141
-  betweenTransition: 3.2
 --- !u!114 &114764152280298004
 MonoBehaviour:
   m_ObjectHideFlags: 1
