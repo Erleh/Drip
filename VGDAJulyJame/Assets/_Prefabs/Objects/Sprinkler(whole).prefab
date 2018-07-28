@@ -317,6 +317,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragCoeff: 30
   affectedRigidbodies: []
+  pushableDrag: 5
+  characterDrag: 20
 --- !u!114 &114591409008201120
 MonoBehaviour:
   m_ObjectHideFlags: 1
