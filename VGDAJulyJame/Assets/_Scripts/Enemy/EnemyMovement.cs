@@ -86,9 +86,10 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
             if (mapGrid.WorldToNodePoint(currPos) == mapGrid.WorldToNodePoint(currentWaypoint))
             {
                 posIndex++;
-                Instantiate(dripObject, enemyTrans.position, enemyTrans.rotation);
+                //Instantiate(dripObject, enemyTrans.position, enemyTrans.rotation);
                 if (posIndex >= path.Length)
                 {
+                    Instantiate(dripObject, enemyTrans.position, enemyTrans.rotation);
                     posIndex = 0;
                     
                     yield return new WaitForSeconds(1);

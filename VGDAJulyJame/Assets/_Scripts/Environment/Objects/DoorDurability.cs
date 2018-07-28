@@ -54,4 +54,9 @@ public class DoorDurability : MonoBehaviour, BreakableBase
             OnInteraction(true, col);
         }
     }
+
+    void OnCollisionExit2D(Collision2D col)
+    {
+
+    }
 }

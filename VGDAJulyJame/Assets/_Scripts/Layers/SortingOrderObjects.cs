@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SortingOrderObjects : MonoBehaviour
 {
-	void Start ()
+	void Awake()
     {
         GetComponent<SpriteRenderer>().sortingOrder = 
             Mathf.RoundToInt(transform.position.y * 100f) * -1;
