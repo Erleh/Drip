@@ -68,11 +68,11 @@
 							<ChildrenList>
 								<Action Name="" ID="{DD8341F8-4DAE-4339-B008-0C62BEB6B1B3}" ShortID="472851582">
 									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="ActionType" Type="int16" Value="22"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Footsteps" ID="{B56F343B-5012-4E4B-9D2C-363F794B18C1}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+											<ObjectRef Name="Walking" ID="{B19F24A1-59B3-4D27-A2B3-C4CAA1F17CCC}" WorkUnitID="{304B9BE2-9D9E-4E24-8CF6-14A758EE62B4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -82,11 +82,11 @@
 							<ChildrenList>
 								<Action Name="" ID="{8B40DFE9-7010-46CA-83FF-D37CC8061020}" ShortID="779602629">
 									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="34"/>
+										<Property Name="ActionType" Type="int16" Value="22"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Footsteps" ID="{B56F343B-5012-4E4B-9D2C-363F794B18C1}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+											<ObjectRef Name="Idle" ID="{3236C64D-BFAE-4540-BC51-2F99FFCF4073}" WorkUnitID="{304B9BE2-9D9E-4E24-8CF6-14A758EE62B4}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -97,7 +97,6 @@
 								<Action Name="" ID="{5562ED87-B66A-4171-83A6-43EDBF591DD7}" ShortID="964342040">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
-										<Property Name="FadeTime" Type="Real64" Value="3"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -108,7 +107,7 @@
 								<Action Name="" ID="{EAC38C89-049D-4736-BC31-E9CEAE944814}" ShortID="153746947">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="22"/>
-										<Property Name="Delay" Type="Real64" Value="2"/>
+										<Property Name="Delay" Type="Real64" Value="3"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -118,6 +117,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Player_Pushing" ID="{6DF3F0C1-7B85-4762-A44D-6FFC0E005C60}"/>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Monster" ID="{06C1B477-690A-4358-8CA7-A0CE5A73E418}" ShortID="904729820">
