@@ -27,6 +27,7 @@ public class DoorDurability : MonoBehaviour, BreakableBase
     public void OnDestroyed()
     {
         doorSplinters.Play();
+        AkSoundEngine.PostEvent("WoodBreak", gameObject);
         Destroy(door);
     }
 

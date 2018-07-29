@@ -64,6 +64,16 @@
 						</Transition>
 					</TransitionList>
 				</StateGroup>
+				<StateGroup Name="Splashing" ID="{3C346F3F-E5FC-44FB-9837-A5AD3FDAE12F}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.4"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{7BE7A551-E5AB-4F97-A4A8-6D3E0F99C94E}"/>
+						<State Name="On" ID="{533E1D79-B3B7-4190-81F0-DCC15B0536CF}"/>
+						<State Name="Off" ID="{B667167F-8FDF-4BC8-917C-68B4E5BFCB25}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

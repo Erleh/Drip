@@ -26,29 +26,34 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1404066238" Name="Ambiance1" ObjectPath="\Events\Default Work Unit\Ambiance Folder\Ambiance1" MaxAttenuation="80.000000"/>
+				<Event Id="1404066237" Name="Ambiance2" ObjectPath="\Events\Default Work Unit\Ambiance Folder\Ambiance2" MaxAttenuation="80.000000"/>
+				<Event Id="1404066236" Name="Ambiance3" ObjectPath="\Events\Default Work Unit\Ambiance Folder\Ambiance3" MaxAttenuation="80.000000"/>
+				<Event Id="1404066235" Name="Ambiance4" ObjectPath="\Events\Default Work Unit\Ambiance Folder\Ambiance4" MaxAttenuation="80.000000"/>
+				<Event Id="1404066234" Name="Ambiance5" ObjectPath="\Events\Default Work Unit\Ambiance Folder\Ambiance5" MaxAttenuation="80.000000"/>
 				<Event Id="3215021356" Name="Click_Play" ObjectPath="\Events\Default Work Unit\UI\Click_Play"/>
 				<Event Id="803012562" Name="Click_Setting" ObjectPath="\Events\Default Work Unit\UI\Click_Setting"/>
-				<Event Id="1877847629" Name="Door" ObjectPath="\Events\Default Work Unit\Door"/>
+				<Event Id="1877847629" Name="Door" ObjectPath="\Events\Default Work Unit\Door" MaxAttenuation="80.000000"/>
 				<Event Id="455730641" Name="Hold_Adjuster" ObjectPath="\Events\Default Work Unit\UI\Hold_Adjuster"/>
-				<Event Id="2698226929" Name="Monster_Drip" ObjectPath="\Events\Default Work Unit\Monster\Monster_Drip" MaxAttenuation="80.000000"/>
+				<Event Id="2698226929" Name="Monster_Drip" ObjectPath="\Events\Default Work Unit\Monster\Monster_Drip" MaxAttenuation="10.000000"/>
 				<Event Id="1020366504" Name="MouseOver" ObjectPath="\Events\Default Work Unit\UI\MouseOver"/>
-				<Event Id="3083087645" Name="Player_Death" ObjectPath="\Events\Default Work Unit\Player\Player_Death"/>
+				<Event Id="3083087645" Name="Player_Death" ObjectPath="\Events\Default Work Unit\Player\Player_Death" MaxAttenuation="80.000000"/>
 				<Event Id="2482507694" Name="Player_MoveCheck" ObjectPath="\Events\Default Work Unit\Player\Player_MoveCheck" MaxAttenuation="80.000000"/>
 				<Event Id="36310742" Name="Release_Adjustment" ObjectPath="\Events\Default Work Unit\UI\Release_Adjustment"/>
 				<Event Id="600834356" Name="Release_Hold" ObjectPath="\Events\Default Work Unit\UI\Release_Hold" MaxAttenuation="0.000000"/>
-				<Event Id="160038168" Name="Splash" ObjectPath="\Events\Default Work Unit\Splash"/>
+				<Event Id="1519632576" Name="Splashing" ObjectPath="\Events\Default Work Unit\Splashing" MaxAttenuation="10.000000"/>
 				<Event Id="4005320019" Name="Sprinkler_Finish" ObjectPath="\Events\Default Work Unit\Sprinklers\Sprinkler_Finish" MaxAttenuation="0.000000"/>
 				<Event Id="108465146" Name="Sprinkler_Start" ObjectPath="\Events\Default Work Unit\Sprinklers\Sprinkler_Start"/>
-				<Event Id="3901853815" Name="WoodBreak" ObjectPath="\Events\Default Work Unit\WoodBreak"/>
+				<Event Id="3901853815" Name="WoodBreak" ObjectPath="\Events\Default Work Unit\WoodBreak" MaxAttenuation="80.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="70994745" Language="SFX">
 					<ShortName>Valve_Folder\Valve4.wav</ShortName>
 					<Path>SFX/Valve_Folder/Valve4_F7D0E330.wem</Path>
 				</File>
-				<File Id="80360196" Language="SFX">
-					<ShortName>Water Sploshing\Splash6.wav</ShortName>
-					<Path>SFX/Water Sploshing/Splash6_F7D0E330.wem</Path>
+				<File Id="99620844" Language="SFX">
+					<ShortName>Ambiance4.wav</ShortName>
+					<Path>SFX/Ambiance4_F7D0E330.wem</Path>
 				</File>
 				<File Id="106061577" Language="SFX">
 					<ShortName>Sprinkler.wav</ShortName>
@@ -57,10 +62,6 @@
 				<File Id="155942631" Language="SFX">
 					<ShortName>Water Dripping into a Big Bucket_bip.27Gurgle Sounds.wav</ShortName>
 					<Path>SFX/Water Dripping into a Big Bucket_bip.27Gurgle Sounds_F7D0E330.wem</Path>
-				</File>
-				<File Id="161386613" Language="SFX">
-					<ShortName>Water Sploshing\Splash1.wav</ShortName>
-					<Path>SFX/Water Sploshing/Splash1_F7D0E330.wem</Path>
 				</File>
 				<File Id="224819954" Language="SFX">
 					<ShortName>Settings Valve.wav</ShortName>
@@ -74,25 +75,17 @@
 					<ShortName>Water Dripping into a Big Bucket_bip.12Gurgle Sounds.wav</ShortName>
 					<Path>SFX/Water Dripping into a Big Bucket_bip.12Gurgle Sounds_F7D0E330.wem</Path>
 				</File>
+				<File Id="341832637" Language="SFX">
+					<ShortName>WaterSplash.wav</ShortName>
+					<Path>SFX/WaterSplash_AD29F36A.wem</Path>
+				</File>
 				<File Id="413463645" Language="SFX">
 					<ShortName>Valve_Folder\Valve3.wav</ShortName>
 					<Path>SFX/Valve_Folder/Valve3_F7D0E330.wem</Path>
 				</File>
-				<File Id="426280273" Language="SFX">
-					<ShortName>Footstep.wav</ShortName>
-					<Path>SFX/Footstep_F7D0E330.wem</Path>
-				</File>
 				<File Id="445560886" Language="SFX">
 					<ShortName>Water Dripping into a Big Bucket_bip.34Gurgle Sounds.wav</ShortName>
 					<Path>SFX/Water Dripping into a Big Bucket_bip.34Gurgle Sounds_F7D0E330.wem</Path>
-				</File>
-				<File Id="488787267" Language="SFX">
-					<ShortName>Water Sploshing\Splash4.wav</ShortName>
-					<Path>SFX/Water Sploshing/Splash4_F7D0E330.wem</Path>
-				</File>
-				<File Id="509557125" Language="SFX">
-					<ShortName>Water Sploshing\Splash2.wav</ShortName>
-					<Path>SFX/Water Sploshing/Splash2_F7D0E330.wem</Path>
 				</File>
 				<File Id="515689105" Language="SFX">
 					<ShortName>Water Dripping into a Big Bucket_bip.45Gurgle Sounds.wav</ShortName>
@@ -106,17 +99,21 @@
 					<ShortName>Water Dripping into a Big Bucket_bip.46Gurgle Sounds.wav</ShortName>
 					<Path>SFX/Water Dripping into a Big Bucket_bip.46Gurgle Sounds_F7D0E330.wem</Path>
 				</File>
+				<File Id="653323360" Language="SFX">
+					<ShortName>Ambiance3.wav</ShortName>
+					<Path>SFX/Ambiance3_F7D0E330.wem</Path>
+				</File>
 				<File Id="711721849" Language="SFX">
 					<ShortName>Water Dripping into a Big Bucket_bip.3Gurgle Sounds.wav</ShortName>
 					<Path>SFX/Water Dripping into a Big Bucket_bip.3Gurgle Sounds_F7D0E330.wem</Path>
 				</File>
+				<File Id="716732541" Language="SFX">
+					<ShortName>Ambiance1.wav</ShortName>
+					<Path>SFX/Ambiance1_AD29F36A.wem</Path>
+				</File>
 				<File Id="749488580" Language="SFX">
 					<ShortName>Water Dripping into a Big Bucket_bip.18Gurgle Sounds.wav</ShortName>
 					<Path>SFX/Water Dripping into a Big Bucket_bip.18Gurgle Sounds_F7D0E330.wem</Path>
-				</File>
-				<File Id="776925586" Language="SFX">
-					<ShortName>Water Sploshing\Splash5.wav</ShortName>
-					<Path>SFX/Water Sploshing/Splash5_F7D0E330.wem</Path>
 				</File>
 				<File Id="818483300" Language="SFX">
 					<ShortName>Water Dripping into a Big Bucket_bip.23Gurgle Sounds.wav</ShortName>
@@ -126,9 +123,21 @@
 					<ShortName>Valve_Folder\Valve1.wav</ShortName>
 					<Path>SFX/Valve_Folder/Valve1_F7D0E330.wem</Path>
 				</File>
+				<File Id="831314962" Language="SFX">
+					<ShortName>Ambiance2.wav</ShortName>
+					<Path>SFX/Ambiance2_AD29F36A.wem</Path>
+				</File>
 				<File Id="860811947" Language="SFX">
 					<ShortName>Water Dripping into a Big Bucket_bip.19Gurgle Sounds.wav</ShortName>
 					<Path>SFX/Water Dripping into a Big Bucket_bip.19Gurgle Sounds_F7D0E330.wem</Path>
+				</File>
+				<File Id="861466094" Language="SFX">
+					<ShortName>PushingCrates.wav</ShortName>
+					<Path>SFX/PushingCrates_AD29F36A.wem</Path>
+				</File>
+				<File Id="869967775" Language="SFX">
+					<ShortName>Ambiance5.wav</ShortName>
+					<Path>SFX/Ambiance5_F7D0E330.wem</Path>
 				</File>
 				<File Id="879809132" Language="SFX">
 					<ShortName>MouseOver.wav</ShortName>
@@ -145,10 +154,6 @@
 				<File Id="978352414" Language="SFX">
 					<ShortName>WoodBreak.wav</ShortName>
 					<Path>SFX/WoodBreak_F7D0E330.wem</Path>
-				</File>
-				<File Id="1017817842" Language="SFX">
-					<ShortName>Water Sploshing\Splash3.wav</ShortName>
-					<Path>SFX/Water Sploshing/Splash3_F7D0E330.wem</Path>
 				</File>
 				<File Id="1041937041" Language="SFX">
 					<ShortName>Water Dripping into a Big Bucket_bip.37Gurgle Sounds.wav</ShortName>

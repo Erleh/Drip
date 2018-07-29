@@ -20,9 +20,9 @@ public class PlayerState : MonoBehaviour
         pMovement = GetComponent<PlayerMovement>();
     }
 
-    public bool IsAlive(){  return _isAlive;                }
-    public bool Moving(){   return pMovement.GetMoving();   }
-    public bool Pushing(){  return pMovement.GetPushing();  }
+    public bool IsAlive() { return _isAlive; }
+    public bool Moving() { return pMovement.GetMoving(); }
+    public bool Pushing() { return pMovement.GetPushing(); }
     public void OnAttacked()
     {
         onDeath.Invoke();
@@ -32,13 +32,13 @@ public class PlayerState : MonoBehaviour
         _isAlive = false;
         GetComponent<Animator>().SetTrigger("die");
         //AkSoundEngine.PostEvent("Player_Death", gameObject);
-        AkSoundEngine.SetState("Moving", "Idle");
+        AkSoundEngine.SetState("PlayerLife", "Dead");
     }
     private void Update()
     {
-        if (IsAlive()){AkSoundEngine.SetState("Moving","Idle");}
-        if (Moving()) {AkSoundEngine.SetState("Moving", "Walking");}
-        if (Pushing()) {AkSoundEngine.SetState("Moving", "Pushing");}
+        if (IsAlive()) { AkSoundEngine.SetState("Moving", "Idle"); }
+        if (Moving()) { AkSoundEngine.SetState("Moving", "Walking"); }
+        if (Pushing()) { AkSoundEngine.SetState("Moving", "Pushing"); }
 
 
     }

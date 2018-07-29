@@ -6,12 +6,8 @@
 				<SoundcasterSession Name="Sprinkler Test" ID="{14CDA1DC-5ED8-4837-887E-C6CB6096CFE4}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Sprinkler_Start" ID="{6A9FC798-EB9E-4E2F-8777-C18D68133C33}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}"/>
+							<ObjectRef Name="Player_MoveCheck" ID="{710465D1-92EE-4ADB-999C-D259F7FD29A3}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}"/>
 							<Position X="0" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Sprinkler_Finish" ID="{51D7A62F-03E8-434C-96F5-A8E780A565F9}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}"/>
-							<Position X="1" Y="0"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -29,8 +25,10 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{62E1B273-30A1-4ACD-9618-19CBB23E2829}"/>
 						<CurrentStateRef Name="None" ID="{2A5FEFA9-BD43-4576-A791-3FFF97AD4317}"/>
-						<CurrentStateRef Name="None" ID="{0D391687-6347-406C-AC86-69E9780B665E}"/>
+						<CurrentStateRef Name="Alive" ID="{D1086BC6-23A2-4797-8E01-1E35DAD80DFF}"/>
+						<CurrentStateRef Name="Pushing" ID="{F11D3256-6A1D-4855-9F40-D24DEEBF24A6}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

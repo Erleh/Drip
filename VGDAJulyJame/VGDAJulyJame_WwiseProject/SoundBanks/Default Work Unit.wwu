@@ -12,10 +12,15 @@
 						</Property>
 					</PropertyList>
 					<ObjectInclusionList>
+						<ObjectRef Name="Ambiance5" ID="{320E264F-3EC9-4052-BDEF-520E0C146994}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Splashing" ID="{8CAFBCCD-CDD1-409D-AE67-2CE798BC9A56}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Splash" ID="{88A1C30E-6A4B-432B-BE56-51167FFE0A79}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Ambiance3" ID="{0FDBE45E-63A0-4341-A949-45C63AD805BE}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Sprinkler_Finish" ID="{51D7A62F-03E8-434C-96F5-A8E780A565F9}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Release_Hold" ID="{689BF115-7DA2-4381-860E-927183B93A17}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Ambiance2" ID="{B51D26E5-F6EA-444F-8056-AA4BDE4A634A}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="MouseOver" ID="{C18CF850-ECB1-449C-80A7-DF401D21EA8E}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Ambiance4" ID="{C52C8F6F-BC1E-458F-AEB1-F933AB224B1F}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Click_Play" ID="{EDDE5941-B70A-4749-A483-70D2796C6604}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Hold_Adjuster" ID="{BACE2EF7-E4CA-481B-BF69-ED44D80857E3}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Player_Death" ID="{A27C4FDB-1457-486B-8AB2-802C513A97E0}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
@@ -23,6 +28,7 @@
 						<ObjectRef Name="Click_Setting" ID="{9A80467A-93EF-4975-94D4-AFCDFBA21A62}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Release_Adjustment" ID="{D74B9D3F-0590-49C4-88CA-59C4A50805D8}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Player_MoveCheck" ID="{710465D1-92EE-4ADB-999C-D259F7FD29A3}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Ambiance1" ID="{558D8103-C946-4C4C-998E-8F94AFD56420}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Door" ID="{B1349898-4820-4C59-80AD-4557080F795C}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Sprinkler_Start" ID="{6A9FC798-EB9E-4E2F-8777-C18D68133C33}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="WoodBreak" ID="{D3835440-A12F-4E70-833B-EFF4554B967A}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
