@@ -17,6 +17,8 @@ public class MenuCameraController : MonoBehaviour {
     [SerializeField]
     private bool forward;
 
+    [SerializeField]
+    private bool transitioning;
 
     private void Start()
     {
@@ -40,6 +42,7 @@ public class MenuCameraController : MonoBehaviour {
     }
     IEnumerator MoveCo()
     {
+        transitioning = true;
         if (forward)
         {
             while (transform.position.x < camMoveTarget.x - lerpMargin)
@@ -52,12 +55,11 @@ public class MenuCameraController : MonoBehaviour {
         {
             while (transform.position.x > camMoveTarget.x + lerpMargin)
             {
-                Debug.Log("Attempting to move backwards...");
                 transform.position = Vector3.Lerp(this.transform.position, camMoveTarget, Time.deltaTime * camMoveSpeed);
                 yield return null;
             }
         }
-        Debug.Log("Finished Moving.");
+        transitioning = false;
         yield return null;
         MovableCam = null;
     }

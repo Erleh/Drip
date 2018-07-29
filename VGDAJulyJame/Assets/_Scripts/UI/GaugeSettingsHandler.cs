@@ -58,8 +58,6 @@ public class GaugeSettingsHandler : MonoBehaviour {
     }
     private void FixedUpdate()
     {
-        Debug.Log("Minus Held: " + checkHeldM);
-        Debug.Log("Plus Held: " + checkHeldP);
         if (checkHeldM)
         {
             DecreaseValue();

@@ -51,15 +51,15 @@ public class DoorDurability : MonoBehaviour, BreakableBase
     //void OnCollisionStay2D(Collision2D col)
     void OnTriggerStay2D(Collider2D col)
     {
-        print("woke");
+        //print("woke");
         if(col.gameObject.CompareTag("Enemy"))
         {
             OnInteraction(true, col);
         }
     }
 
-    void OnCollisionExit2D(Collision2D col)
+    /*void OnCollisionExit2D(Collision2D col)
     {
 
-    }
+    }*/
 }
