@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 212102055969347196}
   - component: {fileID: 95915268138726506}
   - component: {fileID: 114876038939383568}
+  - component: {fileID: 114373781255624202}
   m_Layer: 0
   m_Name: InteractionZone
   m_TagString: Untagged
@@ -40,7 +41,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4308807769164628}
   - component: {fileID: 61304797929396746}
-  - component: {fileID: 114499338944526348}
   m_Layer: 0
   m_Name: DoorAsset
   m_TagString: Untagged
@@ -100,7 +100,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1822268709379950}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.24, y: -7.03, z: -3.300015}
+  m_LocalPosition: {x: -17.637167, y: -11.248075, z: -6.4766655}
   m_LocalScale: {x: 1.5073038, y: 1.003225, z: 1}
   m_Children:
   - {fileID: 4308807769164628}
@@ -172,7 +172,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.058583632, y: -0.44253594}
+  m_Offset: {x: 0.065435566, y: -0.44253594}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0.4}
@@ -183,7 +183,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.48907366, y: 0.8332964}
+  m_Size: {x: 0.18758859, y: 0.8332964}
   m_EdgeRadius: 0
 --- !u!95 &95915268138726506
 Animator:
@@ -203,12 +203,12 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114499338944526348
+--- !u!114 &114373781255624202
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1551115728219016}
+  m_GameObject: {fileID: 1456929734770976}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7390164fb692a744b31be30898e65cc, type: 3}

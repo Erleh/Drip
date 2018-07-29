@@ -31,7 +31,7 @@ public class DoorDurability : MonoBehaviour, BreakableBase
     }
 
     // while the enemy interacts with the door, 
-    public void OnInteraction(bool aggressive, Collision2D col)
+    public void OnInteraction(bool aggressive, Collider2D col)
     {
         if(aggressive)
         {
@@ -41,14 +41,16 @@ public class DoorDurability : MonoBehaviour, BreakableBase
             }
             else if (currentDurability == 0)
             {
-                col.gameObject.GetComponent<CircleCollider2D>().isTrigger = true;
+                col.isTrigger = true;
                 OnDestroyed();
             }
         }
     }
 
-    void OnCollisionStay2D(Collision2D col)
+    //void OnCollisionStay2D(Collision2D col)
+    void OnTriggerStay2D(Collider2D col)
     {
+        print("woke");
         if(col.gameObject.CompareTag("Enemy"))
         {
             OnInteraction(true, col);
