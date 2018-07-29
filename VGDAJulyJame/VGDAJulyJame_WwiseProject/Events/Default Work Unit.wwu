@@ -68,16 +68,6 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{118DCA22-7749-4397-9028-4D0175A31C92}" ShortID="251348547">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Sprinkler" ID="{07C2602F-030C-4ACF-994C-8ADE3E446ED3}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 							</ChildrenList>
 						</Event>
 					</ChildrenList>
@@ -277,13 +267,31 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Start_Reverb" ID="{343D3B3F-F0C0-4CC1-83EE-1114C1777328}">
+				<Event Name="Door" ID="{B1349898-4820-4C59-80AD-4557080F795C}">
 					<ChildrenList>
-						<Action Name="" ID="{A42E77FA-A04F-4F7E-A0F8-DB31E0AA04EB}" ShortID="632065703">
+						<Action Name="" ID="{6AE7EEFC-D4BE-4A05-B11A-22361ADEDABA}" ShortID="114401863">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
-							<ReferenceList/>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DoorOpen" ID="{ADB414B9-C45B-4DF0-905A-4270D5342062}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="WoodBreak" ID="{D3835440-A12F-4E70-833B-EFF4554B967A}">
+					<ChildrenList>
+						<Action Name="" ID="{E043DA4D-DCB7-406F-997A-324CF8A4CDD1}" ShortID="502478850">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WoodBreak" ID="{5F93A9F1-BF69-4694-A6CB-962DEC6548E4}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+								</Reference>
+							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
