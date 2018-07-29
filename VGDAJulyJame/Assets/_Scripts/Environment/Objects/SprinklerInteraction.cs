@@ -32,7 +32,7 @@ public class SprinklerInteraction : MonoBehaviour
             SprinklerCD = StartCoroutine(SprinklerCooldown());
             SlowField.SetActive(true);
             AkSoundEngine.PostEvent("Sprinkler_Start", gameObject);
-            Debug.Log("Yay!");
+            //Debug.Log("Yay!");
         }
     }
 
