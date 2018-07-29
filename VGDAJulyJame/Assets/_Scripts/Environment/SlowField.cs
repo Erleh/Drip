@@ -4,11 +4,6 @@ using UnityEngine;
 
 //SlowField - Increases linear drag coefficient for entering/exiting rigidbodies
 public class SlowField : MonoBehaviour {
-    
-    //Set drag coefficient in inspector
-    //Note: realistic values range 40-100
-    [SerializeField]
-    private float dragCoeff;
 
     //Maintain list of rigidbodies currently affected by the puddle
     [SerializeField]

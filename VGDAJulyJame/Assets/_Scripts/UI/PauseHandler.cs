@@ -29,4 +29,8 @@ public class PauseHandler : MonoBehaviour {
         }
         paused = !paused;
     }
+    public void ResetTimeScale()
+    {
+        Time.timeScale = 1;
+    }
 }

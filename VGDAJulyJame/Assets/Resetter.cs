@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Resetter : MonoBehaviour {
     
-    public void onClick()
+    public void ResetSounds()
     {
         AkSoundEngine.SetState("PlayerLife", "Alive");
         AkSoundEngine.SetState("Moving", "Idle");
