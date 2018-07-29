@@ -21,8 +21,8 @@ MonoBehaviour:
   autoPopulateEnabled: 1
   AuxBusWwu:
   - Guid: '{F77BEB74-7DE8-4B55-950E-8A6899C309EB}'
-    m_lastTimePart2: -1999244195
-    m_lastTimePsrt1: -206896384
+    m_lastTimePart2: -1999244151
+    m_lastTimePsrt1: 659509888
     ParentPhysicalPath: 
     PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
     List:
@@ -90,8 +90,8 @@ MonoBehaviour:
   defaultPoolSize: 4096
   EventWwu:
   - Guid: '{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}'
-    m_lastTimePart2: -1999244178
-    m_lastTimePsrt1: 383626880
+    m_lastTimePart2: -1999244076
+    m_lastTimePsrt1: 1926962688
     ParentPhysicalPath: 
     PhysicalPath: Events/Default Work Unit.wwu
     List:
@@ -148,7 +148,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Monster_Drip
         ObjectType: 3
-      maxAttenuation: 30
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
     - Guid: 50f88cc1b1ec9c4480a7df401d21ea8e
@@ -190,7 +190,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Player_MoveCheck
         ObjectType: 3
-      maxAttenuation: 30
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
     - Guid: 3f9d4bd79005c44988ca59c4a50805d8
@@ -273,13 +273,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - Guid: 3f3b3d34c0f0c14c83ee1114c1777328
+      ID: -52447562
+      Name: Start_Reverb
+      Path: Default Work Unit/Start_Reverb
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Start_Reverb
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   ExpandedItems:
   - /VGDAJulyJame_WwiseProject
+  - /VGDAJulyJame_WwiseProject/Auxiliary Busses
+  - /VGDAJulyJame_WwiseProject/Auxiliary Busses/Default Work Unit
+  - /VGDAJulyJame_WwiseProject/Auxiliary Busses/Default Work Unit/Master Audio Bus
   - /VGDAJulyJame_WwiseProject/Events
   - /VGDAJulyJame_WwiseProject/Events/Default Work Unit
-  - /VGDAJulyJame_WwiseProject/Events/Default Work Unit/Player
-  - /VGDAJulyJame_WwiseProject/SoundBanks
-  - /VGDAJulyJame_WwiseProject/SoundBanks/Default Work Unit
+  - /VGDAJulyJame_WwiseProject/Events/Default Work Unit/Sprinklers
+  - /VGDAJulyJame_WwiseProject/States
+  - /VGDAJulyJame_WwiseProject/States/Default Work Unit
+  - /VGDAJulyJame_WwiseProject/States/Default Work Unit/SprinklerStatus
   language: English(US)
   lowerPoolSize: 2048
   m_lastPopulateTimePart2: 0
@@ -322,8 +338,8 @@ MonoBehaviour:
         ObjectType: 13
   StateWwu:
   - Guid: '{304B9BE2-9D9E-4E24-8CF6-14A758EE62B4}'
-    m_lastTimePart2: -1999244193
-    m_lastTimePsrt1: -1296830976
+    m_lastTimePart2: -1999244094
+    m_lastTimePsrt1: 636374016
     ParentPhysicalPath: 
     PhysicalPath: States/Default Work Unit.wwu
     List:
@@ -381,6 +397,60 @@ MonoBehaviour:
       - Alive
       - Dead
       - None
+    - Guid: e5978a0f7ec9a441b3773ab091b46bb0
+      ID: 2077253480
+      Name: Room
+      Path: Default Work Unit/Room
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Room
+        ObjectType: 9
+      ValueGuids:
+      - bytes: 42dacd03f8f6894c89e5a92c3f84f19b
+      - bytes: 65b7a25f42d259448095f5e9e4c5b291
+      - bytes: 73b2e162a130cd4a961819cbb23e2829
+      - bytes: d5d98cc82b167e4ab73a83a5800f6a5b
+      ValueIcons:
+      - ElementName: Large
+        ObjectType: 8
+      - ElementName: Medium
+        ObjectType: 8
+      - ElementName: None
+        ObjectType: 8
+      - ElementName: Small
+        ObjectType: 8
+      valueIDs: be065effb08bd2a9db3ba32c1a41136e
+      values:
+      - Large
+      - Medium
+      - None
+      - Small
+    - Guid: f4cd1ce21d6b294d8be47f9fe07ee1a1
+      ID: -527144251
+      Name: SprinklerStatus
+      Path: Default Work Unit/SprinklerStatus
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SprinklerStatus
+        ObjectType: 9
+      ValueGuids:
+      - bytes: a9ef5f2a43bd7645a7913fff97ad4317
+      - bytes: fb3cb8a6848db04f8198071a092137b0
+      - bytes: 27bb982d2ef219458910235cb3bb566c
+      ValueIcons:
+      - ElementName: None
+        ObjectType: 8
+      - ElementName: Off
+        ObjectType: 8
+      - ElementName: On
+        ObjectType: 8
+      valueIDs: db3ba32c648a79373e177762
+      values:
+      - None
+      - Off
+      - On
   streamingPoolSize: 1024
   SwitchWwu:
   - Guid: '{6489A8DF-DDBB-4F6F-8A81-AA14C58E66F9}'
@@ -391,8 +461,8 @@ MonoBehaviour:
     List: []
   TriggerWwu:
   - Guid: '{2D021189-DE7B-4D84-845D-7C36DD58E42E}'
-    m_lastTimePart2: -1999245080
-    m_lastTimePsrt1: -2080839424
+    m_lastTimePart2: -1999244090
+    m_lastTimePsrt1: -508462464
     ParentPhysicalPath: 
     PhysicalPath: Triggers/Default Work Unit.wwu
     List: []
