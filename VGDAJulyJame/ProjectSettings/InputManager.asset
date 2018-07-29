@@ -311,15 +311,15 @@ InputManager:
     joyNum: 0
   - serializedVersion: 3
     m_Name: Pause
-    descriptiveName: Pause Button
+    descriptiveName: Pause
     descriptiveNegativeName: 
-    negativeButton: 
+    negativeButton: escape
     positiveButton: escape
     altNegativeButton: 
     altPositiveButton: joystick button 0
-    gravity: 1
+    gravity: 1000
     dead: 0.001
-    sensitivity: 1
+    sensitivity: 1000
     snap: 0
     invert: 0
     type: 0

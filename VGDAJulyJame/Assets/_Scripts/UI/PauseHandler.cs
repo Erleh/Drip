@@ -11,12 +11,12 @@ public class PauseHandler : MonoBehaviour {
 
 	void Update ()
     {
-        if (Input.GetKeyDown("Pause"))
+        if (Input.GetButtonDown("Pause"))
             HandlePause();
 	}
     public void HandlePause()
     {
-        paused = !paused;
+        Debug.Log("Handling Pause...");
         if (!paused)
         {
             PauseMenu.SetActive(true);
@@ -27,5 +27,6 @@ public class PauseHandler : MonoBehaviour {
             PauseMenu.SetActive(false);
             Time.timeScale = 1;
         }
+        paused = !paused;
     }
 }
