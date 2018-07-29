@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4336762853499908}
   - component: {fileID: 212403615958627904}
+  - component: {fileID: 114489656097949848}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -38,7 +39,6 @@ GameObject:
   - component: {fileID: 114314036167736578}
   - component: {fileID: 114812473885388854}
   - component: {fileID: 61564844735735580}
-  - component: {fileID: 114450900452723012}
   m_Layer: 0
   m_Name: OilPuddle
   m_TagString: Untagged
@@ -66,8 +66,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1974801737614272}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.77, y: 15.02, z: 0.375}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalPosition: {x: 13.182, y: 22.792, z: 0.375}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children:
   - {fileID: 4336762853499908}
   m_Father: {fileID: 0}
@@ -113,12 +113,12 @@ MonoBehaviour:
   affectedRigidbodies: []
   pushableDrag: 10
   characterDrag: 200
---- !u!114 &114450900452723012
+--- !u!114 &114489656097949848
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1974801737614272}
+  m_GameObject: {fileID: 1910487152835194}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68924946385f269459ca806ee2d36a56, type: 3}
