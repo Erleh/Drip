@@ -23428,7 +23428,7 @@ MonoBehaviour:
   actionOnEventType: 0
   curveInterpolation: 4
   enableActionOnEvent: 0
-  eventID: 1404066234
+  eventID: 1404066238
   m_callbackData: {fileID: 0}
   playingId: 0
   soundEmitterObject: {fileID: 0}
@@ -39914,6 +39914,22 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e31702bb596e3b1438cbe9a25a2ea34a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1599639244 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1636645324256382, guid: e31702bb596e3b1438cbe9a25a2ea34a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1599639243}
+--- !u!114 &1599639245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1599639244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2c96c42a29fc4809b80276a64480d4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1600817223
 Prefab:
   m_ObjectHideFlags: 0

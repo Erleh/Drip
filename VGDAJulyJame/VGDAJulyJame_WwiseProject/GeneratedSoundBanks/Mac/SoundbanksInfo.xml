@@ -35,13 +35,13 @@
 				<Event Id="803012562" Name="Click_Setting" ObjectPath="\Events\Default Work Unit\UI\Click_Setting"/>
 				<Event Id="1877847629" Name="Door" ObjectPath="\Events\Default Work Unit\Door" MaxAttenuation="80.000000"/>
 				<Event Id="455730641" Name="Hold_Adjuster" ObjectPath="\Events\Default Work Unit\UI\Hold_Adjuster"/>
-				<Event Id="2698226929" Name="Monster_Drip" ObjectPath="\Events\Default Work Unit\Monster\Monster_Drip" MaxAttenuation="10.000000"/>
+				<Event Id="2698226929" Name="Monster_Drip" ObjectPath="\Events\Default Work Unit\Monster\Monster_Drip" MaxAttenuation="100.000000"/>
 				<Event Id="1020366504" Name="MouseOver" ObjectPath="\Events\Default Work Unit\UI\MouseOver"/>
 				<Event Id="3083087645" Name="Player_Death" ObjectPath="\Events\Default Work Unit\Player\Player_Death" MaxAttenuation="80.000000"/>
 				<Event Id="2482507694" Name="Player_MoveCheck" ObjectPath="\Events\Default Work Unit\Player\Player_MoveCheck" MaxAttenuation="80.000000"/>
 				<Event Id="36310742" Name="Release_Adjustment" ObjectPath="\Events\Default Work Unit\UI\Release_Adjustment"/>
 				<Event Id="600834356" Name="Release_Hold" ObjectPath="\Events\Default Work Unit\UI\Release_Hold" MaxAttenuation="0.000000"/>
-				<Event Id="1519632576" Name="Splashing" ObjectPath="\Events\Default Work Unit\Splashing" MaxAttenuation="10.000000"/>
+				<Event Id="1519632576" Name="Splashing" ObjectPath="\Events\Default Work Unit\Splashing" MaxAttenuation="100.000000"/>
 				<Event Id="4005320019" Name="Sprinkler_Finish" ObjectPath="\Events\Default Work Unit\Sprinklers\Sprinkler_Finish" MaxAttenuation="0.000000"/>
 				<Event Id="108465146" Name="Sprinkler_Start" ObjectPath="\Events\Default Work Unit\Sprinklers\Sprinkler_Start"/>
 				<Event Id="3901853815" Name="WoodBreak" ObjectPath="\Events\Default Work Unit\WoodBreak" MaxAttenuation="80.000000"/>
