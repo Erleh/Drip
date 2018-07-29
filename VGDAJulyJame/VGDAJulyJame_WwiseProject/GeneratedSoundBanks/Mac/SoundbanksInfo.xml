@@ -28,16 +28,18 @@
 			<IncludedEvents>
 				<Event Id="3215021356" Name="Click_Play" ObjectPath="\Events\Default Work Unit\UI\Click_Play"/>
 				<Event Id="803012562" Name="Click_Setting" ObjectPath="\Events\Default Work Unit\UI\Click_Setting"/>
+				<Event Id="1877847629" Name="Door" ObjectPath="\Events\Default Work Unit\Door"/>
 				<Event Id="455730641" Name="Hold_Adjuster" ObjectPath="\Events\Default Work Unit\UI\Hold_Adjuster"/>
-				<Event Id="2698226929" Name="Monster_Drip" ObjectPath="\Events\Default Work Unit\Monster\Monster_Drip" MaxAttenuation="30.000000"/>
+				<Event Id="2698226929" Name="Monster_Drip" ObjectPath="\Events\Default Work Unit\Monster\Monster_Drip" MaxAttenuation="80.000000"/>
 				<Event Id="1020366504" Name="MouseOver" ObjectPath="\Events\Default Work Unit\UI\MouseOver"/>
 				<Event Id="3083087645" Name="Player_Death" ObjectPath="\Events\Default Work Unit\Player\Player_Death"/>
-				<Event Id="2482507694" Name="Player_MoveCheck" ObjectPath="\Events\Default Work Unit\Player\Player_MoveCheck" MaxAttenuation="30.000000"/>
+				<Event Id="2482507694" Name="Player_MoveCheck" ObjectPath="\Events\Default Work Unit\Player\Player_MoveCheck" MaxAttenuation="80.000000"/>
 				<Event Id="36310742" Name="Release_Adjustment" ObjectPath="\Events\Default Work Unit\UI\Release_Adjustment"/>
 				<Event Id="600834356" Name="Release_Hold" ObjectPath="\Events\Default Work Unit\UI\Release_Hold" MaxAttenuation="0.000000"/>
 				<Event Id="160038168" Name="Splash" ObjectPath="\Events\Default Work Unit\Splash"/>
 				<Event Id="4005320019" Name="Sprinkler_Finish" ObjectPath="\Events\Default Work Unit\Sprinklers\Sprinkler_Finish" MaxAttenuation="0.000000"/>
 				<Event Id="108465146" Name="Sprinkler_Start" ObjectPath="\Events\Default Work Unit\Sprinklers\Sprinkler_Start"/>
+				<Event Id="3901853815" Name="WoodBreak" ObjectPath="\Events\Default Work Unit\WoodBreak"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="70994745" Language="SFX">
@@ -135,6 +137,14 @@
 				<File Id="964048617" Language="SFX">
 					<ShortName>Valve_Folder\Valve2.wav</ShortName>
 					<Path>SFX/Valve_Folder/Valve2_F7D0E330.wem</Path>
+				</File>
+				<File Id="974388948" Language="SFX">
+					<ShortName>DoorOpen.wav</ShortName>
+					<Path>SFX/DoorOpen_F7D0E330.wem</Path>
+				</File>
+				<File Id="978352414" Language="SFX">
+					<ShortName>WoodBreak.wav</ShortName>
+					<Path>SFX/WoodBreak_F7D0E330.wem</Path>
 				</File>
 				<File Id="1017817842" Language="SFX">
 					<ShortName>Water Sploshing\Splash3.wav</ShortName>

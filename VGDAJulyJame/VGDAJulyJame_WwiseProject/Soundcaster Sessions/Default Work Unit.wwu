@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{47FCFD08-0995-4A62-9EC7-0C25A155DE0F}" SchemaVersion="85">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{47FCFD08-0995-4A62-9EC7-0C25A155DE0F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{47FCFD08-0995-4A62-9EC7-0C25A155DE0F}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Sprinkler Test" ID="{14CDA1DC-5ED8-4837-887E-C6CB6096CFE4}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Sprinkler_Start" ID="{6A9FC798-EB9E-4E2F-8777-C18D68133C33}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Sprinkler_Finish" ID="{51D7A62F-03E8-434C-96F5-A8E780A565F9}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="MusicVolume" ID="{679B2C7C-CD45-45B6-9658-F72FE61D6B95}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance" ID="{2DFB149D-4118-483E-A2C3-31C49175655F}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SFXVolume" ID="{215E0CAB-4F13-490E-B56C-5CCBC6F75BBC}"/>
+							<Value>50</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{2A5FEFA9-BD43-4576-A791-3FFF97AD4317}"/>
+						<CurrentStateRef Name="None" ID="{0D391687-6347-406C-AC86-69E9780B665E}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

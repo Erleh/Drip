@@ -32,6 +32,38 @@
 						</Transition>
 					</TransitionList>
 				</StateGroup>
+				<StateGroup Name="Room" ID="{0F8A97E5-C97E-41A4-B377-3AB091B46BB0}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="1.5"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{62E1B273-30A1-4ACD-9618-19CBB23E2829}"/>
+						<State Name="Small" ID="{C88CD9D5-162B-4A7E-B73A-83A5800F6A5B}"/>
+						<State Name="Medium" ID="{5FA2B765-D242-4459-8095-F5E9E4C5B291}"/>
+						<State Name="Large" ID="{03CDDA42-F6F8-4C89-89E5-A92C3F84F19B}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="SprinklerStatus" ID="{E21CCDF4-6B1D-4D29-8BE4-7F9FE07EE1A1}">
+					<ChildrenList>
+						<State Name="None" ID="{2A5FEFA9-BD43-4576-A791-3FFF97AD4317}"/>
+						<State Name="On" ID="{2D98BB27-F22E-4519-8910-235CB3BB566C}"/>
+						<State Name="Off" ID="{A6B83CFB-8D84-4FB0-8198-071A092137B0}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="On" ID="{2D98BB27-F22E-4519-8910-235CB3BB566C}"/>
+							<EndState Name="Off" ID="{A6B83CFB-8D84-4FB0-8198-071A092137B0}"/>
+							<Time>2</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Off" ID="{A6B83CFB-8D84-4FB0-8198-071A092137B0}"/>
+							<EndState Name="On" ID="{2D98BB27-F22E-4519-8910-235CB3BB566C}"/>
+							<Time>0.3</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
