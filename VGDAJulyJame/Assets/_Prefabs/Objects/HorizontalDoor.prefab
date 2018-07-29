@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4938632123826848}
   - component: {fileID: 61044058813972634}
-  - component: {fileID: 114441343982121308}
   m_Layer: 0
   m_Name: DoorAsset
   m_TagString: Untagged
@@ -41,6 +40,7 @@ GameObject:
   - component: {fileID: 114847402563197782}
   - component: {fileID: 95441053732684090}
   - component: {fileID: 114897337851975166}
+  - component: {fileID: 114762182930756474}
   m_Layer: 0
   m_Name: DoorInteractionZone
   m_TagString: Untagged
@@ -87,7 +87,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1800142204027838}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.96, y: 0.8928833, z: -3.1766505}
+  m_LocalPosition: {x: -21.43, y: -17.49, z: -3.300015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4938632123826848}
@@ -203,12 +203,12 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114441343982121308
+--- !u!114 &114762182930756474
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1505215715914618}
+  m_GameObject: {fileID: 1624652030417922}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7390164fb692a744b31be30898e65cc, type: 3}
