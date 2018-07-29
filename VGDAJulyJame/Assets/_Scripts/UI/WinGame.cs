@@ -9,6 +9,7 @@ public class WinGame : MonoBehaviour {
 	
 	// Update is called once per frame
     void OnTriggerEnter2D(Collider2D col) {
-        winGame.Invoke();
+        if(col.gameObject.CompareTag("Player"))
+            winGame.Invoke();
 	}
 }
