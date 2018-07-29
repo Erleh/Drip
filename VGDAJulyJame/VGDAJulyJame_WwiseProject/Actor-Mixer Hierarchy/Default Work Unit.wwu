@@ -617,11 +617,6 @@
 				</ActorMixer>
 				<ActorMixer Name="FootstepsSFX" ID="{2E49F41D-F53E-4C14-8DAD-AE7C87616C1B}" ShortID="244130310">
 					<PropertyList>
-						<Property Name="Inclusion" Type="bool">
-							<ValueList>
-								<Value>False</Value>
-							</ValueList>
-						</Property>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
@@ -1170,7 +1165,7 @@
 						<Property Name="PositioningType" Type="int16" Value="1"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-10</Value>
+								<Value>-13</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -1191,6 +1186,7 @@
 					<ChildrenList>
 						<Sound Name="Ambiance3" ID="{BA1293D1-2F4C-4395-9E1C-A646D7762531}" ShortID="261733252">
 							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="PositioningType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
@@ -1211,6 +1207,9 @@
 								<AudioFileSource Name="Ambiance3" ID="{55D60BA9-0D99-4042-8DE2-71E526654964}" ShortID="653323360">
 									<Language>SFX</Language>
 									<AudioFile>Ambiance3.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="851460475"/>
+									</ConvertedFileIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
@@ -1283,6 +1282,7 @@
 						</Sound>
 						<Sound Name="Ambiance4" ID="{67F7951B-8AF1-445A-A5F9-B47D5C1DFA80}" ShortID="49943569">
 							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="PositioningType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
@@ -1311,6 +1311,7 @@
 						</Sound>
 						<Sound Name="Ambiance5" ID="{BCB6B432-028A-44C6-A9C8-EBE7FB68A0A4}" ShortID="372034580">
 							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="PositioningType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
@@ -1373,6 +1374,11 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1398,7 +1404,7 @@
 								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-9</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1522,6 +1528,11 @@
 											</Modifier>
 										</ModifierInfo>
 									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2.5</Value>
+									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>

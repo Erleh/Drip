@@ -14,7 +14,6 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Ambiance5" ID="{320E264F-3EC9-4052-BDEF-520E0C146994}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Splashing" ID="{8CAFBCCD-CDD1-409D-AE67-2CE798BC9A56}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Splash" ID="{88A1C30E-6A4B-432B-BE56-51167FFE0A79}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Ambiance3" ID="{0FDBE45E-63A0-4341-A949-45C63AD805BE}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Sprinkler_Finish" ID="{51D7A62F-03E8-434C-96F5-A8E780A565F9}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Release_Hold" ID="{689BF115-7DA2-4381-860E-927183B93A17}" WorkUnitID="{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}" Filter="7" Origin="Manual"/>

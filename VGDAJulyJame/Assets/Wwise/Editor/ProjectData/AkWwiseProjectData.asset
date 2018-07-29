@@ -61,8 +61,8 @@ MonoBehaviour:
         ObjectType: 1
   BankWwu:
   - Guid: '{F3F75FBD-6C18-4F1E-91B6-BAF75923EF9F}'
-    m_lastTimePart2: -1999244023
-    m_lastTimePsrt1: -1791271296
+    m_lastTimePart2: -1999244008
+    m_lastTimePsrt1: -725780736
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks/Default Work Unit.wwu
     List:
@@ -90,8 +90,8 @@ MonoBehaviour:
   defaultPoolSize: 4096
   EventWwu:
   - Guid: '{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}'
-    m_lastTimePart2: -1999244022
-    m_lastTimePsrt1: 618728704
+    m_lastTimePart2: -1999244012
+    m_lastTimePsrt1: -125911552
     ParentPhysicalPath: 
     PhysicalPath: Events/Default Work Unit.wwu
     List:
@@ -106,7 +106,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Ambiance1
         ObjectType: 3
-      maxAttenuation: 0
+      maxAttenuation: 80
       maxDuration: 0
       minDuration: 0
     - Guid: e5261db5eaf64f448056aa4bde4a634a
@@ -120,7 +120,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Ambiance2
         ObjectType: 3
-      maxAttenuation: 0
+      maxAttenuation: 80
       maxDuration: 0
       minDuration: 0
     - Guid: 5ee4db0fa0634143a94945c63ad805be
@@ -134,7 +134,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Ambiance3
         ObjectType: 3
-      maxAttenuation: 0
+      maxAttenuation: 80
       maxDuration: 0
       minDuration: 0
     - Guid: 6f8f2cc51ebc8f45aeb1f933ab224b1f
@@ -148,7 +148,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Ambiance4
         ObjectType: 3
-      maxAttenuation: 0
+      maxAttenuation: 80
       maxDuration: 0
       minDuration: 0
     - Guid: 4f260e32c93e5240bdef520e0c146994
@@ -162,7 +162,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Ambiance5
         ObjectType: 3
-      maxAttenuation: 0
+      maxAttenuation: 80
       maxDuration: 0
       minDuration: 0
     - Guid: 4159deed0ab74947a48370d2796c6604
@@ -202,7 +202,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Door
         ObjectType: 3
-      maxAttenuation: 0
+      maxAttenuation: 80
       maxDuration: 0
       minDuration: 0
     - Guid: f72ecebacae41b48bf69ed44d80857e3
@@ -230,7 +230,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Monster_Drip
         ObjectType: 3
-      maxAttenuation: 0
+      maxAttenuation: 10
       maxDuration: 0
       minDuration: 0
     - Guid: 50f88cc1b1ec9c4480a7df401d21ea8e
@@ -258,7 +258,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Player_Death
         ObjectType: 3
-      maxAttenuation: 0
+      maxAttenuation: 80
       maxDuration: 0
       minDuration: 0
     - Guid: d1650471ee92db4a999cd259f7fd29a3
@@ -272,7 +272,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Player_MoveCheck
         ObjectType: 3
-      maxAttenuation: 0
+      maxAttenuation: 80
       maxDuration: 0
       minDuration: 0
     - Guid: 3f9d4bd79005c44988ca59c4a50805d8
@@ -303,16 +303,16 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - Guid: 0ec3a1884b6a2b43be5651167ffe0a79
-      ID: 160038168
-      Name: Splash
-      Path: Default Work Unit/Splash
+    - Guid: cdbcaf8cd1cd9d40ae672ce798bc9a56
+      ID: 1519632576
+      Name: Splashing
+      Path: Default Work Unit/Splashing
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Splash
+      - ElementName: Splashing
         ObjectType: 3
-      maxAttenuation: 0
+      maxAttenuation: 10
       maxDuration: 0
       minDuration: 0
     - Guid: 2fa6d751e8034c4396f5a8e780a565f9
@@ -376,22 +376,17 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: WoodBreak
         ObjectType: 3
-      maxAttenuation: 0
+      maxAttenuation: 80
       maxDuration: 0
       minDuration: 0
   ExpandedItems:
   - /VGDAJulyJame_WwiseProject
-  - /VGDAJulyJame_WwiseProject/Auxiliary Busses
-  - /VGDAJulyJame_WwiseProject/Auxiliary Busses/Default Work Unit
-  - /VGDAJulyJame_WwiseProject/Auxiliary Busses/Default Work Unit/Master Audio Bus
   - /VGDAJulyJame_WwiseProject/Events
   - /VGDAJulyJame_WwiseProject/Events/Default Work Unit
-  - /VGDAJulyJame_WwiseProject/Events/Default Work Unit/Sprinklers
+  - /VGDAJulyJame_WwiseProject/Events/Default Work Unit/Ambiance Folder
+  - /VGDAJulyJame_WwiseProject/Events/Default Work Unit/Player
   - /VGDAJulyJame_WwiseProject/SoundBanks
   - /VGDAJulyJame_WwiseProject/SoundBanks/Default Work Unit
-  - /VGDAJulyJame_WwiseProject/States
-  - /VGDAJulyJame_WwiseProject/States/Default Work Unit
-  - /VGDAJulyJame_WwiseProject/States/Default Work Unit/SprinklerStatus
   language: English(US)
   lowerPoolSize: 2048
   m_lastPopulateTimePart2: 0
@@ -434,8 +429,8 @@ MonoBehaviour:
         ObjectType: 13
   StateWwu:
   - Guid: '{304B9BE2-9D9E-4E24-8CF6-14A758EE62B4}'
-    m_lastTimePart2: -1999244094
-    m_lastTimePsrt1: 636374016
+    m_lastTimePart2: -1999244011
+    m_lastTimePsrt1: 684088448
     ParentPhysicalPath: 
     PhysicalPath: States/Default Work Unit.wwu
     List:
@@ -522,6 +517,31 @@ MonoBehaviour:
       - Medium
       - None
       - Small
+    - Guid: 3f6f343cfce5fb449837a5ad3fdae12f
+      ID: 1519632576
+      Name: Splashing
+      Path: Default Work Unit/Splashing
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Splashing
+        ObjectType: 9
+      ValueGuids:
+      - bytes: 51a5e77babe5974fa4a86d3e0f99c94e
+      - bytes: 7f1667b6df8fc84b917c68b4e5bfcb25
+      - bytes: 791d3e53b7b3904181f0dcc15b0536cf
+      ValueIcons:
+      - ElementName: None
+        ObjectType: 8
+      - ElementName: Off
+        ObjectType: 8
+      - ElementName: On
+        ObjectType: 8
+      valueIDs: db3ba32c648a79373e177762
+      values:
+      - None
+      - Off
+      - On
     - Guid: f4cd1ce21d6b294d8be47f9fe07ee1a1
       ID: -527144251
       Name: SprinklerStatus

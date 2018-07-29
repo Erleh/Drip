@@ -26,6 +26,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{62E1B273-30A1-4ACD-9618-19CBB23E2829}"/>
+						<CurrentStateRef Name="On" ID="{533E1D79-B3B7-4190-81F0-DCC15B0536CF}"/>
 						<CurrentStateRef Name="None" ID="{2A5FEFA9-BD43-4576-A791-3FFF97AD4317}"/>
 						<CurrentStateRef Name="Alive" ID="{D1086BC6-23A2-4797-8E01-1E35DAD80DFF}"/>
 						<CurrentStateRef Name="Pushing" ID="{F11D3256-6A1D-4855-9F40-D24DEEBF24A6}"/>

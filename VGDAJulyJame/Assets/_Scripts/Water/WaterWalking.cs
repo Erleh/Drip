@@ -9,10 +9,19 @@ public class WaterWalking : MonoBehaviour
 
     public void StartWaterAffect(GameObject self, bool onWater)
     {
-        if(self.CompareTag("Enemy"))
+        if (self.CompareTag("Enemy"))
         {
             //print("enemy found");
             waterManager.FinishedProcess(true, false, onWater, self.GetComponent<Collider2D>());
+
+            if (onWater)
+            {
+                AkSoundEngine.SetState("Splashing", "On");
+            }
+            else if (!onWater)
+            {
+                AkSoundEngine.SetState("Splashing", "Off");
+            }
         }
         if(self.CompareTag("Player"))
         {
