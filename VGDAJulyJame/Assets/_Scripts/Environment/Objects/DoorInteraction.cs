@@ -39,6 +39,7 @@ public class DoorInteraction : MonoBehaviour
                 doorAnimation.SetBool("DoorOpened", true);
                 doorAnimation.SetBool("DoorClosed", false);
                 open = true;
+                AkSoundEngine.PostEvent("Door", gameObject);
                 
             }
             else

@@ -53,7 +53,7 @@
 				</File>
 				<File Id="99620844" Language="SFX">
 					<ShortName>Ambiance4.wav</ShortName>
-					<Path>SFX/Ambiance4_F7D0E330.wem</Path>
+					<Path>SFX/Ambiance4_AD29F36A.wem</Path>
 				</File>
 				<File Id="106061577" Language="SFX">
 					<ShortName>Sprinkler.wav</ShortName>
@@ -83,6 +83,10 @@
 					<ShortName>Valve_Folder\Valve3.wav</ShortName>
 					<Path>SFX/Valve_Folder/Valve3_F7D0E330.wem</Path>
 				</File>
+				<File Id="426280273" Language="SFX">
+					<ShortName>Footstep.wav</ShortName>
+					<Path>SFX/Footstep_F7D0E330.wem</Path>
+				</File>
 				<File Id="445560886" Language="SFX">
 					<ShortName>Water Dripping into a Big Bucket_bip.34Gurgle Sounds.wav</ShortName>
 					<Path>SFX/Water Dripping into a Big Bucket_bip.34Gurgle Sounds_F7D0E330.wem</Path>
@@ -98,10 +102,6 @@
 				<File Id="587991794" Language="SFX">
 					<ShortName>Water Dripping into a Big Bucket_bip.46Gurgle Sounds.wav</ShortName>
 					<Path>SFX/Water Dripping into a Big Bucket_bip.46Gurgle Sounds_F7D0E330.wem</Path>
-				</File>
-				<File Id="653323360" Language="SFX">
-					<ShortName>Ambiance3.wav</ShortName>
-					<Path>SFX/Ambiance3_F7D0E330.wem</Path>
 				</File>
 				<File Id="711721849" Language="SFX">
 					<ShortName>Water Dripping into a Big Bucket_bip.3Gurgle Sounds.wav</ShortName>
@@ -127,6 +127,10 @@
 					<ShortName>Ambiance2.wav</ShortName>
 					<Path>SFX/Ambiance2_AD29F36A.wem</Path>
 				</File>
+				<File Id="851460475" Language="SFX">
+					<ShortName>Ambiance3.wav</ShortName>
+					<Path>SFX/Ambiance3_AD29F36A.wem</Path>
+				</File>
 				<File Id="860811947" Language="SFX">
 					<ShortName>Water Dripping into a Big Bucket_bip.19Gurgle Sounds.wav</ShortName>
 					<Path>SFX/Water Dripping into a Big Bucket_bip.19Gurgle Sounds_F7D0E330.wem</Path>
@@ -137,7 +141,7 @@
 				</File>
 				<File Id="869967775" Language="SFX">
 					<ShortName>Ambiance5.wav</ShortName>
-					<Path>SFX/Ambiance5_F7D0E330.wem</Path>
+					<Path>SFX/Ambiance5_AD29F36A.wem</Path>
 				</File>
 				<File Id="879809132" Language="SFX">
 					<ShortName>MouseOver.wav</ShortName>

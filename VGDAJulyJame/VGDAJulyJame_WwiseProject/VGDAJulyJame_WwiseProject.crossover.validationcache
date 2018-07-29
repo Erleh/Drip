@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="85">
-	<ValidationCacheItem File="Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1532839950" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1532839791" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1532845559" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1532842476" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1532383578" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1532398498" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1532406997" DateHigh="0"/>
@@ -9,7 +9,7 @@
 	<ValidationCacheItem File="Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1532383578" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1532383578" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\Effects\Factory Effects.wwu" DateLow="1532837585" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\Events\Default Work Unit.wwu" DateLow="1532837826" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\Events\Default Work Unit.wwu" DateLow="1532842476" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1532668020" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1532383578" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1532782425" DateHigh="0"/>
@@ -18,12 +18,12 @@
 	<ValidationCacheItem File="Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1532383578" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1532383578" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\Queries\Factory Queries.wwu" DateLow="1532383578" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1532837585" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1532837026" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\States\Default Work Unit.wwu" DateLow="1532806904" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1532844134" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1532844109" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\States\Default Work Unit.wwu" DateLow="1532842557" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1532499107" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1532808937" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\VGDAJulyJame_WwiseProject.crossover.wsettings" DateLow="1532839965" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\VGDAJulyJame_WwiseProject.crossover.wsettings" DateLow="1532845577" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\VGDAJulyJame_WwiseProject.wproj" DateLow="1532383578" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GitHub\VGDAJulyJam\VGDAJulyJame\VGDAJulyJame_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1532383578" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\VGDAJulyJam-master\VGDAJulyJame\VGDAJulyJame_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1532409086" DateHigh="0"/>
