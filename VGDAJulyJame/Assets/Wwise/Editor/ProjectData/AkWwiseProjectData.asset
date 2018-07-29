@@ -61,8 +61,8 @@ MonoBehaviour:
         ObjectType: 1
   BankWwu:
   - Guid: '{F3F75FBD-6C18-4F1E-91B6-BAF75923EF9F}'
-    m_lastTimePart2: -1999244174
-    m_lastTimePsrt1: 1293757696
+    m_lastTimePart2: -1999244023
+    m_lastTimePsrt1: -1791271296
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks/Default Work Unit.wwu
     List:
@@ -90,11 +90,81 @@ MonoBehaviour:
   defaultPoolSize: 4096
   EventWwu:
   - Guid: '{6FFA2545-0DC9-48FC-8F6E-D59EB27AE24A}'
-    m_lastTimePart2: -1999244076
-    m_lastTimePsrt1: 1926962688
+    m_lastTimePart2: -1999244022
+    m_lastTimePsrt1: 618728704
     ParentPhysicalPath: 
     PhysicalPath: Events/Default Work Unit.wwu
     List:
+    - Guid: 03818d5546c94c4c998e8f94afd56420
+      ID: 1404066238
+      Name: Ambiance1
+      Path: Default Work Unit/Ambiance Folder/Ambiance1
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambiance Folder
+        ObjectType: 4
+      - ElementName: Ambiance1
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: e5261db5eaf64f448056aa4bde4a634a
+      ID: 1404066237
+      Name: Ambiance2
+      Path: Default Work Unit/Ambiance Folder/Ambiance2
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambiance Folder
+        ObjectType: 4
+      - ElementName: Ambiance2
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 5ee4db0fa0634143a94945c63ad805be
+      ID: 1404066236
+      Name: Ambiance3
+      Path: Default Work Unit/Ambiance Folder/Ambiance3
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambiance Folder
+        ObjectType: 4
+      - ElementName: Ambiance3
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 6f8f2cc51ebc8f45aeb1f933ab224b1f
+      ID: 1404066235
+      Name: Ambiance4
+      Path: Default Work Unit/Ambiance Folder/Ambiance4
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambiance Folder
+        ObjectType: 4
+      - ElementName: Ambiance4
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 4f260e32c93e5240bdef520e0c146994
+      ID: 1404066234
+      Name: Ambiance5
+      Path: Default Work Unit/Ambiance Folder/Ambiance5
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambiance Folder
+        ObjectType: 4
+      - ElementName: Ambiance5
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - Guid: 4159deed0ab74947a48370d2796c6604
       ID: -1079945940
       Name: Click_Play
@@ -119,6 +189,18 @@ MonoBehaviour:
       - ElementName: UI
         ObjectType: 4
       - ElementName: Click_Setting
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 989834b12048594c80ad4557080f795c
+      ID: 1877847629
+      Name: Door
+      Path: Default Work Unit/Door
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Door
         ObjectType: 3
       maxAttenuation: 0
       maxDuration: 0
@@ -261,6 +343,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - Guid: 2a4e404b1ae11049927989b5eecbc76c
+      ID: -2061746350
+      Name: Start_Ambiance
+      Path: Default Work Unit/Start_Ambiance
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Start_Ambiance
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - Guid: 9b2727b53be3264a9d7899bc04690b12
       ID: 540993415
       Name: Start_Music
@@ -273,14 +367,14 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - Guid: 3f3b3d34c0f0c14c83ee1114c1777328
-      ID: -52447562
-      Name: Start_Reverb
-      Path: Default Work Unit/Start_Reverb
+    - Guid: 405483d32fa1704e833beff4554b967a
+      ID: -393113481
+      Name: WoodBreak
+      Path: Default Work Unit/WoodBreak
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Start_Reverb
+      - ElementName: WoodBreak
         ObjectType: 3
       maxAttenuation: 0
       maxDuration: 0
@@ -293,6 +387,8 @@ MonoBehaviour:
   - /VGDAJulyJame_WwiseProject/Events
   - /VGDAJulyJame_WwiseProject/Events/Default Work Unit
   - /VGDAJulyJame_WwiseProject/Events/Default Work Unit/Sprinklers
+  - /VGDAJulyJame_WwiseProject/SoundBanks
+  - /VGDAJulyJame_WwiseProject/SoundBanks/Default Work Unit
   - /VGDAJulyJame_WwiseProject/States
   - /VGDAJulyJame_WwiseProject/States/Default Work Unit
   - /VGDAJulyJame_WwiseProject/States/Default Work Unit/SprinklerStatus

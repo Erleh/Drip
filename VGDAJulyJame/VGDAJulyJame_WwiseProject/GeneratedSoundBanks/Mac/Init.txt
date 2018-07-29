@@ -1,5 +1,6 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	444815956	PlayerLife			\Default Work Unit\PlayerLife	
+	1519632576	Splashing			\Default Work Unit\Splashing	
 	2077253480	Room			\Default Work Unit\Room	
 	2649703675	Moving			\Default Work Unit\Moving	
 	3767823045	SprinklerStatus			\Default Work Unit\SprinklerStatus	
@@ -8,6 +9,9 @@ State	ID	Name	State Group			Notes
 	0	None	PlayerLife			
 	655265632	Alive	PlayerLife			
 	2044049779	Dead	PlayerLife			
+	0	None	Splashing			
+	930712164	Off	Splashing			
+	1651971902	On	Splashing			
 	0	None	Room			
 	1846755610	Small	Room			
 	2849147824	Medium	Room			

@@ -86,6 +86,16 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{59BAAFCB-26B4-4A42-9E6E-474357A9A55F}" ShortID="841794318">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PushingCrates" ID="{180D6E40-361A-4C10-90E7-4F407E9B9AAD}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Player_Death" ID="{A27C4FDB-1457-486B-8AB2-802C513A97E0}">
@@ -253,20 +263,6 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="Splash" ID="{88A1C30E-6A4B-432B-BE56-51167FFE0A79}">
-					<ChildrenList>
-						<Action Name="" ID="{1832D2FB-D998-4EE3-8255-CD539AE1DC98}" ShortID="428804177">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Water Splashing" ID="{46DE214A-A72A-4E02-A01D-E2C2E3E92028}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Door" ID="{B1349898-4820-4C59-80AD-4557080F795C}">
 					<ChildrenList>
 						<Action Name="" ID="{6AE7EEFC-D4BE-4A05-B11A-22361ADEDABA}" ShortID="114401863">
@@ -290,6 +286,95 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="WoodBreak" ID="{5F93A9F1-BF69-4694-A6CB-962DEC6548E4}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Start_Ambiance" ID="{4B404E2A-E11A-4910-9279-89B5EECBC76C}"/>
+				<Folder Name="Ambiance Folder" ID="{BB0D6272-3D48-49DD-8991-1A32D8E1D9E4}" ShortID="1018084655">
+					<ChildrenList>
+						<Event Name="Ambiance1" ID="{558D8103-C946-4C4C-998E-8F94AFD56420}">
+							<ChildrenList>
+								<Action Name="" ID="{102868C7-6350-41B5-93CF-764710BFBFE9}" ShortID="725225240">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambiance1" ID="{A37B3A53-D297-46C1-9B41-F01922BB42A4}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ambiance2" ID="{B51D26E5-F6EA-444F-8056-AA4BDE4A634A}">
+							<ChildrenList>
+								<Action Name="" ID="{86D7AA85-4E60-44D6-B5ED-06910C9646AA}" ShortID="595883462">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambiance2" ID="{7128E9BD-D578-4B98-A3D7-4823D2B64825}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ambiance3" ID="{0FDBE45E-63A0-4341-A949-45C63AD805BE}">
+							<ChildrenList>
+								<Action Name="" ID="{7E665718-4E84-42DD-A2FF-1353D7D97630}" ShortID="227783885">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambiance3" ID="{BA1293D1-2F4C-4395-9E1C-A646D7762531}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ambiance4" ID="{C52C8F6F-BC1E-458F-AEB1-F933AB224B1F}">
+							<ChildrenList>
+								<Action Name="" ID="{BCB06AFB-4427-4C3C-A649-BEE50CB988D4}" ShortID="996108974">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambiance4" ID="{67F7951B-8AF1-445A-A5F9-B47D5C1DFA80}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ambiance5" ID="{320E264F-3EC9-4052-BDEF-520E0C146994}">
+							<ChildrenList>
+								<Action Name="" ID="{BA8232DB-3570-4B80-9638-DADCFDC71367}" ShortID="19224522">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambiance5" ID="{BCB6B432-028A-44C6-A9C8-EBE7FB68A0A4}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="Splashing" ID="{8CAFBCCD-CDD1-409D-AE67-2CE798BC9A56}">
+					<ChildrenList>
+						<Action Name="" ID="{B03DEFD3-E12E-4C97-8D1D-BF7F45F513CE}" ShortID="257909191">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WaterSplash" ID="{33E72C33-CC4B-46D0-A937-E79AC4411D62}" WorkUnitID="{5A1F0934-3CF7-4657-9DDC-4BA59E638840}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

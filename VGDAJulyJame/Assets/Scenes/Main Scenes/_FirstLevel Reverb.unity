@@ -16173,7 +16173,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1086492782}
   - component: {fileID: 1086492779}
-  - component: {fileID: 1086492781}
+  - component: {fileID: 1086492780}
   - component: {fileID: 1086492778}
   m_Layer: 0
   m_Name: SoundBankLoader
@@ -16222,7 +16222,7 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
---- !u!114 &1086492781
+--- !u!114 &1086492780
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
