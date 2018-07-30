@@ -6,7 +6,10 @@ public class UselessObjectRotation : MonoBehaviour {
 
     [SerializeField]
     private float maxTimer;
+
     private float rotationSpeed;
+
+
     public void RotateObject(float rotSpd)
     {
         rotationSpeed = rotSpd;

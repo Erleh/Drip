@@ -17,9 +17,6 @@ public class MenuCameraController : MonoBehaviour {
     [SerializeField]
     private bool forward;
 
-    [SerializeField]
-    private bool transitioning;
-
     private void Start()
     {
         DetermineTarget();
@@ -42,7 +39,6 @@ public class MenuCameraController : MonoBehaviour {
     }
     IEnumerator MoveCo()
     {
-        transitioning = true;
         if (forward)
         {
             while (transform.position.x < camMoveTarget.x - lerpMargin)
@@ -59,7 +55,6 @@ public class MenuCameraController : MonoBehaviour {
                 yield return null;
             }
         }
-        transitioning = false;
         yield return null;
         MovableCam = null;
     }
