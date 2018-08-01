@@ -142,7 +142,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxTimer: 2
-  mcc: {fileID: 1519862752}
 --- !u!212 &155426933
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1095,7 +1094,7 @@ MonoBehaviour:
   basePath: Audio/GeneratedSoundBanks
   language: English(US)
   defaultPoolSize: 4096
-  lowerPoolSize: 6144
+  lowerPoolSize: 2048
   streamingPoolSize: 1024
   preparePoolSize: 0
   memoryCutoffThreshold: 0.95
@@ -2459,7 +2458,6 @@ MonoBehaviour:
   RotatingKnob: {fileID: 0}
   lerpMargin: 0.5
   forward: 1
-  transitioning: 0
 --- !u!114 &1519862753
 MonoBehaviour:
   m_ObjectHideFlags: 0
