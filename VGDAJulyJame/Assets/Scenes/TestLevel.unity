@@ -2159,7 +2159,7 @@ Transform:
   m_Children:
   - {fileID: 1264340330}
   - {fileID: 86723250}
-  - {fileID: 649934294}
+  - {fileID: 1517500699}
   - {fileID: 163108892}
   - {fileID: 839479978}
   - {fileID: 1434589343}
@@ -2218,11 +2218,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 40fa6e5857bcc4a4eb090ee58fe2617d, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &649934294 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4550715502018526, guid: bf4c3de1b6867be4a83fc8bffdd15c21,
-    type: 2}
-  m_PrefabInternal: {fileID: 512907776}
 --- !u!4 &650113457 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4913083648884890, guid: 911f742dafc28b2409bf9bf7c03c8cc3,
@@ -3139,8 +3134,8 @@ BoxCollider2D:
   m_Offset: {x: -0.003587842, y: 0.13378704}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5021105, y: 0.013164431}
-    oldSize: {x: 1.275, y: 1.625}
+    pivot: {x: 0.02532558, y: 0.016559012}
+    oldSize: {x: 1.1333333, y: 1.4444444}
     newSize: {x: 1.7, y: 2.1666667}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3861,9 +3856,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28e2bcc311cf85e4494087de3868c87d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dragCoeff: 20
   affectedRigidbodies: []
-  puddleSprites: []
+  pushableDrag: 0
+  characterDrag: 0
 --- !u!4 &1395570577
 Transform:
   m_ObjectHideFlags: 0
@@ -8764,6 +8759,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecba62347eadbc24ca2f738eb5fb6e8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1485321878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8883,6 +8883,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ea62135b4b7adef47bba9ea7338e3c6f, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &1517500699 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4263152643115438, guid: bf4c3de1b6867be4a83fc8bffdd15c21,
+    type: 2}
+  m_PrefabInternal: {fileID: 512907776}
 --- !u!4 &1537977190 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4318488632426346, guid: 40fa6e5857bcc4a4eb090ee58fe2617d,
@@ -9037,6 +9042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorCollider: {fileID: 937884198}
+  doorAnimation: {fileID: 0}
 --- !u!61 &1591321821
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9779,7 +9785,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: -0.019724071}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.3}
+    pivot: {x: 0.5, y: 0.25}
     oldSize: {x: 1.08, y: 1.8377777}
     newSize: {x: 4.86, y: 8.27}
     adaptiveTilingThreshold: 0.5

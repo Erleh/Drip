@@ -51742,6 +51742,11 @@ Prefab:
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 1170003179}
+    - target: {fileID: 114638584261835536, guid: 1ff69949dec02734fa67f4979d89cf8b,
+        type: 2}
+      propertyPath: delayDuration
+      value: 4.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ff69949dec02734fa67f4979d89cf8b, type: 2}
   m_IsPrefabParent: 0

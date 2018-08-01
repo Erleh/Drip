@@ -10,12 +10,13 @@ public class PlayerState : MonoBehaviour
 
     private PlayerMovement pMovement;
     bool _isAlive;
-
+    private Animator pAnim;
     //public delegate void onDeathEvent();
     //public event onDeathEvent Died;
 
     void Awake()
     {
+        pAnim = GetComponent<Animator>();
         _isAlive = true;
         pMovement = GetComponent<PlayerMovement>();
     }
@@ -30,7 +31,7 @@ public class PlayerState : MonoBehaviour
     public void Die()
     {
         _isAlive = false;
-        GetComponent<Animator>().SetTrigger("die");
+        pAnim.SetTrigger("die");
         AkSoundEngine.PostEvent("Player_Death", gameObject);
         AkSoundEngine.SetState("PlayerLife", "Dead");
     }
@@ -39,7 +40,7 @@ public class PlayerState : MonoBehaviour
         if (IsAlive()) { AkSoundEngine.SetState("Moving", "Idle"); }
         if (Moving()) { AkSoundEngine.SetState("Moving", "Walking"); }
         if (Pushing()) { AkSoundEngine.SetState("Moving", "Pushing"); }
-
-
     }
+    public void DTOne(){    pAnim.SetTrigger("dt1");    }
+    public void DTTwo(){    pAnim.SetTrigger("dt2");    }
 }

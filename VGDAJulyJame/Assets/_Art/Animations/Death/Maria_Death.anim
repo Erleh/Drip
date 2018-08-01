@@ -110,4 +110,12 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_GenerateMotionCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 1.85
+    functionName: DTOne
+    data: 
+    objectReferenceParameter: {fileID: 1279621555320180, guid: 2459eb49ffa790b4c8233e069f8a7404,
+      type: 2}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
