@@ -4,27 +4,21 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour, EnemyMovementBase
 {
-    [SerializeField]
-    GameObject dripObject;
+    [SerializeField] GameObject dripObject;
 
-    [SerializeField]
-    private float speed = 5;
-    [SerializeField]
-    private Transform target;
+    [SerializeField] private float speed = 5;
+    [SerializeField] private Transform target;
 
     [Header("Set fields below")]
-    [SerializeField]
-    Transform enemyTrans;
-    [SerializeField]
-    Rigidbody2D enemyRB;
-    [SerializeField]
-    GameObject triggerDetectionBox;
-    [SerializeField]
-    MapGrid mapGrid;
-    [SerializeField]
-    ParticleSystem waterTrail;
+    [SerializeField] Transform enemyTrans;
+    [SerializeField] Rigidbody2D enemyRB;
+    [SerializeField] GameObject triggerDetectionBox;
+    [SerializeField] MapGrid mapGrid;
+    [SerializeField] ParticleSystem waterTrail;
+    [SerializeField] private float maxPathSearchTime;
     
     private float distFromPlayer = 0;
+    private Coroutine timer;
 
     // reps the index of the position on the path this object is on
     int posIndex;
@@ -72,21 +66,29 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
         return distFromPlayer;
     }
 
+    public IEnumerator PathTimer(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        timer = null;
+    }
+    
     public IEnumerator FollowPath()
     {
         Vector2 currentWaypoint = path[0];
         Vector2 currPos;
 
-        while (true)// && hasWaypoint)
+        timer = StartCoroutine(PathTimer(5));
+
+        while (timer != null)
         {
             currPos = new Vector2(enemyTrans.position.x, enemyTrans.position.y);
-            float oldPosX = currPos.x;
-            float oldPosY = currPos.y;
+            var oldPosX = currPos.x;
+            var oldPosY = currPos.y;
             
             if (mapGrid.WorldToNodePoint(currPos) == mapGrid.WorldToNodePoint(currentWaypoint))
             {
                 posIndex++;
-                //Instantiate(dripObject, enemyTrans.position, enemyTrans.rotation);
+                
                 if (posIndex >= path.Length)
                 {
                     Instantiate(dripObject, enemyTrans.position, enemyTrans.rotation);
@@ -105,13 +107,10 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
             }
 
             enemyRB.AddForce(Vector3.Normalize(currentWaypoint - currPos) * speed);
-
-            //Vector2 newPos = new Vector2(enemyTrans.position.x, enemyTrans.position.y);
             
             // if stuck
             if (ApproxVals(currPos.x, oldPosX, .01f) && ApproxVals(currPos.y, oldPosY, .01f))
             {
-                //print("stuck");
                 yield return new WaitForSeconds(1);
 
                 hunting = false;
@@ -121,9 +120,17 @@ public class EnemyMovement : MonoBehaviour, EnemyMovementBase
                 // stop coroutine
                 yield break;
             }
-            //enemyTrans.position = Vector2.MoveTowards(enemyTrans.position, currentWaypoint, speed);
 
             yield return null;
+        }
+
+        if (timer == null)
+        {
+            hunting = false;
+            triggerDetectionBox.SetActive(false);
+            triggerDetectionBox.SetActive(true);
+
+            yield break;
         }
     }
 
