@@ -19,8 +19,8 @@ public static class LoadManager
         }
     }
 
-    static IEnumerator BeginLevelCo()
+    /*static IEnumerator BeginLevelCo()
     {
         
-    }
+    }*/
 }
